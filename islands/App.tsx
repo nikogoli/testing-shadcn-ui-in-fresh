@@ -1,5 +1,5 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
-import {
+//import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
+/*import {
   AlertDialog,
   AlertDialogAction,
   AlertDialogCancel,
@@ -9,34 +9,34 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from '@/components/ui/alert-dialog'
-import { Button } from '@/components/ui/button'
-import { Checkbox } from '@/components/ui/checkbox'
-import { ContextMenuDemo } from '@/examples/ContextMenu'
-import { DialogDemo } from './examples/Dialog'
-import { DropdownMenuDemo } from './examples/DropdownMenu'
-import { HoverCardDemo } from './examples/HoverCard'
-import { InputDemo } from './examples/Input'
-import { LabelDemo } from './examples/Label'
-import { MenubarDemo } from './examples/Menubar'
-import { PopoverDemo } from './examples/Popover'
-import { RadioGroupDemo } from './examples/RadioGroup'
-import { SelectDemo } from './examples/Select'
-import { SheetDemo } from './examples/Sheet'
-import { SkeletonDemo } from './examples/Skeleton'
-import { SliderDemo } from './examples/Slider'
-import { SwitchDemo } from './examples/Switch'
-import { TabsDemo } from './examples/Tabs'
-import { TextareaDemo } from './examples/Textarea'
-import { ToastDemo } from './examples/Toast'
-import { ToggleDemo } from './examples/Toggle'
-import { TooltipDemo } from './examples/Tooltip'
-import { NavigationMenuDemo } from './examples/NavigationMenu'
+} from '@/components/ui/alert-dialog'*/
+//import { Button } from '@/components/ui/button'
+//import { Checkbox } from '@/components/ui/checkbox'
+//import { ContextMenuDemo } from '@/examples/ContextMenu'
+//import { DialogDemo } from './examples/Dialog'
+//import { DropdownMenuDemo } from './examples/DropdownMenu'
+//import { HoverCardDemo } from './examples/HoverCard'
+//import { InputDemo } from './examples/Input'
+//import { LabelDemo } from './examples/Label'
+//import { MenubarDemo } from './examples/Menubar'
+//import { PopoverDemo } from './examples/Popover'
+//import { RadioGroupDemo } from './examples/RadioGroup'
+//import { SelectDemo } from './examples/Select'
+//import { SheetDemo } from './examples/Sheet'
+//import { SkeletonDemo } from './examples/Skeleton'
+//import { SliderDemo } from './examples/Slider'
+//import { SwitchDemo } from './examples/Switch'
+//import { TabsDemo } from './examples/Tabs'
+//import { TextareaDemo } from './examples/Textarea'
+//import { ToastDemo } from './examples/Toast'
+//import { ToggleDemo } from './examples/Toggle'
+//import { TooltipDemo } from './examples/Tooltip'
+//import { NavigationMenuDemo } from './examples/NavigationMenu'
 
 function App() {
   return (
     <div className="App w-full py-20 flex-col-center gap-4 overflow-hidden">
-      <Accordion type="single" collapsible className="w-90% max-w-450px">
+      {/*<Accordion type="single" collapsible className="w-90% max-w-450px">
         <AccordionItem value="item-1">
           <AccordionTrigger>Is it accessible?</AccordionTrigger>
           <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>
@@ -51,11 +51,11 @@ function App() {
           <AccordionTrigger>Is it animated?</AccordionTrigger>
           <AccordionContent>Yes. It's animated by default, but you can disable it if you prefer.</AccordionContent>
         </AccordionItem>
-      </Accordion>
+      </Accordion>*/}
 
-      <Button>Button</Button>
+      {/*<Button>Button</Button>*/}
 
-      <AlertDialog>
+      {/*<AlertDialog>
         <AlertDialogTrigger asChild>
           <Button variant="outline">Open</Button>
         </AlertDialogTrigger>
@@ -72,9 +72,9 @@ function App() {
             <AlertDialogAction>Continue</AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
-      </AlertDialog>
+      </AlertDialog>*/}
 
-      <div className="flex items-center space-x-2">
+      {/*<div className="flex items-center space-x-2">
         <Checkbox defaultChecked disabled id="terms" />
         <label
           htmlFor="terms"
@@ -82,9 +82,9 @@ function App() {
         >
           Accept terms and conditions
         </label>
-      </div>
+      </div>*/}
 
-      <ContextMenuDemo />
+      {/*<ContextMenuDemo />
 
       <SelectDemo />
 
@@ -122,7 +122,7 @@ function App() {
 
       <TooltipDemo />
 
-      <SkeletonDemo />
+      <SkeletonDemo />*/}
     </div>
   )
 }
