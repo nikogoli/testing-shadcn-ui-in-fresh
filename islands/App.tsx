@@ -10,7 +10,7 @@
   AlertDialogTitle,
   AlertDialogTrigger,
 } from '@/components/ui/alert-dialog'*/
-import { Button } from '../_unocss-preset-shadcn/components/ui/button.tsx'
+import { Button } from '../components/ui/button.tsx'
 //import { Checkbox } from '@/components/ui/checkbox'
 //import { ContextMenuDemo } from '@/examples/ContextMenu'
 //import { DialogDemo } from './examples/Dialog'
