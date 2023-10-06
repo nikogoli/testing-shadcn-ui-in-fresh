@@ -10,7 +10,7 @@
   AlertDialogTitle,
   AlertDialogTrigger,
 } from '@/components/ui/alert-dialog'*/
-//import { Button } from '@/components/ui/button'
+import { Button } from '../_unocss-preset-shadcn/components/ui/button.tsx'
 //import { Checkbox } from '@/components/ui/checkbox'
 //import { ContextMenuDemo } from '@/examples/ContextMenu'
 //import { DialogDemo } from './examples/Dialog'
@@ -53,7 +53,7 @@ function App() {
         </AccordionItem>
       </Accordion>*/}
 
-      {/*<Button>Button</Button>*/}
+      <Button onClick={(_ev) => console.log("Button is clicked!!")}>Button</Button>
 
       {/*<AlertDialog>
         <AlertDialogTrigger asChild>
