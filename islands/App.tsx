@@ -29,7 +29,7 @@ import { SkeletonDemo } from '../_examples/Skeleton.tsx'
 //import { TabsDemo } from './examples/Tabs'
 import { TextareaDemo } from '../_examples/Textarea.tsx'
 //import { ToastDemo } from './examples/Toast'
-//import { ToggleDemo } from './examples/Toggle'
+import { ToggleDemo } from '../_examples/Toggle.tsx'
 //import { TooltipDemo } from './examples/Tooltip'
 //import { NavigationMenuDemo } from './examples/NavigationMenu'
 
@@ -116,11 +116,11 @@ function App() {
 
       <TextareaDemo />
 
-      {/*<ToastDemo />
+      {/*<ToastDemo />*/}
 
       <ToggleDemo />
 
-      <TooltipDemo />*/}
+      {/*<TooltipDemo />*/}
 
       <SkeletonDemo />
     </div>

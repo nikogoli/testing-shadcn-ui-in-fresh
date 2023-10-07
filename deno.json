@@ -35,7 +35,16 @@
     "$std/": "https://deno.land/std@0.193.0/",
     "class-variance-authority": "https://esm.sh/class-variance-authority@0.7.0",
     "clsx": "https://esm.sh/clsx@2.0.0",
-    "tailwind-merge": "https://esm.sh/tailwind-merge@1.14.0"
+    "tailwind-merge": "https://esm.sh/tailwind-merge@1.14.0",
+    "@babel/runtime/helpers/esm/extends": "https://esm.sh/@babel/runtime@7.23.1/helpers/esm/extends",
+    "@radix-ui/primitive": "https://esm.sh/*@radix-ui/primitive@1.0.1",
+    "@radix-ui/react-primitive": "https://esm.sh/*@radix-ui/react-primitive@1.0.3?alias=react:preact/compat,react-dom:preact/compat,@types/react:preact/compat",
+    "@radix-ui/react-slot": "https://esm.sh/*@radix-ui/react-slot@1.0.2?alias=react:preact/compat,@types/react:preact/compat",
+    "@radix-ui/react-use-controllable-state": "https://esm.sh/*@radix-ui/react-use-controllable-state@1.0.1?alias=react:preact/compat,@types/react:preact/compat",
+    "@radix-ui/react-use-callback-ref": "https://esm.sh/v132/*@radix-ui/react-use-callback-ref@1.0.1?alias=react:preact/compat,@types/react:preact/compat",
+    "@radix-ui/react-compose-refs": "https://esm.sh/v132/*@radix-ui/react-compose-refs@1.0.1?alias=react:preact/compat,@types/react:preact/compat",
+
+    "@radix-ui/react-toggle": "https://esm.sh/*@radix-ui/react-toggle@1.0.3?alias=react:preact/compat,@types/react:preact/compat"
   },
   "compilerOptions": {
     "jsx": "react-jsx",
