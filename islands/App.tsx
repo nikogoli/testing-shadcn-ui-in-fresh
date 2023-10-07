@@ -23,7 +23,7 @@ import { InputDemo } from '../_examples/Input.tsx'
 //import { RadioGroupDemo } from './examples/RadioGroup'
 //import { SelectDemo } from './examples/Select'
 //import { SheetDemo } from './examples/Sheet'
-//import { SkeletonDemo } from './examples/Skeleton'
+import { SkeletonDemo } from '../_examples/Skeleton.tsx'
 //import { SliderDemo } from './examples/Slider'
 //import { SwitchDemo } from './examples/Switch'
 //import { TabsDemo } from './examples/Tabs'
@@ -120,9 +120,9 @@ function App() {
 
       <ToggleDemo />
 
-      <TooltipDemo />
+      <TooltipDemo />*/}
 
-      <SkeletonDemo />*/}
+      <SkeletonDemo />
     </div>
   )
 }
