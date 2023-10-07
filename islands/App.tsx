@@ -27,7 +27,7 @@ import { InputDemo } from '../_examples/Input.tsx'
 //import { SliderDemo } from './examples/Slider'
 //import { SwitchDemo } from './examples/Switch'
 //import { TabsDemo } from './examples/Tabs'
-//import { TextareaDemo } from './examples/Textarea'
+import { TextareaDemo } from '../_examples/Textarea.tsx'
 //import { ToastDemo } from './examples/Toast'
 //import { ToggleDemo } from './examples/Toggle'
 //import { TooltipDemo } from './examples/Tooltip'
@@ -35,7 +35,7 @@ import { InputDemo } from '../_examples/Input.tsx'
 
 function App() {
   return (
-    <div className="App w-full py-20 flex-col-center gap-4 overflow-hidden">
+    <div className="App w-full py-20 flex-col-center gap-8 overflow-hidden">
       {/*<Accordion type="single" collapsible className="w-90% max-w-450px">
         <AccordionItem value="item-1">
           <AccordionTrigger>Is it accessible?</AccordionTrigger>
@@ -112,11 +112,11 @@ function App() {
 
       <SwitchDemo />
 
-      <TabsDemo />
+    <TabsDemo />*/}
 
       <TextareaDemo />
 
-      <ToastDemo />
+      {/*<ToastDemo />
 
       <ToggleDemo />
 

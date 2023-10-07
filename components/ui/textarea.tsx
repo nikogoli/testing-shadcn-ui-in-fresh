@@ -1,10 +1,11 @@
-import * as React from 'react'
+import * as React from 'preact/compat'
 
-import { cn } from '../../lib/utils'
+import { cn } from '../../lib/utils.ts'
 
-export interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {}
+// deno-lint-ignore no-empty-interface
+export interface TextareaProps extends React.HTMLAttributes<HTMLTextAreaElement> {}
 
-const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(({ className, ...props }, ref) => {
+const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(({ class:className, ...props }, ref) => {
   return (
     <textarea
       className={cn(
