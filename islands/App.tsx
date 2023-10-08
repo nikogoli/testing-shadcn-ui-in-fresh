@@ -35,8 +35,8 @@ import { ToggleDemo } from '../_examples/Toggle.tsx'
 
 function App() {
   return (
-    <div className="App w-full py-20 flex-col-center gap-8 overflow-hidden">
       {/*<Accordion type="single" collapsible className="w-90% max-w-450px">
+    <div className="App w-full py-20 flex-col-center gap-12 overflow-hidden">
         <AccordionItem value="item-1">
           <AccordionTrigger>Is it accessible?</AccordionTrigger>
           <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>

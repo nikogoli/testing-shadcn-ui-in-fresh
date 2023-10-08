@@ -9,6 +9,7 @@ export default function Home(){
       <App />
       {/*<Toaster />*/}
       <link href={asset("/uno.css")} rel="stylesheet" />
+      <style> {`button:focus { outline-style: none !important}`} </style>
     </div>
   )
 }
