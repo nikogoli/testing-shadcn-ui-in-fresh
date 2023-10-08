@@ -56,9 +56,12 @@
     "@radix-ui/react-use-callback-ref": "https://esm.sh/v132/*@radix-ui/react-use-callback-ref@1.0.1?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-use-escape-keydown": "https://esm.sh/v132/*@radix-ui/react-use-escape-keydown@1.0.3?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-use-layout-effect": "https://esm.sh/v132/*@radix-ui/react-use-layout-effect@1.0.1?alias=react:preact/compat,@types/react:preact/compat",
+    "@radix-ui/react-use-previous": "https://esm.sh/v132/*@radix-ui/react-use-previous@1.0.1?alias=react:preact/compat,@types/react:preact/compat",
+    "@radix-ui/react-use-size": "https://esm.sh/v132/*@radix-ui/react-use-size@1.0.1?alias=react:preact/compat,@types/react:preact/compat",
 
     "@radix-ui/react-accordion": "https://esm.sh/v132/*@radix-ui/react-accordion@1.1.2?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-alert-dialog": "https://esm.sh/v132/*@radix-ui/react-alert-dialog@1.0.5?alias=react:preact/compat,@types/react:preact/compat",
+    "@radix-ui/react-checkbox": "https://esm.sh/v132/*@radix-ui/react-checkbox@1.0.4?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-toggle": "https://esm.sh/v132/*@radix-ui/react-toggle@1.0.3?alias=react:preact/compat,@types/react:preact/compat",
 
     "aria-hidden": "https://esm.sh/aria-hidden@1.2.3",

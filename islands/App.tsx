@@ -11,7 +11,7 @@ import {
   AlertDialogTrigger,
 } from '../components/ui/alert-dialog.tsx'
 import { Button } from '../components/ui/button.tsx'
-//import { Checkbox } from '@/components/ui/checkbox'
+import { Checkbox } from '../components/ui/checkbox.tsx'
 //import { ContextMenuDemo } from '@/examples/ContextMenu'
 //import { DialogDemo } from './examples/Dialog'
 //import { DropdownMenuDemo } from './examples/DropdownMenu'
@@ -74,15 +74,15 @@ function App() {
         </AlertDialogContent>
       </AlertDialog>
 
-      {/*<div className="flex items-center space-x-2">
-        <Checkbox defaultChecked disabled id="terms" />
+      <div class="flex items-center space-x-2">
+        <Checkbox defaultChecked id="terms" />
         <label
           htmlFor="terms"
-          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 select-none"
+          class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 select-none"
         >
           Accept terms and conditions
         </label>
-      </div>*/}
+      </div>
 
       {/*<ContextMenuDemo />
 
