@@ -1,5 +1,7 @@
 import * as React from "preact/compat"
 import { PrimitiveForwardRefComponent, ComponentPropsWithoutRef } from "./type-utils.ts"
+import { DismissableLayerProps as BaseDismissableLayerProps } from "./type-utils-DismissableLayer.d.ts";
+import { FocusScopeProps as BaseFocusScopeProps } from "./type-utils-FocusScope.d.ts";
 import { VNode } from "preact";
 
 /**
@@ -124,73 +126,14 @@ export const Description: React.ForwardRefExoticComponent<
 
 // ---------- Content -----------
 
-type PointerDownOutsideEvent = CustomEvent<{ originalEvent: PointerEvent }>;
-type FocusOutsideEvent = CustomEvent<{ originalEvent: FocusEvent }>;
-interface _DismissableLayerProps extends PrimitiveDivProps {
-  /**
-   * When `true`, hover/focus/click interactions will be disabled on elements outside
-   * the `DismissableLayer`. Users will need to click twice on outside elements to
-   * interact with them: once to close the `DismissableLayer`, and again to trigger the element.
-   */
-  disableOutsidePointerEvents?: boolean;
-  /**
-   * Event handler called when the escape key is down.
-   * Can be prevented.
-   */
-  onEscapeKeyDown?: (event: KeyboardEvent) => void;
-  /**
-   * Event handler called when the a `pointerdown` event happens outside of the `DismissableLayer`.
-   * Can be prevented.
-   */
-  onPointerDownOutside?: (event: PointerDownOutsideEvent) => void;
-  /**
-   * Event handler called when the focus moves outside of the `DismissableLayer`.
-   * Can be prevented.
-   */
-  onFocusOutside?: (event: FocusOutsideEvent) => void;
-  /**
-   * Event handler called when an interaction happens outside the `DismissableLayer`.
-   * Specifically, when a `pointerdown` event happens outside or focus moves outside of it.
-   * Can be prevented.
-   */
-  onInteractOutside?: (event: PointerDownOutsideEvent | FocusOutsideEvent) => void;
-  /**
-   * Handler called when the `DismissableLayer` should be dismissed
-   */
-  onDismiss?: () => void;
-}
 type DismissableLayerProps = ComponentPropsWithoutRef<
-  React.ForwardRefExoticComponent<_DismissableLayerProps & React.RefAttributes<HTMLDivElement>>
+  React.ForwardRefExoticComponent<BaseDismissableLayerProps & React.RefAttributes<HTMLDivElement>>
 >;
-
-interface _FocusScopeProps extends PrimitiveDivProps {
-    /**
-     * When `true`, tabbing from last item will focus first tabbable
-     * and shift+tab from first item will focus last tababble.
-     * @defaultValue false
-     */
-    loop?: boolean;
-    /**
-     * When `true`, focus cannot escape the focus scope via keyboard,
-     * pointer, or a programmatic focus.
-     * @defaultValue false
-     */
-    trapped?: boolean;
-    /**
-     * Event handler called when auto-focusing on mount.
-     * Can be prevented.
-     */
-    onMountAutoFocus?: (event: Event) => void;
-    /**
-     * Event handler called when auto-focusing on unmount.
-     * Can be prevented.
-     */
-    onUnmountAutoFocus?: (event: Event) => void;
-}
 
 type FocusScopeProps = ComponentPropsWithoutRef<
-  React.ForwardRefExoticComponent<_FocusScopeProps & React.RefAttributes<HTMLDivElement>>
+  React.ForwardRefExoticComponent<BaseFocusScopeProps & React.RefAttributes<HTMLDivElement>>
 >;
+
 interface DialogContentImplProps extends Omit<DismissableLayerProps, 'onDismiss'> {
     /**
      * When `true`, focus cannot escape the `Content` via keyboard,
