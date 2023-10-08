@@ -14,7 +14,7 @@ import { Button } from '../components/ui/button.tsx'
 import { ContextMenuDemo } from '../_examples/ContextMenu.tsx'
 import { DialogDemo } from '../_examples/Dialog.tsx'
 import { DropdownMenuDemo } from '../_examples/DropdownMenu.tsx'
-//import { HoverCardDemo } from './examples/HoverCard'
+import { HoverCardDemo } from '../_examples/HoverCard.tsx'
 import { InputDemo } from '../_examples/Input.tsx'
 import { LabelDemo } from '../_examples/Label.tsx'
 //import { MenubarDemo } from './examples/Menubar'
@@ -85,9 +85,9 @@ function App() {
 
       <DropdownMenuDemo />
 
-      {/*<HoverCardDemo />
+      <HoverCardDemo />
 
-      <MenubarDemo />
+      {/*<MenubarDemo />
 
       <NavigationMenuDemo />
 
