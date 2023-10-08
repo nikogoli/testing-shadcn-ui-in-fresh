@@ -14,15 +14,15 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-} from '@/components/ui/context-menu'
+} from '../components/ui/context-menu.tsx'
 
 export function ContextMenuDemo() {
   return (
     <ContextMenu>
-      <ContextMenuTrigger className="flex h-[150px] w-[300px] items-center justify-center rounded-md border border-dashed border-slate-200 text-sm dark:border-slate-700">
+      <ContextMenuTrigger class="flex h-[150px] w-[300px] items-center justify-center rounded-md border border-dashed border-slate-200 text-sm dark:border-slate-700">
         Right click here
       </ContextMenuTrigger>
-      <ContextMenuContent className="w-64">
+      <ContextMenuContent class="w-64">
         <ContextMenuItem inset>
           Back
           <ContextMenuShortcut>⌘[</ContextMenuShortcut>
@@ -37,7 +37,7 @@ export function ContextMenuDemo() {
         </ContextMenuItem>
         <ContextMenuSub>
           <ContextMenuSubTrigger inset>More Tools</ContextMenuSubTrigger>
-          <ContextMenuSubContent className="w-48">
+          <ContextMenuSubContent class="w-48">
             <ContextMenuItem>
               Save Page As...
               <ContextMenuShortcut>⇧⌘S</ContextMenuShortcut>

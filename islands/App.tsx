@@ -12,7 +12,7 @@ import {
 } from '../components/ui/alert-dialog.tsx'
 import { Button } from '../components/ui/button.tsx'
 import { Checkbox } from '../components/ui/checkbox.tsx'
-//import { ContextMenuDemo } from '@/examples/ContextMenu'
+import { ContextMenuDemo } from '../_examples/ContextMenu.tsx'
 //import { DialogDemo } from './examples/Dialog'
 //import { DropdownMenuDemo } from './examples/DropdownMenu'
 //import { HoverCardDemo } from './examples/HoverCard'
@@ -84,9 +84,9 @@ function App() {
         </label>
       </div>
 
-      {/*<ContextMenuDemo />
+      <ContextMenuDemo />
 
-      <SelectDemo />
+      {/*<SelectDemo />
 
       <DialogDemo />
 
