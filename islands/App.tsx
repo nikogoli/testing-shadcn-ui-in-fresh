@@ -11,13 +11,12 @@ import {
   AlertDialogTrigger,
 } from '../components/ui/alert-dialog.tsx'
 import { Button } from '../components/ui/button.tsx'
-import { Checkbox } from '../components/ui/checkbox.tsx'
 import { ContextMenuDemo } from '../_examples/ContextMenu.tsx'
 import { DialogDemo } from '../_examples/Dialog.tsx'
 //import { DropdownMenuDemo } from './examples/DropdownMenu'
 //import { HoverCardDemo } from './examples/HoverCard'
 import { InputDemo } from '../_examples/Input.tsx'
-//import { LabelDemo } from './examples/Label'
+import { LabelDemo } from '../_examples/Label.tsx'
 //import { MenubarDemo } from './examples/Menubar'
 //import { PopoverDemo } from './examples/Popover'
 //import { RadioGroupDemo } from './examples/RadioGroup'
@@ -74,23 +73,13 @@ function App() {
         </AlertDialogContent>
       </AlertDialog>
 
-      <div class="flex items-center space-x-2">
-        <Checkbox defaultChecked id="terms" />
-        <label
-          htmlFor="terms"
-          class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 select-none"
-        >
-          Accept terms and conditions
-        </label>
-      </div>
+      <LabelDemo />
 
       <ContextMenuDemo />
 
       <SelectDemo />
 
       <DialogDemo />
-
-      {/*<LabelDemo />*/}
 
       <InputDemo />
 

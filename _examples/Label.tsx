@@ -1,12 +1,12 @@
-import { Checkbox } from "@/components/ui/checkbox"
-import { Label } from "@/components/ui/label"
+import { Checkbox } from "../components/ui/checkbox.tsx"
+import { Label } from "../components/ui/label.tsx"
 
 export function LabelDemo() {
   return (
     <div>
-      <div className="flex items-center space-x-2">
+      <div class="flex items-center space-x-2">
         <Checkbox id="terms" />
-        <Label htmlFor="terms">Accept terms and conditions</Label>
+        <Label htmlFor="terms" class="cursor-pointer">Accept terms and conditions</Label>
       </div>
     </div>
   )
