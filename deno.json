@@ -70,6 +70,7 @@
     "@radix-ui/react-alert-dialog": "https://esm.sh/v132/*@radix-ui/react-alert-dialog@1.0.5?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-checkbox": "https://esm.sh/v132/*@radix-ui/react-checkbox@1.0.4?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-context-menu": "https://esm.sh/v132/*@radix-ui/react-context-menu@2.1.5?alias=react:preact/compat,@types/react:preact/compat",
+    "@radix-ui/react-dropdown-menu": "https://esm.sh/v132/*@radix-ui/react-dropdown-menu@2.0.6?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-select": "https://esm.sh/v132/*@radix-ui/react-select@2.0.0?alias=react:preact/compat,react-dom:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-toggle": "https://esm.sh/v132/*@radix-ui/react-toggle@1.0.3?alias=react:preact/compat,@types/react:preact/compat",
 
