@@ -38,12 +38,20 @@
     "tailwind-merge": "https://esm.sh/tailwind-merge@1.14.0",
     "@babel/runtime/helpers/esm/extends": "https://esm.sh/@babel/runtime@7.23.1/helpers/esm/extends",
     "@radix-ui/primitive": "https://esm.sh/*@radix-ui/primitive@1.0.1",
+    "@radix-ui/react-collapsible": "https://esm.sh/*@radix-ui/react-collapsible@1.0.3?alias=react:preact/compat,@types/react:preact/compat",
+    "@radix-ui/react-collection": "https://esm.sh/*@radix-ui/react-collection@1.0.3?alias=react:preact/compat,@types/react:preact/compat",
+    "@radix-ui/react-context": "https://esm.sh/v132/*@radix-ui/react-context@1.0.1?alias=react:preact/compat,@types/react:preact/compat",
+    "@radix-ui/react-direction": "https://esm.sh/v132/*@radix-ui/react-direction@1.0.1?alias=react:preact/compat,@types/react:preact/compat",
+    "@radix-ui/react-id": "https://esm.sh/*@radix-ui/react-id@1.0.1?alias=react:preact/compat,@types/react:preact/compat",
+    "@radix-ui/react-presence": "https://esm.sh/*@radix-ui/react-presence@1.0.1?alias=react:preact/compat,react-dom:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-primitive": "https://esm.sh/*@radix-ui/react-primitive@1.0.3?alias=react:preact/compat,react-dom:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-slot": "https://esm.sh/*@radix-ui/react-slot@1.0.2?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-use-controllable-state": "https://esm.sh/*@radix-ui/react-use-controllable-state@1.0.1?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-use-callback-ref": "https://esm.sh/v132/*@radix-ui/react-use-callback-ref@1.0.1?alias=react:preact/compat,@types/react:preact/compat",
+    "@radix-ui/react-use-layout-effect": "https://esm.sh/*@radix-ui/react-use-layout-effect@1.0.1?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-compose-refs": "https://esm.sh/v132/*@radix-ui/react-compose-refs@1.0.1?alias=react:preact/compat,@types/react:preact/compat",
 
+    "@radix-ui/react-accordion": "https://esm.sh/*@radix-ui/react-accordion@1.1.2?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-toggle": "https://esm.sh/*@radix-ui/react-toggle@1.0.3?alias=react:preact/compat,@types/react:preact/compat"
   },
   "compilerOptions": {

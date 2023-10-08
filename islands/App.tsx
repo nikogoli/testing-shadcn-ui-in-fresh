@@ -1,4 +1,4 @@
-//import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion.tsx'
 /*import {
   AlertDialog,
   AlertDialogAction,
@@ -35,8 +35,8 @@ import { ToggleDemo } from '../_examples/Toggle.tsx'
 
 function App() {
   return (
-      {/*<Accordion type="single" collapsible className="w-90% max-w-450px">
-    <div className="App w-full py-20 flex-col-center gap-12 overflow-hidden">
+    <div class="App w-full py-20 flex-col-center gap-12 overflow-hidden">
+      <Accordion type="single" collapsible class="w-90% max-w-450px">
         <AccordionItem value="item-1">
           <AccordionTrigger>Is it accessible?</AccordionTrigger>
           <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>
@@ -51,7 +51,7 @@ function App() {
           <AccordionTrigger>Is it animated?</AccordionTrigger>
           <AccordionContent>Yes. It's animated by default, but you can disable it if you prefer.</AccordionContent>
         </AccordionItem>
-      </Accordion>*/}
+      </Accordion>
 
       <Button onClick={(_ev) => console.log("Button is clicked!!")}>Button</Button>
 

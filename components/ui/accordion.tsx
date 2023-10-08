@@ -1,22 +1,24 @@
-import * as React from 'react'
+import * as React from 'preact/compat'
 import * as AccordionPrimitive from '@radix-ui/react-accordion'
 
-import { cn } from '../../lib/utils'
+import { cn } from '../../lib/utils.ts'
+import { ElementRef, ComponentPropsWithoutRef } from "../../lib/type-utils.ts"
+import * as AltAccordionPrimitive from "../../lib/components/accordion.d.ts"
 
 const Accordion = AccordionPrimitive.Root
 
 const AccordionItem = React.forwardRef<
-  React.ElementRef<typeof AccordionPrimitive.Item>,
-  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>
->(({ className, ...props }, ref) => (
+  ElementRef<typeof AltAccordionPrimitive.Item>,
+  ComponentPropsWithoutRef<typeof AltAccordionPrimitive.Item>
+>(({ class:className, ...props }, ref) => (
   <AccordionPrimitive.Item ref={ref} className={cn('border-b', className)} {...props} />
 ))
 AccordionItem.displayName = 'AccordionItem'
 
 const AccordionTrigger = React.forwardRef<
-  React.ElementRef<typeof AccordionPrimitive.Trigger>,
-  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
->(({ className, children, ...props }, ref) => (
+  ElementRef<typeof AltAccordionPrimitive.Trigger>,
+  ComponentPropsWithoutRef<typeof AltAccordionPrimitive.Trigger>
+>(({ class:className, children, ...props }, ref) => (
   <AccordionPrimitive.Header className="flex">
     <AccordionPrimitive.Trigger
       ref={ref}
@@ -34,9 +36,9 @@ const AccordionTrigger = React.forwardRef<
 AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName
 
 const AccordionContent = React.forwardRef<
-  React.ElementRef<typeof AccordionPrimitive.Content>,
-  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Content>
->(({ className, children, ...props }, ref) => (
+  ElementRef<typeof AltAccordionPrimitive.Content>,
+  ComponentPropsWithoutRef<typeof AltAccordionPrimitive.Content>
+>(({ class:className, children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
     className={cn(
