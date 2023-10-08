@@ -1,5 +1,5 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion.tsx'
-/*import {
+import {
   AlertDialog,
   AlertDialogAction,
   AlertDialogCancel,
@@ -9,7 +9,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '..
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from '@/components/ui/alert-dialog'*/
+} from '../components/ui/alert-dialog.tsx'
 import { Button } from '../components/ui/button.tsx'
 //import { Checkbox } from '@/components/ui/checkbox'
 //import { ContextMenuDemo } from '@/examples/ContextMenu'
@@ -55,11 +55,11 @@ function App() {
 
       <Button onClick={(_ev) => console.log("Button is clicked!!")}>Button</Button>
 
-      {/*<AlertDialog>
+      <AlertDialog>
         <AlertDialogTrigger asChild>
           <Button variant="outline">Open</Button>
         </AlertDialogTrigger>
-        <AlertDialogContent className="relative md:-top-25">
+        <AlertDialogContent class="relative md:-top-25">
           <AlertDialogHeader>
             <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
             <AlertDialogDescription>
@@ -72,7 +72,7 @@ function App() {
             <AlertDialogAction>Continue</AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
-      </AlertDialog>*/}
+      </AlertDialog>
 
       {/*<div className="flex items-center space-x-2">
         <Checkbox defaultChecked disabled id="terms" />
