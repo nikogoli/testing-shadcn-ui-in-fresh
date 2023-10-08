@@ -1,7 +1,9 @@
-import * as React from 'react'
+import * as React from 'preact/compat'
 import * as SelectPrimitive from '@radix-ui/react-select'
+import * as AltSelectPrimitive from "../../lib/components/select.d.ts"
 
-import { cn } from '../../lib/utils'
+import { cn } from '../../lib/utils.ts'
+import { ElementRef, ComponentPropsWithoutRef } from "../../lib/type-utils.ts"
 
 const Select = SelectPrimitive.Root
 
@@ -9,10 +11,11 @@ const SelectGroup = SelectPrimitive.Group
 
 const SelectValue = SelectPrimitive.Value
 
+
 const SelectTrigger = React.forwardRef<
-  React.ElementRef<typeof SelectPrimitive.Trigger>,
-  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Trigger>
->(({ className, children, ...props }, ref) => (
+  ElementRef<typeof AltSelectPrimitive.Trigger>,
+  ComponentPropsWithoutRef<typeof AltSelectPrimitive.Trigger>
+>(({ class:className, children, ...props }, ref) => (
   <SelectPrimitive.Trigger
     ref={ref}
     className={cn(
@@ -29,10 +32,11 @@ const SelectTrigger = React.forwardRef<
 ))
 SelectTrigger.displayName = SelectPrimitive.Trigger.displayName
 
+
 const SelectContent = React.forwardRef<
-  React.ElementRef<typeof SelectPrimitive.Content>,
-  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Content>
->(({ className, children, position = 'popper', ...props }, ref) => (
+  ElementRef<typeof AltSelectPrimitive.Content>,
+  ComponentPropsWithoutRef<typeof AltSelectPrimitive.Content>
+>(({ class:className, children, position = 'popper', ...props }, ref) => (
   <SelectPrimitive.Portal>
     <SelectPrimitive.Content
       ref={ref}
@@ -58,18 +62,20 @@ const SelectContent = React.forwardRef<
 ))
 SelectContent.displayName = SelectPrimitive.Content.displayName
 
+
 const SelectLabel = React.forwardRef<
-  React.ElementRef<typeof SelectPrimitive.Label>,
-  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Label>
->(({ className, ...props }, ref) => (
+  ElementRef<typeof AltSelectPrimitive.Label>,
+  ComponentPropsWithoutRef<typeof AltSelectPrimitive.Label>
+>(({ class:className, ...props }, ref) => (
   <SelectPrimitive.Label ref={ref} className={cn('py-1.5 pl-8 pr-2 text-sm font-semibold', className)} {...props} />
 ))
 SelectLabel.displayName = SelectPrimitive.Label.displayName
 
+
 const SelectItem = React.forwardRef<
-  React.ElementRef<typeof SelectPrimitive.Item>,
-  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Item>
->(({ className, children, ...props }, ref) => (
+  ElementRef<typeof AltSelectPrimitive.Item>,
+  ComponentPropsWithoutRef<typeof AltSelectPrimitive.Item>
+>(({ class:className, children, ...props }, ref) => (
   <SelectPrimitive.Item
     ref={ref}
     className={cn(
@@ -89,12 +95,14 @@ const SelectItem = React.forwardRef<
 ))
 SelectItem.displayName = SelectPrimitive.Item.displayName
 
+
 const SelectSeparator = React.forwardRef<
-  React.ElementRef<typeof SelectPrimitive.Separator>,
-  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Separator>
->(({ className, ...props }, ref) => (
+  ElementRef<typeof AltSelectPrimitive.Separator>,
+  ComponentPropsWithoutRef<typeof AltSelectPrimitive.Separator>
+>(({ class:className, ...props }, ref) => (
   <SelectPrimitive.Separator ref={ref} className={cn('-mx-1 my-1 h-px bg-muted', className)} {...props} />
 ))
 SelectSeparator.displayName = SelectPrimitive.Separator.displayName
+
 
 export { Select, SelectGroup, SelectValue, SelectTrigger, SelectContent, SelectLabel, SelectItem, SelectSeparator }

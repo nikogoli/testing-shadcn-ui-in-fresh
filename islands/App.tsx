@@ -21,7 +21,7 @@ import { InputDemo } from '../_examples/Input.tsx'
 //import { MenubarDemo } from './examples/Menubar'
 //import { PopoverDemo } from './examples/Popover'
 //import { RadioGroupDemo } from './examples/RadioGroup'
-//import { SelectDemo } from './examples/Select'
+import { SelectDemo } from '../_examples/Select.tsx'
 //import { SheetDemo } from './examples/Sheet'
 import { SkeletonDemo } from '../_examples/Skeleton.tsx'
 //import { SliderDemo } from './examples/Slider'
@@ -86,9 +86,9 @@ function App() {
 
       <ContextMenuDemo />
 
-      {/*<SelectDemo />
+      <SelectDemo />
 
-      <DialogDemo />
+      {/*<DialogDemo />
 
       <LabelDemo />*/}
 

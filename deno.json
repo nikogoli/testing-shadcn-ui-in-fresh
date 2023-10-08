@@ -38,6 +38,7 @@
     "tailwind-merge": "https://esm.sh/tailwind-merge@1.14.0",
     "@babel/runtime/helpers/esm/extends": "https://esm.sh/@babel/runtime@7.23.1/helpers/esm/extends",
     "@radix-ui/primitive": "https://esm.sh/*@radix-ui/primitive@1.0.1",
+    "@radix-ui/number": "https://esm.sh/@radix-ui/number@1.0.1",
     "@radix-ui/react-arrow": "https://esm.sh/v132/*@radix-ui/react-arrow@1.0.3?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-collapsible": "https://esm.sh/v132/*@radix-ui/react-collapsible@1.0.3?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-collection": "https://esm.sh/v132/*@radix-ui/react-collection@1.0.3?alias=react:preact/compat,@types/react:preact/compat",
@@ -62,11 +63,13 @@
     "@radix-ui/react-use-previous": "https://esm.sh/v132/*@radix-ui/react-use-previous@1.0.1?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-roving-focus": "https://esm.sh/v132/*@radix-ui/react-roving-focus@1.0.4?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-use-size": "https://esm.sh/v132/*@radix-ui/react-use-size@1.0.1?alias=react:preact/compat,@types/react:preact/compat",
+    "@radix-ui/react-visually-hidden": "https://esm.sh/v132/*@radix-ui/react-visually-hidden@1.0.3?alias=react:preact/compat,@types/react:preact/compat",
 
     "@radix-ui/react-accordion": "https://esm.sh/v132/*@radix-ui/react-accordion@1.1.2?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-alert-dialog": "https://esm.sh/v132/*@radix-ui/react-alert-dialog@1.0.5?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-checkbox": "https://esm.sh/v132/*@radix-ui/react-checkbox@1.0.4?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-context-menu": "https://esm.sh/v132/*@radix-ui/react-context-menu@2.1.5?alias=react:preact/compat,@types/react:preact/compat",
+    "@radix-ui/react-select": "https://esm.sh/v132/*@radix-ui/react-select@2.0.0?alias=react:preact/compat,react-dom:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-toggle": "https://esm.sh/v132/*@radix-ui/react-toggle@1.0.3?alias=react:preact/compat,@types/react:preact/compat",
 
     "aria-hidden": "https://esm.sh/aria-hidden@1.2.3",

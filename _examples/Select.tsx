@@ -1,5 +1,3 @@
-import * as React from "react"
-
 import {
   Select,
   SelectContent,
@@ -8,12 +6,12 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
+} from "../components/ui/select.tsx"
 
 export function SelectDemo() {
   return (
     <Select>
-      <SelectTrigger className="w-[180px]">
+      <SelectTrigger class="w-[180px]">
         <SelectValue placeholder="Select a fruit" />
       </SelectTrigger>
       <SelectContent>
