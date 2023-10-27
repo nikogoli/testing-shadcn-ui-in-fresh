@@ -1,18 +1,20 @@
 'use client'
 
-import * as React from 'react'
+import * as React from 'preact/compat'
 import * as PopoverPrimitive from '@radix-ui/react-popover'
+import * as AltPopoverPrimitive from "../../lib/components/popover.d.ts"
 
-import { cn } from '../../lib/utils'
+import { cn } from '../../lib/utils.ts'
+import { ElementRef, ComponentPropsWithoutRef } from "../../lib/type-utils.ts"
 
 const Popover = PopoverPrimitive.Root
 
 const PopoverTrigger = PopoverPrimitive.Trigger
 
 const PopoverContent = React.forwardRef<
-  React.ElementRef<typeof PopoverPrimitive.Content>,
-  React.ComponentPropsWithoutRef<typeof PopoverPrimitive.Content>
->(({ className, align = 'center', sideOffset = 4, ...props }, ref) => (
+  ElementRef<typeof AltPopoverPrimitive.Content>,
+  ComponentPropsWithoutRef<typeof AltPopoverPrimitive.Content>
+>(({ class:className, align = 'center', sideOffset = 4, ...props }, ref) => (
   <PopoverPrimitive.Portal>
     <PopoverPrimitive.Content
       ref={ref}

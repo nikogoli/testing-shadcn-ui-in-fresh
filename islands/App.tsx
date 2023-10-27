@@ -18,7 +18,7 @@ import { HoverCardDemo } from '../_examples/HoverCard.tsx'
 import { InputDemo } from '../_examples/Input.tsx'
 import { LabelDemo } from '../_examples/Label.tsx'
 import { MenubarDemo } from '../_examples/Menubar.tsx'
-//import { PopoverDemo } from './examples/Popover'
+import { PopoverDemo } from '../_examples/Popover.tsx'
 //import { RadioGroupDemo } from './examples/RadioGroup'
 import { SelectDemo } from '../_examples/Select.tsx'
 //import { SheetDemo } from './examples/Sheet'
@@ -91,9 +91,9 @@ function App() {
 
       <NavigationMenuDemo />
 
-      {/*<PopoverDemo />
+      <PopoverDemo />
 
-      <RadioGroupDemo />
+      {/*<RadioGroupDemo />
 
       <SheetDemo />
 

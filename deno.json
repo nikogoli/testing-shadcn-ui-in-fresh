@@ -77,6 +77,7 @@
     "@radix-ui/react-navigation-menu": "https://esm.sh/v132/*@radix-ui/react-navigation-menu@1.1.4?alias=react:preact/compat,react-dom:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-select": "https://esm.sh/v132/*@radix-ui/react-select@2.0.0?alias=react:preact/compat,react-dom:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-toggle": "https://esm.sh/v132/*@radix-ui/react-toggle@1.0.3?alias=react:preact/compat,@types/react:preact/compat",
+    "@radix-ui/react-popover": "https://esm.sh/*@radix-ui/react-popover@1.0.7?alias=react:preact/compat,@types/react:preact/compat",
 
     "aria-hidden": "https://esm.sh/aria-hidden@1.2.3",
     "detect-node-es": "https://esm.sh/detect-node-es@1.1.0?target=es2022",
