@@ -19,7 +19,7 @@ import { InputDemo } from '../_examples/Input.tsx'
 import { LabelDemo } from '../_examples/Label.tsx'
 import { MenubarDemo } from '../_examples/Menubar.tsx'
 import { PopoverDemo } from '../_examples/Popover.tsx'
-//import { RadioGroupDemo } from './examples/RadioGroup'
+import { RadioGroupDemo } from '../_examples/RadioGroup.tsx'
 import { SelectDemo } from '../_examples/Select.tsx'
 //import { SheetDemo } from './examples/Sheet'
 import { SkeletonDemo } from '../_examples/Skeleton.tsx'
@@ -93,9 +93,9 @@ function App() {
 
       <PopoverDemo />
 
-      {/*<RadioGroupDemo />
+      <RadioGroupDemo />
 
-      <SheetDemo />
+      {/*<SheetDemo />
 
       <SliderDemo />
 

@@ -1,14 +1,16 @@
 "use client"
 
-import * as React from "react"
+import * as React from "preact/compat"
 import * as RadioGroupPrimitive from "@radix-ui/react-radio-group"
+import * as AltRadioGroupPrimitive from "../../lib/components/radio-group.d.ts"
 
-import { cn } from "@/lib/utils"
+import { cn } from "../../lib/utils.ts"
+import { ElementRef, ComponentPropsWithoutRef } from "../../lib/type-utils.ts"
 
 const RadioGroup = React.forwardRef<
-  React.ElementRef<typeof RadioGroupPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Root>
->(({ className, ...props }, ref) => {
+  ElementRef<typeof AltRadioGroupPrimitive.Root>,
+  ComponentPropsWithoutRef<typeof AltRadioGroupPrimitive.Root>
+>(({ class:className, ...props }, ref) => {
   return (
     <RadioGroupPrimitive.Root
       className={cn("grid gap-2", className)}
@@ -20,9 +22,9 @@ const RadioGroup = React.forwardRef<
 RadioGroup.displayName = RadioGroupPrimitive.Root.displayName
 
 const RadioGroupItem = React.forwardRef<
-  React.ElementRef<typeof RadioGroupPrimitive.Item>,
-  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Item>
->(({ className, children, ...props }, ref) => {
+  ElementRef<typeof AltRadioGroupPrimitive.Item>,
+  ComponentPropsWithoutRef<typeof AltRadioGroupPrimitive.Item>
+>(({ class:className, children, ...props }, ref) => {
   return (
     <RadioGroupPrimitive.Item
       ref={ref}
@@ -33,7 +35,7 @@ const RadioGroupItem = React.forwardRef<
       {...props}
     >
       <RadioGroupPrimitive.Indicator className="flex items-center justify-center">
-        <span className="i-tabler:circle-filled flex h-2.5 w-2.5 fill-primary text-primary" />
+        <span class="i-tabler:circle-filled flex h-2.5 w-2.5 fill-primary text-primary" />
       </RadioGroupPrimitive.Indicator>
     </RadioGroupPrimitive.Item>
   )
