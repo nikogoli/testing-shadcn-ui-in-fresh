@@ -74,6 +74,7 @@
     "@radix-ui/react-dropdown-menu": "https://esm.sh/v132/*@radix-ui/react-dropdown-menu@2.0.6?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-hover-card": "https://esm.sh/v132/*@radix-ui/react-hover-card@1.0.7?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-menubar": "https://esm.sh/v132/*@radix-ui/react-menubar@1.0.4?alias=react:preact/compat,@types/react:preact/compat",
+    "@radix-ui/react-navigation-menu": "https://esm.sh/v132/*@radix-ui/react-navigation-menu@1.1.4?alias=react:preact/compat,react-dom:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-select": "https://esm.sh/v132/*@radix-ui/react-select@2.0.0?alias=react:preact/compat,react-dom:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-toggle": "https://esm.sh/v132/*@radix-ui/react-toggle@1.0.3?alias=react:preact/compat,@types/react:preact/compat",
 

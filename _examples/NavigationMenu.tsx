@@ -1,8 +1,9 @@
 'use client'
 
-import * as React from 'react'
+import * as React from 'preact/compat'
 
-import { cn } from '@/lib/utils'
+import { cn } from '../lib/utils.ts'
+import { ElementRef, ComponentPropsWithoutRef } from "../lib/type-utils.ts"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -11,7 +12,8 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from '@/components/ui/navigation-menu'
+} from '../components/ui/navigation-menu.tsx'
+
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -48,61 +50,80 @@ const components: { title: string; href: string; description: string }[] = [
   },
 ]
 
+
+const FIContent = () => (
+  <NavigationMenuContent>
+    <ul class="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+      <li class="row-span-3">
+        <NavigationMenuLink asChild>
+          <a
+            class="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+            href="/"
+          >
+            <div class="mb-2 mt-4 text-lg font-medium">shadcn/ui</div>
+            <p class="text-sm leading-tight text-muted-foreground">
+              Beautifully designed components built with Radix UI and Tailwind CSS.
+            </p>
+          </a>
+        </NavigationMenuLink>
+      </li>
+      <ListItem href="/docs" title="Introduction">
+        Re-usable components built using Radix UI and Tailwind CSS.
+      </ListItem>
+      <ListItem href="/docs/installation" title="Installation">
+        How to install dependencies and structure your app.
+      </ListItem>
+      <ListItem href="/docs/primitives/typography" title="Typography">
+        Styles for headings, paragraphs, lists...etc
+      </ListItem>
+    </ul>
+  </NavigationMenuContent>
+)
+
+const FirstItem = () => (
+  <NavigationMenuItem>
+    <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+    <FIContent />
+  </NavigationMenuItem>
+)
+
+
+const SecondItem = () => (
+  <NavigationMenuItem>
+    <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+    <NavigationMenuContent>
+      <ul class="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+        {components.map((component) => (
+          <ListItem key={component.title} title={component.title} href={component.href}>
+            {component.description}
+          </ListItem>
+        ))}
+      </ul>
+    </NavigationMenuContent>
+  </NavigationMenuItem>
+)
+
+
+const ThirdItem = () => (
+  <NavigationMenuItem>
+    <NavigationMenuLink className={navigationMenuTriggerStyle()}>Documentation</NavigationMenuLink>
+  </NavigationMenuItem>
+)
+
+
 export function NavigationMenuDemo() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    <div className="mb-2 mt-4 text-lg font-medium">shadcn/ui</div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components built with Radix UI and Tailwind CSS.
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-              <ListItem href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
-              </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
-              </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
-              </ListItem>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
-                <ListItem key={component.title} title={component.title} href={component.href}>
-                  {component.description}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuLink className={navigationMenuTriggerStyle()}>Documentation</NavigationMenuLink>
-        </NavigationMenuItem>
+        <FirstItem />
+        <SecondItem />
       </NavigationMenuList>
     </NavigationMenu>
   )
 }
 
-const ListItem = React.forwardRef<React.ElementRef<'a'>, React.ComponentPropsWithoutRef<'a'>>(
-  ({ className, title, children, ...props }, ref) => {
+const ListItem = React.forwardRef<ElementRef<'a'>, ComponentPropsWithoutRef<'a'>>(
+  ({ class:className, title, children, ...props }, ref) => {
     return (
       <li>
         <NavigationMenuLink asChild>
@@ -114,8 +135,8 @@ const ListItem = React.forwardRef<React.ElementRef<'a'>, React.ComponentPropsWit
             )}
             {...props}
           >
-            <div className="text-sm font-medium leading-none">{title}</div>
-            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">{children}</p>
+            <div class="text-sm font-medium leading-none">{title}</div>
+            <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">{children}</p>
           </a>
         </NavigationMenuLink>
       </li>

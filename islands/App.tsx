@@ -30,7 +30,7 @@ import { TextareaDemo } from '../_examples/Textarea.tsx'
 //import { ToastDemo } from './examples/Toast'
 import { ToggleDemo } from '../_examples/Toggle.tsx'
 //import { TooltipDemo } from './examples/Tooltip'
-//import { NavigationMenuDemo } from './examples/NavigationMenu'
+import { NavigationMenuDemo } from '../_examples/NavigationMenu.tsx'
 
 function App() {
   return (
@@ -89,9 +89,9 @@ function App() {
 
       <MenubarDemo />
 
-      {/*<NavigationMenuDemo />
+      <NavigationMenuDemo />
 
-      <PopoverDemo />
+      {/*<PopoverDemo />
 
       <RadioGroupDemo />
 
