@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import { Button } from "../components/ui/button.tsx"
+import { Input } from "../components/ui/input.tsx"
+import { Label } from "../components/ui/label.tsx"
 import {
   Sheet,
   SheetContent,
@@ -9,7 +9,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet"
+} from "../components/ui/sheet.tsx"
 
 export function SheetDemo() {
   return (
@@ -24,18 +24,18 @@ export function SheetDemo() {
             Make changes to your profile here. Click save when you're done.
           </SheetDescription>
         </SheetHeader>
-        <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="name" className="text-right">
+        <div class="grid gap-4 py-4">
+          <div class="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="name" class="text-right">
               Name
             </Label>
-            <Input id="name" value="Pedro Duarte" className="col-span-3" />
+            <Input id="name" value="Pedro Duarte" class="col-span-3" />
           </div>
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="username" className="text-right">
+          <div class="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="username" class="text-right">
               Username
             </Label>
-            <Input id="username" value="@peduarte" className="col-span-3" />
+            <Input id="username" value="@peduarte" class="col-span-3" />
           </div>
         </div>
         <SheetFooter>
