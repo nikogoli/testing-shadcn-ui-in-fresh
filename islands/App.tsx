@@ -23,7 +23,7 @@ import { RadioGroupDemo } from '../_examples/RadioGroup.tsx'
 import { SelectDemo } from '../_examples/Select.tsx'
 import { SheetDemo } from '../_examples/Sheet.tsx'
 import { SkeletonDemo } from '../_examples/Skeleton.tsx'
-//import { SliderDemo } from './examples/Slider'
+import { SliderDemo } from '../_examples/Slider.tsx'
 //import { SwitchDemo } from './examples/Switch'
 //import { TabsDemo } from './examples/Tabs'
 import { TextareaDemo } from '../_examples/Textarea.tsx'
@@ -97,9 +97,9 @@ function App() {
 
       <SheetDemo />
 
-      {/*<SliderDemo />
+      <SliderDemo />
 
-      <SwitchDemo />
+      {/*<SwitchDemo />
 
     <TabsDemo />*/}
 
