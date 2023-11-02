@@ -29,7 +29,7 @@ import { TabsDemo } from '../_examples/Tabs.tsx'
 import { TextareaDemo } from '../_examples/Textarea.tsx'
 import { ToastDemo } from '../_examples/Toast.tsx'
 import { ToggleDemo } from '../_examples/Toggle.tsx'
-//import { TooltipDemo } from './examples/Tooltip'
+import { TooltipDemo } from '../_examples/Tooltip.tsx'
 import { NavigationMenuDemo } from '../_examples/NavigationMenu.tsx'
 
 function App() {
@@ -109,7 +109,7 @@ function App() {
 
       <ToggleDemo />
 
-      {/*<TooltipDemo />*/}
+      <TooltipDemo />
 
       <SkeletonDemo />
     </div>

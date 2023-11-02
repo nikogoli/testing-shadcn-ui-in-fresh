@@ -1,9 +1,11 @@
 'use client'
 
-import * as React from 'react'
+import * as React from 'preact/compat'
 import * as TooltipPrimitive from '@radix-ui/react-tooltip'
+import * as AlitTooltipPrimitive from "../../lib/components/tooltip.d.ts"
 
-import { cn } from '../../lib/utils'
+import { cn } from '../../lib/utils.ts'
+import { ElementRef, ComponentPropsWithoutRef } from "../../lib/type-utils.ts"
 
 const TooltipProvider = TooltipPrimitive.Provider
 
@@ -12,9 +14,9 @@ const Tooltip = TooltipPrimitive.Root
 const TooltipTrigger = TooltipPrimitive.Trigger
 
 const TooltipContent = React.forwardRef<
-  React.ElementRef<typeof TooltipPrimitive.Content>,
-  React.ComponentPropsWithoutRef<typeof TooltipPrimitive.Content>
->(({ className, sideOffset = 4, ...props }, ref) => (
+  ElementRef<typeof AlitTooltipPrimitive.Content>,
+  ComponentPropsWithoutRef<typeof AlitTooltipPrimitive.Content>
+>(({ class:className, sideOffset = 4, ...props }, ref) => (
   <TooltipPrimitive.Content
     ref={ref}
     sideOffset={sideOffset}

@@ -1,14 +1,14 @@
-import { Button } from '@/components/ui/button'
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
+import { Button } from '../components/ui/button.tsx'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../components/ui/tooltip.tsx'
 
 export function TooltipDemo() {
   return (
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger asChild>
-          <Button variant="outline" className="w-10 rounded-full p-0">
-            <span className="i-lucide:plus flex h-4 w-4" />
-            <span className="sr-only">Add</span>
+          <Button variant="outline" class="w-10 rounded-full p-0">
+            <span class="i-lucide:plus flex h-4 w-4" />
+            <span class="sr-only">Add</span>
           </Button>
         </TooltipTrigger>
         <TooltipContent>
