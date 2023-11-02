@@ -1,4 +1,5 @@
 import { AccordionDemo } from "../_examples/Accordion.tsx"
+import { AlertDemo } from "../_examples/Alert.tsx"
 import {
   AlertDialog,
   AlertDialogAction,
@@ -38,6 +39,8 @@ function App() {
       <AccordionDemo />
 
       <Button>Button</Button>
+
+      <AlertDemo />
 
       <AlertDialog>
         <AlertDialogTrigger asChild>
