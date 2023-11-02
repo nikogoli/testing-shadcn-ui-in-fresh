@@ -1,16 +1,6 @@
 import { AccordionDemo } from "../_examples/Accordion.tsx"
 import { AlertDemo } from "../_examples/Alert.tsx"
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from '../components/ui/alert-dialog.tsx'
+import { AlertDialogDemo } from "../_examples/AlertDialog.tsx"
 import { Button } from '../components/ui/button.tsx'
 import { ContextMenuDemo } from '../_examples/ContextMenu.tsx'
 import { DialogDemo } from '../_examples/Dialog.tsx'
@@ -42,24 +32,7 @@ function App() {
 
       <AlertDemo />
 
-      <AlertDialog>
-        <AlertDialogTrigger asChild>
-          <Button variant="outline">Open</Button>
-        </AlertDialogTrigger>
-        <AlertDialogContent class="relative md:-top-25">
-          <AlertDialogHeader>
-            <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
-            <AlertDialogDescription>
-              This action cannot be undone. This will permanently delete your account and remove your data from our
-              servers.
-            </AlertDialogDescription>
-          </AlertDialogHeader>
-          <AlertDialogFooter>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction>Continue</AlertDialogAction>
-          </AlertDialogFooter>
-        </AlertDialogContent>
-      </AlertDialog>
+      <AlertDialogDemo />
 
       <LabelDemo />
 
