@@ -81,6 +81,7 @@
     "@radix-ui/react-radio-group": "https://esm.sh/*@radix-ui/react-radio-group@1.1.3?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-slider": "https://esm.sh/*@radix-ui/react-slider@1.1.2?alias=react:preact/compat,@types/react:preact/compat",
     "@radix-ui/react-switch": "https://esm.sh/*@radix-ui/react-switch@1.0.3?alias=react:preact/compat,@types/react:preact/compat",
+    "@radix-ui/react-tabs": "https://esm.sh/*@radix-ui/react-tabs@1.0.4?alias=react:preact/compat,@types/react:preact/compat",
 
     "aria-hidden": "https://esm.sh/aria-hidden@1.2.3",
     "detect-node-es": "https://esm.sh/detect-node-es@1.1.0?target=es2022",
