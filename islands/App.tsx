@@ -52,7 +52,7 @@ function App() {
         </AccordionItem>
       </Accordion>
 
-      <Button onClick={(_ev) => console.log("Button is clicked!!")}>Button</Button>
+      <Button>Button</Button>
 
       <AlertDialog>
         <AlertDialogTrigger asChild>
