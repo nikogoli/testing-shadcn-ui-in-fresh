@@ -27,7 +27,7 @@ import { SliderDemo } from '../_examples/Slider.tsx'
 import { SwitchDemo } from '../_examples/Switch.tsx'
 import { TabsDemo } from '../_examples/Tabs.tsx'
 import { TextareaDemo } from '../_examples/Textarea.tsx'
-//import { ToastDemo } from './examples/Toast'
+import { ToastDemo } from '../_examples/Toast.tsx'
 import { ToggleDemo } from '../_examples/Toggle.tsx'
 //import { TooltipDemo } from './examples/Tooltip'
 import { NavigationMenuDemo } from '../_examples/NavigationMenu.tsx'
@@ -105,7 +105,7 @@ function App() {
 
       <TextareaDemo />
 
-      {/*<ToastDemo />*/}
+      <ToastDemo />
 
       <ToggleDemo />
 

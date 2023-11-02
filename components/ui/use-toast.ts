@@ -1,15 +1,16 @@
 // Inspired by react-hot-toast library
-import * as React from "react"
+import * as React from "preact/compat"
 
-import { ToastActionElement, type ToastProps } from "./toast"
+import { ToastActionElement, type ToastProps } from "./toast.tsx"
+import { VNode } from "preact";
 
 const TOAST_LIMIT = 1
 const TOAST_REMOVE_DELAY = 1000000
 
 type ToasterToast = ToastProps & {
   id: string
-  title?: React.ReactNode
-  description?: React.ReactNode
+  title?: VNode | string
+  description?: VNode | string
   action?: ToastActionElement
 }
 
@@ -135,6 +136,7 @@ function dispatch(action: Action) {
   })
 }
 
+// deno-lint-ignore no-empty-interface
 interface Toast extends Omit<ToasterToast, "id"> {}
 
 function toast({ ...props }: Toast) {
