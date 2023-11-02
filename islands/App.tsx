@@ -1,7 +1,7 @@
 import { AccordionDemo } from "../_examples/Accordion.tsx"
 import { AlertDemo } from "../_examples/Alert.tsx"
 import { AlertDialogDemo } from "../_examples/AlertDialog.tsx"
-import { Button } from '../components/ui/button.tsx'
+import { ButtonDemo } from "../_examples/Button.tsx"
 import { ContextMenuDemo } from '../_examples/ContextMenu.tsx'
 import { DialogDemo } from '../_examples/Dialog.tsx'
 import { DropdownMenuDemo } from '../_examples/DropdownMenu.tsx'
@@ -28,7 +28,7 @@ function App() {
     <div class="App w-full py-20 flex-col-center gap-12 overflow-hidden">
       <AccordionDemo />
 
-      <Button>Button</Button>
+      <ButtonDemo />
 
       <AlertDemo />
 
