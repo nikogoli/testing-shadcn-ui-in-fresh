@@ -4,6 +4,7 @@ import { AlertDialogDemo } from "../_examples/AlertDialog.tsx"
 import { AspectRatioDemo } from "../_examples/AspectRatio.tsx"
 import { BadgeDemo } from "../_examples/Badge.tsx"
 import { ButtonDemo } from "../_examples/Button.tsx"
+import { CollapsibleDemo } from "../_examples/Collapsible.tsx"
 import { ContextMenuDemo } from '../_examples/ContextMenu.tsx'
 import { DialogDemo } from '../_examples/Dialog.tsx'
 import { DropdownMenuDemo } from '../_examples/DropdownMenu.tsx'
@@ -39,6 +40,8 @@ function App() {
       <AspectRatioDemo />
 
       <BadgeDemo />
+
+      <CollapsibleDemo />
 
       <LabelDemo />
 
