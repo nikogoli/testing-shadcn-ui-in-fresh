@@ -6,6 +6,7 @@ import { BadgeDemo } from "../_examples/Badge.tsx"
 import { ButtonDemo } from "../_examples/Button.tsx"
 import { CollapsibleDemo } from "../_examples/Collapsible.tsx"
 import { ContextMenuDemo } from '../_examples/ContextMenu.tsx'
+import { CommandDemo } from "../_examples/Command.tsx"
 import { DialogDemo } from '../_examples/Dialog.tsx'
 import { DropdownMenuDemo } from '../_examples/DropdownMenu.tsx'
 import { HoverCardDemo } from '../_examples/HoverCard.tsx'
@@ -42,6 +43,8 @@ function App() {
       <BadgeDemo />
 
       <CollapsibleDemo />
+
+      <CommandDemo />
 
       <LabelDemo />
 

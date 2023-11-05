@@ -87,6 +87,8 @@
     "@radix-ui/react-aspect-ratio": "https://esm.sh/*@radix-ui/react-aspect-ratio@1.0.3?alias=react:preact/compat,@types/react:preact/compat",
 
     "aria-hidden": "https://esm.sh/aria-hidden@1.2.3",
+    "cmdk": "https://esm.sh/*cmdk@0.2.0?alias=react:preact/compat,@types/react:preact/compat",
+    "command-score": "https://esm.sh/command-score@0.1.2",
     "detect-node-es": "https://esm.sh/detect-node-es@1.1.0?target=es2022",
     "get-nonce": "https://esm.sh/get-nonce@1.0.1",
     "@floating-ui/dom": "https://esm.sh/v132/@floating-ui/dom@1.5.3",
