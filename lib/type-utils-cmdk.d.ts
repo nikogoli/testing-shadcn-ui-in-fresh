@@ -9,7 +9,7 @@ import { DialogProps } from '@radix-ui/react-dialog'
 
 
 declare type Children = {
-    children?: Array<VNode> | string;
+    children?: Array<VNode | string> | VNode | string;
 };
 declare type DivProps = React.HTMLAttributes<HTMLDivElement>;
 
