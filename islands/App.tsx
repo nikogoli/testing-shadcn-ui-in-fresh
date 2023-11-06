@@ -22,6 +22,7 @@ import { SkeletonDemo } from '../_examples/Skeleton.tsx'
 import { SliderDemo } from '../_examples/Slider.tsx'
 import { SwitchDemo } from '../_examples/Switch.tsx'
 import { TabsDemo } from '../_examples/Tabs.tsx'
+import { TableDemo } from "../_examples/Table.tsx"
 import { TextareaDemo } from '../_examples/Textarea.tsx'
 import { ToastDemo } from '../_examples/Toast.tsx'
 import { ToggleDemo } from '../_examples/Toggle.tsx'
@@ -78,6 +79,8 @@ function App() {
       <SwitchDemo />
 
       <TabsDemo />
+
+      <TableDemo />
 
       <TextareaDemo />
 
