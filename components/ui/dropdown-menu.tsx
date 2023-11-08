@@ -2,6 +2,10 @@ import * as React from 'preact/compat'
 import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu'
 import * as AltDropdownMenuPrimitive from "../../lib/components/dropdown-menu.d.ts"
 
+import IconChevronLeft from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/chevron-left.tsx"
+import IconCheck from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/check.tsx"
+import IconCircleFilled from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/circle-filled.tsx"
+
 import { cn } from '../../lib/utils.ts'
 import { ElementRef, ComponentPropsWithoutRef } from "../../lib/type-utils.ts"
 
@@ -39,7 +43,7 @@ const DropdownMenuSubTrigger = React.forwardRef<
     {...props}
   >
     {children}
-    <span className="i-lucide:chevron-right ml-auto h-4 w-4" />
+    <IconChevronLeft class="ml-auto h-4 w-4" />
   </DropdownMenuPrimitive.SubTrigger>
 ))
 DropdownMenuSubTrigger.displayName = DropdownMenuPrimitive.SubTrigger.displayName
@@ -112,9 +116,9 @@ const DropdownMenuCheckboxItem = React.forwardRef<
     checked={checked}
     {...props}
   >
-    <span className="absolute left-2 flex h-3.5 w-3.5 items-center justify-center">
+    <span class="absolute left-2 flex h-3.5 w-3.5 items-center justify-center">
       <DropdownMenuPrimitive.ItemIndicator>
-        <span className="i-lucide:check flex h-4 w-4" />
+        <IconCheck class="flex h-4 w-4" />
       </DropdownMenuPrimitive.ItemIndicator>
     </span>
     {children}
@@ -135,9 +139,9 @@ const DropdownMenuRadioItem = React.forwardRef<
     )}
     {...props}
   >
-    <span className="absolute left-2 flex h-3.5 w-3.5 items-center justify-center">
+    <span class="absolute left-2 flex h-3.5 w-3.5 items-center justify-center">
       <DropdownMenuPrimitive.ItemIndicator>
-        <span className='i-tabler:circle-filled flex h-2 w-2' />
+        <IconCircleFilled class='flex h-2 w-2' />
       </DropdownMenuPrimitive.ItemIndicator>
     </span>
     {children}
