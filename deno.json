@@ -97,6 +97,8 @@
     "react-remove-scroll-bar": "https://esm.sh/v132/*react-remove-scroll-bar@2.3.4?alias=react:preact/compat,@types/react:preact/compat",
     "react-remove-scroll-bar/constants": "https://esm.sh/react-remove-scroll-bar@2.3.4/constants",
     "react-style-singleton": "https://esm.sh/v132/*react-style-singleton@2.2.1?alias=react:preact/compat,@types/react:preact/compat",
+    "@tanstack/react-table": "https://esm.sh/*@tanstack/react-table@8.10.7?alias=react:preact/compat,@types/react:preact/compat",
+    "@tanstack/table-core": "https://esm.sh/@tanstack/table-core@8.10.7",
     "tslib": "https://esm.sh/tslib@2.6.2",
     "use-sidecar": "https://esm.sh/v132/*use-sidecar@1.1.2?alias=react:preact/compat,@types/react:preact/compat",
     "use-callback-ref": "https://esm.sh/v132/*use-callback-ref@1.3.0?alias=react:preact/compat,@types/react:preact/compat"

@@ -8,6 +8,7 @@ import { CollapsibleDemo } from "../_examples/Collapsible.tsx"
 import { ContextMenuDemo } from '../_examples/ContextMenu.tsx'
 import { ComboboxDemo } from "../_examples/Combobox.tsx"
 import { CommandDemo } from "../_examples/Command.tsx"
+import { DataTableDemo } from "../_examples/DataTable.tsx"
 import { DialogDemo } from '../_examples/Dialog.tsx'
 import { DropdownMenuDemo } from '../_examples/DropdownMenu.tsx'
 import { HoverCardDemo } from '../_examples/HoverCard.tsx'
@@ -51,6 +52,8 @@ function App() {
       <ComboboxDemo />
 
       <LabelDemo />
+
+      <DataTableDemo />
 
       <ContextMenuDemo />
 
