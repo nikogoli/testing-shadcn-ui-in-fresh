@@ -6,9 +6,10 @@ Based on [unocss-preset-shadcn](https://github.com/fisand/unocss-preset-shadcn).
 
 --------------
 
-[demo](https://testing-shadcn-ui-in-fresh.deno.dev/)
+[demo](https://testing-shadcn-ui-in-fresh.deno.dev/) <br>
+※ 初回の読み込みに時間がかかり deno deploy が止まることが多いので、動かないときは何度かリロードすること
 
 --------------
 
 - **Apr 9, 2024**<br>
-  重い & 動かない問題を修正。ただし挙動がおかしいものは多い (Issues 参照)。
+  動かない問題を修正。ただし挙動がおかしいものは多い (Issues 参照)。
