@@ -6,6 +6,8 @@ import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $App from "./islands/App.tsx";
+import * as $Sidepanel from "./islands/Sidepanel.tsx";
+import * as $VIewarea from "./islands/VIewarea.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -16,6 +18,8 @@ const manifest = {
   },
   islands: {
     "./islands/App.tsx": $App,
+    "./islands/Sidepanel.tsx": $Sidepanel,
+    "./islands/VIewarea.tsx": $VIewarea,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
