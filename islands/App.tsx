@@ -30,21 +30,70 @@ import { ToggleDemo } from '../_examples/Toggle.tsx'
 import { TooltipDemo } from '../_examples/Tooltip.tsx'
 import { NavigationMenuDemo } from '../_examples/NavigationMenu.tsx'
 
-import { signal } from "@preact/signals"
-
-import Sidepanel from "./Sidepanel.tsx"
-import Viewarea from "./Viewarea.tsx"
-import { ITEM_NAMES } from "../types.ts"
-
-type ITEM_NAMES_type = typeof ITEM_NAMES[number]
-
 function App() {
-  const item_sig = signal<ITEM_NAMES_type>("Accordion" as const)
-
   return (
-    <div class="Appw-full h-screen p-8 grid grid-cols-4 gap-2 place-content-center">
-      <Sidepanel item_sig={item_sig} />
-      <Viewarea item_sig={item_sig} />
+    <div class="App w-full py-20 flex-col-center gap-12 overflow-hidden">
+      <AccordionDemo />
+
+      <ButtonDemo />
+
+      <AlertDemo />
+
+      <AlertDialogDemo />
+
+      <AspectRatioDemo />
+
+      <BadgeDemo />
+
+      <CollapsibleDemo />
+
+      <CommandDemo />
+
+      <ComboboxDemo />
+
+      <LabelDemo />
+
+      <DataTableDemo />
+
+      <ContextMenuDemo />
+
+      <SelectDemo />
+
+      <DialogDemo />
+
+      <InputDemo />
+
+      <DropdownMenuDemo />
+
+      <HoverCardDemo />
+
+      <MenubarDemo />
+
+      <NavigationMenuDemo />
+
+      <PopoverDemo />
+
+      <RadioGroupDemo />
+
+      <SheetDemo />
+
+      <SliderDemo />
+
+      <SwitchDemo />
+
+      <TabsDemo />
+
+      <TableDemo />
+
+      <TextareaDemo />
+
+      <ToastDemo />
+
+      <ToggleDemo />
+
+      <TooltipDemo />
+
+      <SkeletonDemo />
     </div>
   )
 }
