@@ -30,4 +30,4 @@ export const ITEM_NAMES = [
   "Toggle",
   "Tooltip",
   "NavigationMenu",
-] as const
+]
