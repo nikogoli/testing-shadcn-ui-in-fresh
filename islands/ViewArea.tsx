@@ -30,54 +30,49 @@ import { ToggleDemo } from '../_examples/Toggle.tsx'
 import { TooltipDemo } from '../_examples/Tooltip.tsx'
 import { NavigationMenuDemo } from '../_examples/NavigationMenu.tsx'
 
+import { Signal } from "@preact/signals"
+
 import { ITEM_NAMES } from "../types.ts"
 
+type ITEM_NAMES_type = typeof ITEM_NAMES[number]
 
-export default function ViewArea(props:{item: string}) {
-  const { item } = props
-
-  if (!ITEM_NAMES.includes(item)){
-    return (
-      <div class="col-span-3 flex-col-center gap-12 overflow-hidden">
-        <span class="text-2xl">No Match</span>
-      </div>
-    )
-  }
+export default function ViewArea(props:{item_sig: Signal<ITEM_NAMES_type>}) {
+  const { item_sig } = props
 
   return (
-    <div class="grow flex-col-center gap-12 overflow-hidden">
+    <div class="col-span-3 flex-col-center gap-12 overflow-hidden">
       {
-        item == "Accordion" ? <AccordionDemo />
-          : item == "Alert" ? <AlertDemo />
-          : item == "AlertDialog" ? <AlertDialogDemo />
-          : item == "AspectRatio" ? <AspectRatioDemo />
-          : item == "Badge" ? <BadgeDemo />
-          : item == "Button" ? <ButtonDemo />
-          : item == "Collapsible" ? <CollapsibleDemo />
-          : item == "ContextMenu" ? <ContextMenuDemo />
-          : item == "Combobox" ? <ComboboxDemo />
-          : item == "Command" ? <CommandDemo />
-          : item == "DataTable" ? <DataTableDemo />
-          : item == "Dialog" ? <DialogDemo />
-          : item == "DropdownMenu" ? <DropdownMenuDemo />
-          : item == "HoverCard" ? <HoverCardDemo />
-          : item == "Input" ? <InputDemo />
-          : item == "Label" ? <LabelDemo />
-          : item == "NavigationMenu" ? <NavigationMenuDemo />
-          : item == "Menubar" ? <MenubarDemo />
-          : item == "Popover" ? <PopoverDemo />
-          : item == "RadioGroup" ? <RadioGroupDemo />
-          : item == "Select" ? <SelectDemo />
-          : item == "Sheet" ? <SheetDemo />
-          : item == "Skeleton" ? <SkeletonDemo />
-          : item == "Slider" ? <SliderDemo />
-          : item == "Switch" ? <SwitchDemo />
-          : item == "Tabs" ? <TabsDemo />
-          : item == "Table" ? <TableDemo />
-          : item == "Textarea" ? <TextareaDemo />
-          : item == "Toast" ? <ToastDemo />
-          : item == "Toggle" ? <ToggleDemo />
-          : item == "Tooltip" ? <TooltipDemo />
+        item_sig.value == "Accordion" ? <AccordionDemo />
+          : item_sig.value == "Alert" ? <AlertDemo />
+          : item_sig.value == "AlertDialog" ? <AlertDialogDemo />
+          : item_sig.value == "AspectRatio" ? <AspectRatioDemo />
+          : item_sig.value == "Badge" ? <BadgeDemo />
+          : item_sig.value == "Button" ? <ButtonDemo />
+          : item_sig.value == "Collapsible" ? <CollapsibleDemo />
+          : item_sig.value == "ContextMenu" ? <ContextMenuDemo />
+          : item_sig.value == "Combobox" ? <ComboboxDemo />
+          : item_sig.value == "Command" ? <CommandDemo />
+          : item_sig.value == "DataTable" ? <DataTableDemo />
+          : item_sig.value == "Dialog" ? <DialogDemo />
+          : item_sig.value == "DropdownMenu" ? <DropdownMenuDemo />
+          : item_sig.value == "HoverCard" ? <HoverCardDemo />
+          : item_sig.value == "Input" ? <InputDemo />
+          : item_sig.value == "Label" ? <LabelDemo />
+          : item_sig.value == "NavigationMenu" ? <NavigationMenuDemo />
+          : item_sig.value == "Menubar" ? <MenubarDemo />
+          : item_sig.value == "Popover" ? <PopoverDemo />
+          : item_sig.value == "RadioGroup" ? <RadioGroupDemo />
+          : item_sig.value == "Select" ? <SelectDemo />
+          : item_sig.value == "Sheet" ? <SheetDemo />
+          : item_sig.value == "Skeleton" ? <SkeletonDemo />
+          : item_sig.value == "Slider" ? <SliderDemo />
+          : item_sig.value == "Switch" ? <SwitchDemo />
+          : item_sig.value == "Tabs" ? <TabsDemo />
+          : item_sig.value == "Table" ? <TableDemo />
+          : item_sig.value == "Textarea" ? <TextareaDemo />
+          : item_sig.value == "Toast" ? <ToastDemo />
+          : item_sig.value == "Toggle" ? <ToggleDemo />
+          : item_sig.value == "Tooltip" ? <TooltipDemo />
           : <></>
       }
     </div>

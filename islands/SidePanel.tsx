@@ -1,16 +1,22 @@
+import { Signal } from "@preact/signals"
 import { ITEM_NAMES } from "../types.ts"
 
+type ITEM_NAMES_type = typeof ITEM_NAMES[number]
 
-export default function SidePanel(props:{item: string}) {
-  const { item } = props
+export default function SidePanel(props:{item_sig: Signal<ITEM_NAMES_type>}) {
+  const { item_sig } = props
+
+  const item_sty = (targ:ITEM_NAMES_type, act:ITEM_NAMES_type) => {
+    return targ == act ? "bg-sky-100" : "hover:bg-gray-100"
+  }
 
   return(
-    <div class={`h-fit w-72 self-center p-2 grid grid-cols-2 gap-1 border border-lg`}>
+    <div class="h-full overflow-y-scroll col-span-1 p-2 flex flex-col gap-2 border border-lg">
       {ITEM_NAMES.map(name => (
-        <a class={"py-1 pl-4 " + (item == name ? "bg-sky-100" : "hover:bg-gray-100")}
-           href={`/${name}`}>
+        <button class={"p-1 " + item_sty(name, item_sig.value)}
+                onClick={()=> item_sig.value = name}>
           {name}
-        </a>
+        </button>
       ))}
     </div>
   )
