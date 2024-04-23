@@ -6,8 +6,38 @@ import * as $_item_ from "./routes/[item].tsx";
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $index from "./routes/index.tsx";
+import * as $DemoComponents_Accordion from "./islands/DemoComponents/Accordion.tsx";
+import * as $DemoComponents_Alert from "./islands/DemoComponents/Alert.tsx";
+import * as $DemoComponents_AlertDialog from "./islands/DemoComponents/AlertDialog.tsx";
+import * as $DemoComponents_AspectRatio from "./islands/DemoComponents/AspectRatio.tsx";
+import * as $DemoComponents_Badge from "./islands/DemoComponents/Badge.tsx";
+import * as $DemoComponents_Button from "./islands/DemoComponents/Button.tsx";
+import * as $DemoComponents_Collapsible from "./islands/DemoComponents/Collapsible.tsx";
+import * as $DemoComponents_Combobox from "./islands/DemoComponents/Combobox.tsx";
+import * as $DemoComponents_Command from "./islands/DemoComponents/Command.tsx";
+import * as $DemoComponents_ContextMenu from "./islands/DemoComponents/ContextMenu.tsx";
+import * as $DemoComponents_DataTable from "./islands/DemoComponents/DataTable.tsx";
+import * as $DemoComponents_Dialog from "./islands/DemoComponents/Dialog.tsx";
+import * as $DemoComponents_DropdownMenu from "./islands/DemoComponents/DropdownMenu.tsx";
+import * as $DemoComponents_HoverCard from "./islands/DemoComponents/HoverCard.tsx";
+import * as $DemoComponents_Input from "./islands/DemoComponents/Input.tsx";
+import * as $DemoComponents_Label from "./islands/DemoComponents/Label.tsx";
+import * as $DemoComponents_Menubar from "./islands/DemoComponents/Menubar.tsx";
+import * as $DemoComponents_NavigationMenu from "./islands/DemoComponents/NavigationMenu.tsx";
+import * as $DemoComponents_Popover from "./islands/DemoComponents/Popover.tsx";
+import * as $DemoComponents_RadioGroup from "./islands/DemoComponents/RadioGroup.tsx";
+import * as $DemoComponents_Select from "./islands/DemoComponents/Select.tsx";
+import * as $DemoComponents_Sheet from "./islands/DemoComponents/Sheet.tsx";
+import * as $DemoComponents_Skeleton from "./islands/DemoComponents/Skeleton.tsx";
+import * as $DemoComponents_Slider from "./islands/DemoComponents/Slider.tsx";
+import * as $DemoComponents_Switch from "./islands/DemoComponents/Switch.tsx";
+import * as $DemoComponents_Table from "./islands/DemoComponents/Table.tsx";
+import * as $DemoComponents_Tabs from "./islands/DemoComponents/Tabs.tsx";
+import * as $DemoComponents_Textarea from "./islands/DemoComponents/Textarea.tsx";
+import * as $DemoComponents_Toast from "./islands/DemoComponents/Toast.tsx";
+import * as $DemoComponents_Toggle from "./islands/DemoComponents/Toggle.tsx";
+import * as $DemoComponents_Tooltip from "./islands/DemoComponents/Tooltip.tsx";
 import * as $SidePanel from "./islands/SidePanel.tsx";
-import * as $ViewArea from "./islands/ViewArea.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -18,8 +48,39 @@ const manifest = {
     "./routes/index.tsx": $index,
   },
   islands: {
+    "./islands/DemoComponents/Accordion.tsx": $DemoComponents_Accordion,
+    "./islands/DemoComponents/Alert.tsx": $DemoComponents_Alert,
+    "./islands/DemoComponents/AlertDialog.tsx": $DemoComponents_AlertDialog,
+    "./islands/DemoComponents/AspectRatio.tsx": $DemoComponents_AspectRatio,
+    "./islands/DemoComponents/Badge.tsx": $DemoComponents_Badge,
+    "./islands/DemoComponents/Button.tsx": $DemoComponents_Button,
+    "./islands/DemoComponents/Collapsible.tsx": $DemoComponents_Collapsible,
+    "./islands/DemoComponents/Combobox.tsx": $DemoComponents_Combobox,
+    "./islands/DemoComponents/Command.tsx": $DemoComponents_Command,
+    "./islands/DemoComponents/ContextMenu.tsx": $DemoComponents_ContextMenu,
+    "./islands/DemoComponents/DataTable.tsx": $DemoComponents_DataTable,
+    "./islands/DemoComponents/Dialog.tsx": $DemoComponents_Dialog,
+    "./islands/DemoComponents/DropdownMenu.tsx": $DemoComponents_DropdownMenu,
+    "./islands/DemoComponents/HoverCard.tsx": $DemoComponents_HoverCard,
+    "./islands/DemoComponents/Input.tsx": $DemoComponents_Input,
+    "./islands/DemoComponents/Label.tsx": $DemoComponents_Label,
+    "./islands/DemoComponents/Menubar.tsx": $DemoComponents_Menubar,
+    "./islands/DemoComponents/NavigationMenu.tsx":
+      $DemoComponents_NavigationMenu,
+    "./islands/DemoComponents/Popover.tsx": $DemoComponents_Popover,
+    "./islands/DemoComponents/RadioGroup.tsx": $DemoComponents_RadioGroup,
+    "./islands/DemoComponents/Select.tsx": $DemoComponents_Select,
+    "./islands/DemoComponents/Sheet.tsx": $DemoComponents_Sheet,
+    "./islands/DemoComponents/Skeleton.tsx": $DemoComponents_Skeleton,
+    "./islands/DemoComponents/Slider.tsx": $DemoComponents_Slider,
+    "./islands/DemoComponents/Switch.tsx": $DemoComponents_Switch,
+    "./islands/DemoComponents/Table.tsx": $DemoComponents_Table,
+    "./islands/DemoComponents/Tabs.tsx": $DemoComponents_Tabs,
+    "./islands/DemoComponents/Textarea.tsx": $DemoComponents_Textarea,
+    "./islands/DemoComponents/Toast.tsx": $DemoComponents_Toast,
+    "./islands/DemoComponents/Toggle.tsx": $DemoComponents_Toggle,
+    "./islands/DemoComponents/Tooltip.tsx": $DemoComponents_Tooltip,
     "./islands/SidePanel.tsx": $SidePanel,
-    "./islands/ViewArea.tsx": $ViewArea,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
