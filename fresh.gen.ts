@@ -2,9 +2,37 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $_item_ from "./routes/[item].tsx";
-import * as $_404 from "./routes/_404.tsx";
-import * as $_app from "./routes/_app.tsx";
+import * as $Accordion from "./routes/Accordion.tsx";
+import * as $Alert from "./routes/Alert.tsx";
+import * as $AlertDialog from "./routes/AlertDialog.tsx";
+import * as $AspectRatio from "./routes/AspectRatio.tsx";
+import * as $Badge from "./routes/Badge.tsx";
+import * as $Button from "./routes/Button.tsx";
+import * as $Collapsible from "./routes/Collapsible.tsx";
+import * as $Combobox from "./routes/Combobox.tsx";
+import * as $Command from "./routes/Command.tsx";
+import * as $ContextMenu from "./routes/ContextMenu.tsx";
+import * as $DataTable from "./routes/DataTable.tsx";
+import * as $Dialog from "./routes/Dialog.tsx";
+import * as $DropdownMenu from "./routes/DropdownMenu.tsx";
+import * as $HoverCard from "./routes/HoverCard.tsx";
+import * as $Input from "./routes/Input.tsx";
+import * as $Label from "./routes/Label.tsx";
+import * as $Menubar from "./routes/Menubar.tsx";
+import * as $NavigationMenu from "./routes/NavigationMenu.tsx";
+import * as $Popover from "./routes/Popover.tsx";
+import * as $RadioGroup from "./routes/RadioGroup.tsx";
+import * as $Select from "./routes/Select.tsx";
+import * as $Sheet from "./routes/Sheet.tsx";
+import * as $Skeleton from "./routes/Skeleton.tsx";
+import * as $Slider from "./routes/Slider.tsx";
+import * as $Switch from "./routes/Switch.tsx";
+import * as $Table from "./routes/Table.tsx";
+import * as $Tabs from "./routes/Tabs.tsx";
+import * as $Textarea from "./routes/Textarea.tsx";
+import * as $Toast from "./routes/Toast.tsx";
+import * as $Toggle from "./routes/Toggle.tsx";
+import * as $Tooltip from "./routes/Tooltip.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $DemoComponents_Accordion from "./islands/DemoComponents/Accordion.tsx";
 import * as $DemoComponents_Alert from "./islands/DemoComponents/Alert.tsx";
@@ -42,9 +70,37 @@ import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
-    "./routes/[item].tsx": $_item_,
-    "./routes/_404.tsx": $_404,
-    "./routes/_app.tsx": $_app,
+    "./routes/Accordion.tsx": $Accordion,
+    "./routes/Alert.tsx": $Alert,
+    "./routes/AlertDialog.tsx": $AlertDialog,
+    "./routes/AspectRatio.tsx": $AspectRatio,
+    "./routes/Badge.tsx": $Badge,
+    "./routes/Button.tsx": $Button,
+    "./routes/Collapsible.tsx": $Collapsible,
+    "./routes/Combobox.tsx": $Combobox,
+    "./routes/Command.tsx": $Command,
+    "./routes/ContextMenu.tsx": $ContextMenu,
+    "./routes/DataTable.tsx": $DataTable,
+    "./routes/Dialog.tsx": $Dialog,
+    "./routes/DropdownMenu.tsx": $DropdownMenu,
+    "./routes/HoverCard.tsx": $HoverCard,
+    "./routes/Input.tsx": $Input,
+    "./routes/Label.tsx": $Label,
+    "./routes/Menubar.tsx": $Menubar,
+    "./routes/NavigationMenu.tsx": $NavigationMenu,
+    "./routes/Popover.tsx": $Popover,
+    "./routes/RadioGroup.tsx": $RadioGroup,
+    "./routes/Select.tsx": $Select,
+    "./routes/Sheet.tsx": $Sheet,
+    "./routes/Skeleton.tsx": $Skeleton,
+    "./routes/Slider.tsx": $Slider,
+    "./routes/Switch.tsx": $Switch,
+    "./routes/Table.tsx": $Table,
+    "./routes/Tabs.tsx": $Tabs,
+    "./routes/Textarea.tsx": $Textarea,
+    "./routes/Toast.tsx": $Toast,
+    "./routes/Toggle.tsx": $Toggle,
+    "./routes/Tooltip.tsx": $Tooltip,
     "./routes/index.tsx": $index,
   },
   islands: {
