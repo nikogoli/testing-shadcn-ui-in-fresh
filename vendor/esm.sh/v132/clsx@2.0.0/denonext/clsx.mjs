@@ -1,0 +1,3 @@
+/* esm.sh - esbuild bundle(clsx@2.0.0) denonext production */
+function o(r){var f,n,t="";if(typeof r=="string"||typeof r=="number")t+=r;else if(typeof r=="object")if(Array.isArray(r))for(f=0;f<r.length;f++)r[f]&&(n=o(r[f]))&&(t&&(t+=" "),t+=n);else for(f in r)r[f]&&(t&&(t+=" "),t+=f);return t}function e(){for(var r,f,n=0,t="";n<arguments.length;)(r=arguments[n++])&&(f=o(r))&&(t&&(t+=" "),t+=f);return t}var i=e;export{e as clsx,i as default};
+//# sourceMappingURL=clsx.mjs.map
