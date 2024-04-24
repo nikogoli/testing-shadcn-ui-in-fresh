@@ -1,0 +1,19 @@
+{
+  "imports":{
+  	"clx": "./esm.sh/v132/clsx@2.0.0/denonext/clsx.mjs",
+  	"tailwind-merge": "./esm.sh/v132/tailwind-merge@1.14.0/denonext/tailwind-merge.mjs",
+
+	"@radix-ui/primitive": "./esm.sh/v133/@radix-ui/primitive@1.0.1/#x-zs8q_780fd/denonext/primitive.mjs",
+  	"@radix-ui/react-collapsible": "./esm.sh/v132/@radix-ui/react-collapsible@1.0.3/#x-ys9adhlwzxmvcmvhy3_cb64f/denonext/react-collapsible.mjs",
+  	"@radix-ui/react-collection": "./esm.sh/v132/@radix-ui/react-collection@1.0.3/#x-ys9adhlwzxmvcmvhy3_cb64f/denonext/react-collection.mjs",
+  	"@radix-ui/react-context": "./esm.sh/v132/@radix-ui/react-context@1.0.1/#x-ys9adhlwzxmvcmvhy3_cb64f/denonext/react-context.mjs",
+  	"@radix-ui/react-compose-refs":"./esm.sh/v132/@radix-ui/react-compose-refs@1.0.1/#x-ys9adhlwzxmvcmvhy3_cb64f/denonext/react-compose-refs.mjs",
+  	"@radix-ui/react-direction": "./esm.sh/v132/@radix-ui/react-direction@1.0.1/#x-ys9adhlwzxmvcmvhy3_cb64f/denonext/react-direction.mjs",
+  	"@radix-ui/react-id": "./esm.sh/v132/@radix-ui/react-id@1.0.1/#x-ys9adhlwzxmvcmvhy3_cb64f/denonext/react-id.mjs",
+  	"@radix-ui/react-primitive": "./esm.sh/v132/@radix-ui/react-primitive@1.0.3/#x-ys9adhlwzxmvcmvhy3_7544c/denonext/react-primitive.mjs", 
+  	"@radix-ui/react-use-controllable-state": "./esm.sh/v132/@radix-ui/#react-use-controllab_7b4a1/#x-ys9adhlwzxmvcmvhy3_cb64f/denonext/#react-use-controllab_f17e9.mjs",
+  	
+
+  	"@radix-ui/react-accordion": "./esm.sh/v132/@radix-ui/react-accordion@1.1.2/#x-ys9adhlwzxmvcmvhy3_cb64f/denonext/react-accordion.mjs"
+  }
+}
