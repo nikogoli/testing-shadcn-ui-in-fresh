@@ -3,18 +3,22 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $Accordion from "./routes/Accordion.tsx";
+import * as $ContextMenu from "./routes/ContextMenu.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $DemoComponents_Accordion from "./islands/DemoComponents/Accordion.tsx";
+import * as $DemoComponents_ContextMenu from "./islands/DemoComponents/ContextMenu.tsx";
 import * as $SidePanel from "./islands/SidePanel.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
     "./routes/Accordion.tsx": $Accordion,
+    "./routes/ContextMenu.tsx": $ContextMenu,
     "./routes/index.tsx": $index,
   },
   islands: {
     "./islands/DemoComponents/Accordion.tsx": $DemoComponents_Accordion,
+    "./islands/DemoComponents/ContextMenu.tsx": $DemoComponents_ContextMenu,
     "./islands/SidePanel.tsx": $SidePanel,
   },
   baseUrl: import.meta.url,
