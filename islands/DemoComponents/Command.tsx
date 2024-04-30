@@ -14,7 +14,7 @@ import {
   CommandList,
   CommandSeparator,
   CommandShortcut,
-} from "../../components/ui/command.tsx"
+} from "../../_bundled/ui/command.js"
 
 export function CommandDemo() {
   return (

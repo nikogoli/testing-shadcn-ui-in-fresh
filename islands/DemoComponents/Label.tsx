@@ -1,5 +1,5 @@
-import { Checkbox } from "../../components/ui/checkbox.tsx"
-import { Label } from "../../components/ui/label.tsx"
+import { Checkbox } from "../../_bundled/ui/checkbox.js"
+import { Label } from "../../_bundled/ui/label.js"
 
 export function LabelDemo() {
   return (

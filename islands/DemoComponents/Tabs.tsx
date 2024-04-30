@@ -1,8 +1,8 @@
-import { Button } from '../../components/ui/button.tsx'
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../../components/ui/card.tsx'
-import { Input } from '../../components/ui/input.tsx'
-import { Label } from '../../components/ui/label.tsx'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../components/ui/tabs.tsx'
+import { Button } from '../../_bundled/ui/button.js'
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../../_bundled/ui/card.js'
+import { Input } from '../../_bundled/ui/input.js'
+import { Label } from '../../_bundled/ui/label.js'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../../_bundled/ui/tabs.js'
 
 export function TabsDemo() {
   return (

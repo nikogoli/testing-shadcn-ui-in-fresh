@@ -7,19 +7,19 @@ import IconSearch from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/search.ts
 import IconBracketsAngle from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/brackets-angle.tsx"
 
 import { cn } from "../../lib/utils.ts"
-import { Button } from "../../components/ui/button.tsx"
+import { Button } from "../../_bundled/ui/button.js"
 import {
   Command,
   CommandEmpty,
   CommandGroup,
   CommandInput,
   CommandItem,
-} from "../../components/ui/command.tsx"
+} from "../../_bundled/ui/command.js"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "../../components/ui/popover.tsx"
+} from "../../_bundled/ui/popover.js"
 
 const frameworks = [
   {

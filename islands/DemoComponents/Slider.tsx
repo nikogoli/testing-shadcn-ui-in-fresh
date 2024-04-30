@@ -1,5 +1,5 @@
 import { cn } from "../../lib/utils.ts"
-import { Slider } from "../../components/ui/slider.tsx"
+import { Slider } from "../../_bundled/ui/slider.js"
 
 
 export function SliderDemo() {

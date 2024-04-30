@@ -1,6 +1,6 @@
 import {
   Collapsible,  CollapsibleContent,  CollapsibleTrigger,
-} from "../../components/ui/collapsible.tsx"
+} from "../../_bundled/ui/collapsible.js"
  
 export function CollapsibleDemo() {
   return (

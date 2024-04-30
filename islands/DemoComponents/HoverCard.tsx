@@ -1,6 +1,6 @@
-import { Avatar, AvatarFallback, AvatarImage } from '../../components/ui/avatar.tsx'
-import { Button } from '../../components/ui/button.tsx'
-import { HoverCard, HoverCardContent, HoverCardTrigger } from '../../components/ui/hover-card.tsx'
+import { Avatar, AvatarFallback, AvatarImage } from '../../_bundled/ui/avatar.js'
+import { Button } from '../../_bundled/ui/button.js'
+import { HoverCard, HoverCardContent, HoverCardTrigger } from '../../_bundled/ui/hover-card.js'
 
 export function HoverCardDemo() {
   return (

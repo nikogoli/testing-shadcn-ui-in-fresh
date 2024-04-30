@@ -12,7 +12,7 @@ import {
   MenubarSubContent,
   MenubarSubTrigger,
   MenubarTrigger,
-} from '../../components/ui/menubar.tsx'
+} from '../../_bundled/ui/menubar.js'
 
 export function MenubarDemo() {
   return (

@@ -1,4 +1,4 @@
-import { AspectRatio } from "../../components/ui/aspect-ratio.tsx"
+import { AspectRatio } from "../../_bundled/ui/aspect-ratio.js"
 
 export function AspectRatioDemo() {
   return (

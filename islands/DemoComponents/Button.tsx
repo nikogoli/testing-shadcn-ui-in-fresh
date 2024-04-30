@@ -1,4 +1,4 @@
-import { Button } from '../../components/ui/button.tsx'
+import { Button } from '../../_bundled/ui/button.js'
 
 export const ButtonDemo = () => {
   return <Button>Button</Button>

@@ -1,5 +1,5 @@
-import { Label } from "../../components/ui/label.tsx"
-import { Switch } from "../../components/ui/switch.tsx"
+import { Label } from "../../_bundled/ui/label.js"
+import { Switch } from "../../_bundled/ui/switch.js"
 
 export function SwitchDemo() {
   return (

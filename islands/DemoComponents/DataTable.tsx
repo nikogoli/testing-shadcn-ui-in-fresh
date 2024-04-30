@@ -18,8 +18,8 @@ import IconArrowsUpDown from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/arr
 import IconChevronDown from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/chevron-down.tsx"
 import IconDots from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/dots.tsx"
 
-import { Button } from "../../components/ui/button.tsx"
-import { Checkbox } from "../../components/ui/checkbox.tsx"
+import { Button } from "../../_bundled/ui/button.js"
+import { Checkbox } from "../../_bundled/ui/checkbox.js"
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -28,8 +28,8 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "../../components/ui/dropdown-menu.tsx"
-import { Input } from "../../components/ui/input.tsx"
+} from "../../_bundled/ui/dropdown-menu.js"
+import { Input } from "../../_bundled/ui/input.js"
 import {
   Table,
   TableBody,
@@ -37,7 +37,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "../../components/ui/table.tsx"
+} from "../../_bundled/ui/table.js"
 
 const data: Payment[] = [
   {

@@ -1,4 +1,4 @@
-import { Button } from '../../components/ui/button.tsx'
+import { Button } from '../../_bundled/ui/button.js'
 import {
   Dialog,
   DialogContent,
@@ -7,9 +7,9 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '../../components/ui/dialog.tsx'
-import { Input } from '../../components/ui/input.tsx'
-import { Label } from '../../components/ui/label.tsx'
+} from '../../_bundled/ui/dialog.js'
+import { Input } from '../../_bundled/ui/input.js'
+import { Label } from '../../_bundled/ui/label.js'
 
 export function DialogDemo() {
   return (

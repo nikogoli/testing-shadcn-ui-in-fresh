@@ -1,4 +1,4 @@
-import { Toggle } from '../../components/ui/toggle.tsx'
+import { Toggle } from '../../_bundled/ui/toggle.js'
 
 export function ToggleDemo() {
   return (

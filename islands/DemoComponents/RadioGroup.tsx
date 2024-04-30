@@ -1,5 +1,5 @@
-import { Label } from "../../components/ui/label.tsx"
-import { RadioGroup, RadioGroupItem } from "../../components/ui/radio-group.tsx"
+import { Label } from "../../_bundled/ui/label.js"
+import { RadioGroup, RadioGroupItem } from "../../_bundled/ui/radio-group.js"
 
 export function RadioGroupDemo() {
   return (

@@ -1,4 +1,4 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../../components/ui/accordion.tsx'
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../../_bundled/ui/accordion.js'
 
 export function AccordionDemo() {
   return (

@@ -6,7 +6,7 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "../../components/ui/select.tsx"
+} from "../../_bundled/ui/select.js"
 
 export function SelectDemo() {
   return (

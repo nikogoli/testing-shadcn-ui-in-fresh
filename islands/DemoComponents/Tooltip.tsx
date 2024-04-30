@@ -1,5 +1,5 @@
-import { Button } from '../../components/ui/button.tsx'
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../../components/ui/tooltip.tsx'
+import { Button } from '../../_bundled/ui/button.js'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../../_bundled/ui/tooltip.js'
 
 export function TooltipDemo() {
   return (

@@ -14,7 +14,7 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-} from '../../components/ui/context-menu.tsx'
+} from '../../_bundled/ui/context-menu.js'
 
 export function ContextMenuDemo() {
   return (

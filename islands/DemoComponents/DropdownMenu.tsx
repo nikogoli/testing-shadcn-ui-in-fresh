@@ -1,4 +1,4 @@
-import { Button } from "../../components/ui/button.tsx"
+import { Button } from "../../_bundled/ui/button.js"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,7 +12,7 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "../../components/ui/dropdown-menu.tsx"
+} from "../../_bundled/ui/dropdown-menu.js"
 
 export function DropdownMenuDemo() {
   return (

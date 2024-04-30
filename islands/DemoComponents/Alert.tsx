@@ -4,7 +4,7 @@ import {
   Alert,
   AlertDescription,
   AlertTitle,
-} from "../../components/ui/alert.tsx"
+} from "../../_bundled/ui/alert.js"
 
 export function AlertDemo() {
   return (

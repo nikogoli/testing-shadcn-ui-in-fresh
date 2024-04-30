@@ -1,7 +1,7 @@
-import { Button } from '../../components/ui/button.tsx'
-import { Input } from '../../components/ui/input.tsx'
-import { Label } from '../../components/ui/label.tsx'
-import { Popover, PopoverContent, PopoverTrigger } from '../../components/ui/popover.tsx'
+import { Button } from '../../_bundled/ui/button.js'
+import { Input } from '../../_bundled/ui/input.js'
+import { Label } from '../../_bundled/ui/label.js'
+import { Popover, PopoverContent, PopoverTrigger } from '../../_bundled/ui/popover.js'
 
 export function PopoverDemo() {
   return (

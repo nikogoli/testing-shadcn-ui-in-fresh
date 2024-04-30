@@ -1,6 +1,6 @@
-import { Button } from "../../components/ui/button.tsx"
-import { Input } from "../../components/ui/input.tsx"
-import { Label } from "../../components/ui/label.tsx"
+import { Button } from "../../_bundled/ui/button.js"
+import { Input } from "../../_bundled/ui/input.js"
+import { Label } from "../../_bundled/ui/label.js"
 import {
   Sheet,
   SheetContent,
@@ -9,7 +9,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "../../components/ui/sheet.tsx"
+} from "../../_bundled/ui/sheet.js"
 
 export function SheetDemo() {
   return (

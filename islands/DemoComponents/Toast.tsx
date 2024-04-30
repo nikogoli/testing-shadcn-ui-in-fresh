@@ -1,10 +1,10 @@
 "use client"
 
 import { VNode, JSX, Fragment } from "preact";
-import { Button } from "../../components/ui/button.tsx"
-import { ToastAction } from "../../components/ui/toast.tsx"
-import { Toaster } from "../../components/ui/toaster.tsx"
-import { useToast } from "../../components/ui/use-toast.ts"
+import { Button } from "../../_bundled/ui/button.js"
+import { ToastAction } from "../../_bundled/ui/toast.js"
+import { Toaster } from "../../_bundled/ui/toaster.js"
+import { useToast } from "../../_bundled/ui/use-toast.js"
 
 function ToastDemoBase() {
   const { toast } = useToast()
