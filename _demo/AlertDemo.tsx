@@ -6,6 +6,7 @@ import {
   AlertTitle,
 } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.3/components/alert.tsx"
 
+import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
@@ -17,11 +18,11 @@ import {
 
 export function AlertDemo() {
   return (
-    <Alert>
+    <Alert class="h-fit">
       <IconAlertCircle class="h-4 w-4" />
       <AlertTitle>Error</AlertTitle>
       <AlertDescription>
-        Your session has expired. Please log in again.
+        {"Your session has expired. Please log in again."}
       </AlertDescription>
     </Alert>
   )
@@ -31,25 +32,14 @@ export function AlertDemo() {
 
 export function AlertDemo() {
   return (
-    <div class="flex flex-col gap-4">
-      <div class="flex flex-col gap-3">
-        <div class="text-2xl">Preview</div>
-        <Alert class="">
-          <IconAlertCircle class="h-4 w-4" />
-          <AlertTitle>Error</AlertTitle>
-          <AlertDescription>
-            Your session has expired. Please log in again.
-          </AlertDescription>
-        </Alert>
-      </div>
-      <div class="flex flex-col gap-3">
-        <div class="text-2xl">Code</div>
-        <div class="bg-black py-4 px-6 rounded-xl flex flex-col gap-1 font-mono text-sm">
-          {Code.trim().split("\n").map(tx => {
-            return(<pre class="text-white">{tx == "" ? "　" : tx}</pre> )
-          })}
-        </div>
-      </div>
-    </div>
+    <DemoWrapper code_text={Code.trim()}>
+      <Alert class="h-fit">
+        <IconAlertCircle class="h-4 w-4" />
+        <AlertTitle>Error</AlertTitle>
+        <AlertDescription>
+          Your session has expired. Please log in again.
+        </AlertDescription>
+      </Alert>
+    </DemoWrapper>
   )
 }
