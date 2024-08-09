@@ -46,7 +46,7 @@ export default function ViewArea(props:{
   const { item_sig, testmode } = props
 
   return (
-    <div class="col-span-3 flex-col-center gap-12 overflow-hidden">
+    <div class="col-span-3 flex-col-center gap-12 overflow-y-scroll">
       {
         item_sig.value == "Accordion" ? testmode ? <AccordionDemoTest /> : <AccordionDemo />
           : item_sig.value == "Alert" ? testmode ? <AlertDemoTest /> : <AlertDemo />
