@@ -1,5 +1,6 @@
 import { AccordionDemo } from "../_examples/Accordion.tsx"
 import { AlertDemo } from "../_examples/Alert.tsx"
+import { AlertDemo as AlertDemoTest } from "../_demo/AlertDemo.tsx"
 import { AlertDialogDemo } from "../_examples/AlertDialog.tsx"
 import { AspectRatioDemo } from "../_examples/AspectRatio.tsx"
 import { BadgeDemo } from "../_examples/Badge.tsx"
@@ -36,14 +37,18 @@ import { ITEM_NAMES } from "../types.ts"
 
 type ITEM_NAMES_type = typeof ITEM_NAMES[number]
 
-export default function ViewArea(props:{item_sig: Signal<ITEM_NAMES_type>}) {
-  const { item_sig } = props
+
+export default function ViewArea(props:{
+  item_sig: Signal<ITEM_NAMES_type>,
+  testmode: boolean,
+}) {
+  const { item_sig, testmode } = props
 
   return (
     <div class="col-span-3 flex-col-center gap-12 overflow-hidden">
       {
         item_sig.value == "Accordion" ? <AccordionDemo />
-          : item_sig.value == "Alert" ? <AlertDemo />
+          : item_sig.value == "Alert" ? testmode ? <AlertDemoTest /> : <AlertDemo />
           : item_sig.value == "AlertDialog" ? <AlertDialogDemo />
           : item_sig.value == "AspectRatio" ? <AspectRatioDemo />
           : item_sig.value == "Badge" ? <BadgeDemo />
