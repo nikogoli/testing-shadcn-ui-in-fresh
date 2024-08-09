@@ -1,4 +1,5 @@
 import { AccordionDemo } from "../_examples/Accordion.tsx"
+import { AccordionDemo as AccordionDemoTest } from "../_demo/AccordionDemo.tsx"
 import { AlertDemo } from "../_examples/Alert.tsx"
 import { AlertDemo as AlertDemoTest } from "../_demo/AlertDemo.tsx"
 import { AlertDialogDemo } from "../_examples/AlertDialog.tsx"
@@ -47,7 +48,7 @@ export default function ViewArea(props:{
   return (
     <div class="col-span-3 flex-col-center gap-12 overflow-hidden">
       {
-        item_sig.value == "Accordion" ? <AccordionDemo />
+        item_sig.value == "Accordion" ? testmode ? <AccordionDemoTest /> : <AccordionDemo />
           : item_sig.value == "Alert" ? testmode ? <AlertDemoTest /> : <AlertDemo />
           : item_sig.value == "AlertDialog" ? <AlertDialogDemo />
           : item_sig.value == "AspectRatio" ? <AspectRatioDemo />
