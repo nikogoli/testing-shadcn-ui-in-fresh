@@ -11,8 +11,8 @@ import { ContextMenuDemo } from "../_demo/ContextMenuDemo.tsx"
 //import { ComboboxDemo } from "../_examples/Combobox.tsx"
 import { CommandDemo } from "../_demo/CommandDemo.tsx"
 import { DialogDemo } from "../_demo/DialogDemo.tsx"
-//import { HoverCardDemo } from '../_examples/HoverCard.tsx'
 import { DropdownMenuDemo } from '../_demo/DropdownMenuDemo.tsx'
+import { HoverCardDemo } from '../_demo/HoverCardDemo.tsx'
 import { InputDemo } from '../_demo/InputDemo.tsx'
 import { LabelDemo } from "../_demo/LabelDemo.tsx"
 //import { MenubarDemo } from '../_examples/Menubar.tsx'
@@ -59,6 +59,7 @@ export default function ViewArea(props:{
         : item_sig.value == "Command" ? <CommandDemo />
         : item_sig.value == "Dialog" ? <DialogDemo />
         : item_sig.value == "DropdownMenu" ? <DropdownMenuDemo />
+        : item_sig.value == "HoverCard" ? <HoverCardDemo />
         : item_sig.value == "Input" ? <InputDemo />
         : item_sig.value == "Label" ? <LabelDemo />
         : item_sig.value == "Skeleton" ? <SkeletonDemo />
@@ -68,7 +69,6 @@ export default function ViewArea(props:{
         /*
           
           : item_sig.value == "Combobox" ? <ComboboxDemo />
-          : item_sig.value == "HoverCard" ? <HoverCardDemo />
           
           : item_sig.value == "NavigationMenu" ? <NavigationMenuDemo />
           : item_sig.value == "Menubar" ? <MenubarDemo />
