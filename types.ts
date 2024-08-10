@@ -3,6 +3,7 @@ export const ITEM_NAMES = [
   "Alert",
   "AlertDialog",
   "AspectRatio",
+  "Avatar",
   "Badge",
   "Button",
   "Collapsible",
