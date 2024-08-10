@@ -8,14 +8,13 @@ import { ITEM_NAMES } from "../types.ts"
 type ITEM_NAMES_type = typeof ITEM_NAMES[number]
 
 
-export default function App(props:{testmode?: true}) {
+export default function App() {
   const item_sig = signal<ITEM_NAMES_type>("Accordion" as const)
-  const is_testmode = props.testmode ?? false
 
   return (
     <div class="App w-full h-screen p-8 grid grid-cols-4 gap-2 place-content-center">
       <SidePanel item_sig={item_sig} />
-      <ViewArea item_sig={item_sig} testmode={is_testmode} />
+      <ViewArea item_sig={item_sig} />
     </div>
   )
 }

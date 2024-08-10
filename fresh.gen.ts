@@ -5,7 +5,6 @@
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $index from "./routes/index.tsx";
-import * as $test_index from "./routes/test/index.tsx";
 import * as $App from "./islands/App.tsx";
 import * as $SidePanel from "./islands/SidePanel.tsx";
 import * as $ViewArea from "./islands/ViewArea.tsx";
@@ -16,7 +15,6 @@ const manifest = {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
     "./routes/index.tsx": $index,
-    "./routes/test/index.tsx": $test_index,
   },
   islands: {
     "./islands/App.tsx": $App,
