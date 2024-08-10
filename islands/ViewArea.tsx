@@ -10,7 +10,6 @@ import { CollapsibleDemo } from "../_demo/CollapsibleDemo.tsx"
 import { ContextMenuDemo } from "../_demo/ContextMenuDemo.tsx"
 //import { ComboboxDemo } from "../_examples/Combobox.tsx"
 import { CommandDemo } from "../_demo/CommandDemo.tsx"
-//import { DataTableDemo } from "../_examples/DataTable.tsx"
 import { DialogDemo } from "../_demo/DialogDemo.tsx"
 //import { DropdownMenuDemo } from '../_examples/DropdownMenu.tsx'
 //import { HoverCardDemo } from '../_examples/HoverCard.tsx'
@@ -68,7 +67,6 @@ export default function ViewArea(props:{
         /*
           
           : item_sig.value == "Combobox" ? <ComboboxDemo />
-          : item_sig.value == "DataTable" ? <DataTableDemo />
           : item_sig.value == "DropdownMenu" ? <DropdownMenuDemo />
           : item_sig.value == "HoverCard" ? <HoverCardDemo />
           
