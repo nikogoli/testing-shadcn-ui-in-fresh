@@ -11,7 +11,6 @@ export const ITEM_NAMES = [
   "Combobox",
   "Command",
   "ContextMenu",
-  "DataTable",
   "Dialog",
   "DropdownMenu",
   "HoverCard",
