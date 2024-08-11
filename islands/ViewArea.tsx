@@ -19,7 +19,7 @@ import { MenubarDemo } from '../_demo/MenubarDemo.tsx'
 import { NavigationMenuDemo } from '../_demo/NavigationMenuDemo.tsx'
 import { PopoverDemo } from '../_demo/PopoverDemo.tsx'
 import { RadioGroupDemo } from '../_demo/RadioGroupDemo.tsx'
-//import { SelectDemo } from '../_demo/Select.tsx'
+import { SelectDemo } from '../_demo/SelectDemo.tsx'
 //import { SheetDemo } from '../_demo/Sheet.tsx'
 import { SkeletonDemo } from '../_demo/SkeletonDemo.tsx'
 //import { SliderDemo } from '../_demo/Slider.tsx'
@@ -68,6 +68,7 @@ export default function ViewArea(props:{
         : item_sig.value == "NavigationMenu" ? <NavigationMenuDemo />
         : item_sig.value == "Popover" ? <PopoverDemo />
         : item_sig.value == "RadioGroup" ? <RadioGroupDemo />
+        : item_sig.value == "Select" ? <SelectDemo />
         : item_sig.value == "Skeleton" ? <SkeletonDemo />
         : item_sig.value == "Table" ? <TableDemo />
         : item_sig.value == "Textarea" ? <TextareaDemo />
@@ -75,7 +76,6 @@ export default function ViewArea(props:{
         /*
           
           
-          : item_sig.value == "Select" ? <SelectDemo />
           : item_sig.value == "Sheet" ? <SheetDemo />
           
           : item_sig.value == "Slider" ? <SliderDemo />
