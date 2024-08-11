@@ -8,7 +8,7 @@ import { ButtonDemo } from "../_demo/ButtonDemo.tsx"
 import { CheckboxDemo } from "../_demo/CheckboxDemo.tsx"
 import { CollapsibleDemo } from "../_demo/CollapsibleDemo.tsx"
 import { ContextMenuDemo } from "../_demo/ContextMenuDemo.tsx"
-//import { ComboboxDemo } from "../_demo/Combobox.tsx"
+import { ComboboxDemo } from "../_demo/ComboboxDemo.tsx"
 import { CommandDemo } from "../_demo/CommandDemo.tsx"
 import { DialogDemo } from "../_demo/DialogDemo.tsx"
 import { DropdownMenuDemo } from '../_demo/DropdownMenuDemo.tsx'
@@ -55,8 +55,9 @@ export default function ViewArea(props:{
         : item_sig.value == "Button" ? <ButtonDemo />
         : item_sig.value == "Checkbox"  ? <CheckboxDemo />
         : item_sig.value == "Collapsible" ? <CollapsibleDemo />
-        : item_sig.value == "ContextMenu" ? <ContextMenuDemo />
+        : item_sig.value == "Combobox" ? <ComboboxDemo />
         : item_sig.value == "Command" ? <CommandDemo />
+        : item_sig.value == "ContextMenu" ? <ContextMenuDemo />
         : item_sig.value == "Dialog" ? <DialogDemo />
         : item_sig.value == "DropdownMenu" ? <DropdownMenuDemo />
         : item_sig.value == "HoverCard" ? <HoverCardDemo />
@@ -70,7 +71,6 @@ export default function ViewArea(props:{
         : <></>
         /*
           
-          : item_sig.value == "Combobox" ? <ComboboxDemo />
           
           : item_sig.value == "NavigationMenu" ? <NavigationMenuDemo />
           : item_sig.value == "RadioGroup" ? <RadioGroupDemo />
