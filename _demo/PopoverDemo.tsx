@@ -1,3 +1,5 @@
+import { useState } from "preact/hooks"
+
 import { Button } from '../../testing_shadcn_ui_for_deno/components/button.tsx'
 import { Input } from '../../testing_shadcn_ui_for_deno/components/input.tsx'
 import { Label } from '../../testing_shadcn_ui_for_deno/components/label.tsx'
@@ -14,9 +16,10 @@ import { Popover, PopoverContent, PopoverTrigger } from '../../testing_shadcn_ui
 `
 
 export function PopoverDemo() {
+  const [open, setOpen] = useState(false)
   return (
-    <DemoWrapper code_text={Code.trim()} is_error={true}>
-      <Popover>
+    <DemoWrapper code_text={Code.trim()}>
+      <Popover open={open} onOpenChange={setOpen}>
         <PopoverTrigger asChild>
           <Button variant="outline" class="w-10 rounded-full p-0">
             <span class='i-lucide:settings-2 flex h-4 w-4'></span>
