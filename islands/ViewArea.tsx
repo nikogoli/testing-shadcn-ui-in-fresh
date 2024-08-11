@@ -15,8 +15,8 @@ import { DropdownMenuDemo } from '../_demo/DropdownMenuDemo.tsx'
 import { HoverCardDemo } from '../_demo/HoverCardDemo.tsx'
 import { InputDemo } from '../_demo/InputDemo.tsx'
 import { LabelDemo } from "../_demo/LabelDemo.tsx"
-//import { MenubarDemo } from '../_demo/Menubar.tsx'
 //import { PopoverDemo } from '../_demo/Popover.tsx'
+import { MenubarDemo } from '../_demo/MenubarDemo.tsx'
 //import { RadioGroupDemo } from '../_demo/RadioGroup.tsx'
 //import { SelectDemo } from '../_demo/Select.tsx'
 //import { SheetDemo } from '../_demo/Sheet.tsx'
@@ -62,6 +62,7 @@ export default function ViewArea(props:{
         : item_sig.value == "HoverCard" ? <HoverCardDemo />
         : item_sig.value == "Input" ? <InputDemo />
         : item_sig.value == "Label" ? <LabelDemo />
+        : item_sig.value == "Menubar" ? <MenubarDemo />
         : item_sig.value == "Skeleton" ? <SkeletonDemo />
         : item_sig.value == "Table" ? <TableDemo />
         : item_sig.value == "Textarea" ? <TextareaDemo />
@@ -71,7 +72,6 @@ export default function ViewArea(props:{
           : item_sig.value == "Combobox" ? <ComboboxDemo />
           
           : item_sig.value == "NavigationMenu" ? <NavigationMenuDemo />
-          : item_sig.value == "Menubar" ? <MenubarDemo />
           : item_sig.value == "Popover" ? <PopoverDemo />
           : item_sig.value == "RadioGroup" ? <RadioGroupDemo />
           : item_sig.value == "Select" ? <SelectDemo />
