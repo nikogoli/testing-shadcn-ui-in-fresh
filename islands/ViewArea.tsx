@@ -16,6 +16,7 @@ import { HoverCardDemo } from '../_demo/HoverCardDemo.tsx'
 import { InputDemo } from '../_demo/InputDemo.tsx'
 import { LabelDemo } from "../_demo/LabelDemo.tsx"
 import { MenubarDemo } from '../_demo/MenubarDemo.tsx'
+import { NavigationMenuDemo } from '../_demo/NavigationMenuDemo.tsx'
 import { PopoverDemo } from '../_demo/PopoverDemo.tsx'
 import { RadioGroupDemo } from '../_demo/RadioGroupDemo.tsx'
 //import { SelectDemo } from '../_demo/Select.tsx'
@@ -29,7 +30,7 @@ import { TextareaDemo } from '../_demo/TextareaDemo.tsx'
 //import { ToastDemo } from '../_demo/Toast.tsx'
 //import { ToggleDemo } from '../_demo/Toggle.tsx'
 //import { TooltipDemo } from '../_demo/Tooltip.tsx'
-//import { NavigationMenuDemo } from '../_demo/NavigationMenu.tsx'
+
 
 import { Signal } from "@preact/signals"
 
@@ -64,6 +65,7 @@ export default function ViewArea(props:{
         : item_sig.value == "Input" ? <InputDemo />
         : item_sig.value == "Label" ? <LabelDemo />
         : item_sig.value == "Menubar" ? <MenubarDemo />
+        : item_sig.value == "NavigationMenu" ? <NavigationMenuDemo />
         : item_sig.value == "Popover" ? <PopoverDemo />
         : item_sig.value == "RadioGroup" ? <RadioGroupDemo />
         : item_sig.value == "Skeleton" ? <SkeletonDemo />
@@ -73,7 +75,6 @@ export default function ViewArea(props:{
         /*
           
           
-          : item_sig.value == "NavigationMenu" ? <NavigationMenuDemo />
           : item_sig.value == "Select" ? <SelectDemo />
           : item_sig.value == "Sheet" ? <SheetDemo />
           

@@ -17,6 +17,7 @@ export const ITEM_NAMES = [
   "Input",
   "Label",
   "Menubar",
+  "NavigationMenu",
   "Popover",
   "RadioGroup",
   "Select",
@@ -30,5 +31,4 @@ export const ITEM_NAMES = [
   "Toast",
   "Toggle",
   "Tooltip",
-  "NavigationMenu",
 ] as const
