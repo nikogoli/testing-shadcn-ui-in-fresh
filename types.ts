@@ -6,6 +6,7 @@ export const ITEM_NAMES = [
   "Avatar",
   "Badge",
   "Button",
+  "Card",
   "Checkbox",
   "Collapsible",
   "Combobox",
