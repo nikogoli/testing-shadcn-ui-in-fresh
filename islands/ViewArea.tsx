@@ -23,8 +23,8 @@ import { SelectDemo } from '../_demo/SelectDemo.tsx'
 import { SheetDemo } from '../_demo/SheetDemo.tsx'
 import { SkeletonDemo } from '../_demo/SkeletonDemo.tsx'
 import { SliderDemo } from '../_demo/SliderDemo.tsx'
-//import { TabsDemo } from '../_demo/Tabs.tsx'
 import { SwitchDemo } from '../_demo/SwitchDemo.tsx'
+import { TabsDemo } from '../_demo/TabsDemo.tsx'
 import { TableDemo } from "../_demo/TableDemo.tsx"
 import { TextareaDemo } from '../_demo/TextareaDemo.tsx'
 //import { ToastDemo } from '../_demo/Toast.tsx'
@@ -74,11 +74,10 @@ export default function ViewArea(props:{
         : item_sig.value == "Skeleton" ? <SkeletonDemo />
         : item_sig.value == "Switch" ? <SwitchDemo />
         : item_sig.value == "Table" ? <TableDemo />
+        : item_sig.value == "Tabs" ? <TabsDemo />
         : item_sig.value == "Textarea" ? <TextareaDemo />
         : <></>
         /*
-          : item_sig.value == "Tabs" ? <TabsDemo />
-          
           : item_sig.value == "Toast" ? <ToastDemo />
           : item_sig.value == "Toggle" ? <ToggleDemo />
           : item_sig.value == "Tooltip" ? <TooltipDemo />
