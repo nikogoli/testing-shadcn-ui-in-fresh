@@ -36,7 +36,7 @@ import {
 
 export function MenubarDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()}>
+    <DemoWrapper code_text={Code.trim()} is_error={true}>
       <Menubar>
         <MenubarMenu>
           <MenubarTrigger>File</MenubarTrigger>
