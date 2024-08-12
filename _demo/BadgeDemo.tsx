@@ -11,9 +11,16 @@ export function BadgeDemo() {
 }
 `
 
+const info = {
+  title: "Badge",
+  text: "Displays a badge or a component that looks like a badge."
+}
+
+
+
 export function BadgeDemo() {
   return(
-    <DemoWrapper code_text={Code.trim()}>
+    <DemoWrapper code_text={Code.trim()} info={info} >
       <Badge variant="default">Badge</Badge>
     </DemoWrapper>
 )}

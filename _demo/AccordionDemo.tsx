@@ -35,10 +35,15 @@ export function AccordionDemo() {
   )
 }`
 
+const info = {
+  title: "Accordion",
+  text: "A vertically stacked set of interactive headings that each reveal a section of content."
+}
+
 
 export function AccordionDemo() {
   return (
-    <DemoWrapper preview_h={280} code_text={Code.trim()} place_class="justify-center">
+    <DemoWrapper code_text={Code.trim()} info={info} preview_h={280} place_class="justify-center">
       <Accordion type="single" collapsible class="w-[500px]">
         <AccordionItem value="item-1">
           <AccordionTrigger>Is it accessible?</AccordionTrigger>

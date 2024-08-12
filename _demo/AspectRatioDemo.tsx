@@ -21,10 +21,15 @@ export function AspectRatioDemo() {
 }
 `
 
+const info = {
+  title: "Aspect Ratio",
+  text: "Displays content within a desired ratio."
+}
+
 
 export function AspectRatioDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()} preview_h={300}>
+    <DemoWrapper code_text={Code.trim()} info={info} preview_h={300}>
       <div class="w-[415px]">
         <AspectRatio ratio={16 / 9} class="bg-muted">
           <img

@@ -29,10 +29,15 @@ export function AlertDemo() {
 }
 `
 
+const info = {
+  title: "Alert",
+  text: "Displays a callout for user attention."
+}
+
 
 export function AlertDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()}>
+    <DemoWrapper code_text={Code.trim()} info={info}>
       <Alert class="h-fit">
         <IconAlertCircle class="h-4 w-4" />
         <AlertTitle>Error</AlertTitle>

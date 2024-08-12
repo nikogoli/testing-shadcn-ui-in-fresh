@@ -11,9 +11,15 @@ export const ButtonDemo = () => {
 }
 `
 
+const info = {
+  title: "Button",
+  text: "Displays a button or a component that looks like a button."
+}
+
+
 export const ButtonDemo = () => {
   return (
-    <DemoWrapper code_text={Code.trim()}>
+    <DemoWrapper code_text={Code.trim()} info={info} >
       <Button>Button</Button>
     </DemoWrapper>
 )}

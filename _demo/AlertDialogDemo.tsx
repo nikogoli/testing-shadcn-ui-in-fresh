@@ -52,9 +52,14 @@ export function AlertDialogDemo() {
 }
 `
 
+const info = {
+  title: "Alert Dialog",
+  text: "A modal dialog that interrupts the user with important content and expects a response."
+}
+
 export function AlertDialogDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()}>
+    <DemoWrapper code_text={Code.trim()} info={info}>
       <AlertDialog>
         <AlertDialogTrigger asChild>
           <Button variant="outline">Open</Button>

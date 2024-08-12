@@ -24,10 +24,16 @@ export function AvatarDemo() {
 }
 `
 
+const info = {
+  title: "Avatar",
+  text: "An image element with a fallback for representing the user."
+}
+
+
 
 export function AvatarDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()}>
+    <DemoWrapper code_text={Code.trim()} info={info}>
       <Avatar>
         <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
         <AvatarFallback>CN</AvatarFallback>
