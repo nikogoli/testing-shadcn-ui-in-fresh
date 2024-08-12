@@ -1,10 +1,10 @@
 import { VNode, JSX, Fragment } from "preact";
-import { Button } from "../../testing_shadcn_ui_for_deno/components/button.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/button.tsx"
 import {
   ToastAction,
   Toaster,
   useToast
-} from "../../testing_shadcn_ui_for_deno/components/toast.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/toast.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx";
 

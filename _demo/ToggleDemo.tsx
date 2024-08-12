@@ -1,4 +1,4 @@
-import { Toggle } from '../../testing_shadcn_ui_for_deno/components/toggle.tsx'
+import { Toggle } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/toggle.tsx'
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 

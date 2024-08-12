@@ -1,4 +1,4 @@
-import { Button } from "../../testing_shadcn_ui_for_deno/components/button.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/button.tsx"
 import {
   Card,
   CardContent,
@@ -6,16 +6,16 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "../../testing_shadcn_ui_for_deno/components/card.tsx"
-import { Input } from "../../testing_shadcn_ui_for_deno/components/input.tsx"
-import { Label } from "../../testing_shadcn_ui_for_deno/components/label.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/card.tsx"
+import { Input } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/input.tsx"
+import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/label.tsx"
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "../../testing_shadcn_ui_for_deno/components/select.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/select.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 

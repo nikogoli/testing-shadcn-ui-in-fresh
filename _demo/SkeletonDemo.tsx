@@ -1,10 +1,10 @@
-import { Skeleton } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.5/components/skeleton.tsx'
+import { Skeleton } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/skeleton.tsx'
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
-import { Skeleton } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.5/components/skeleton.tsx'
+import { Skeleton } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/skeleton.tsx'
 
 export function SkeletonDemo() {
   return (

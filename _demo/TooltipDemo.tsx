@@ -1,5 +1,5 @@
-import { Button } from '../../testing_shadcn_ui_for_deno/components/button.tsx'
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../../testing_shadcn_ui_for_deno/components/tooltip.tsx'
+import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/button.tsx'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/tooltip.tsx'
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
