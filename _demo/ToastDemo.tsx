@@ -10,7 +10,49 @@ import DemoWrapper from "./_DemoWrapper.tsx";
 
 
 const Code = `
+import { VNode, JSX, Fragment } from "preact";
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/button.tsx"
+import {
+  ToastAction,
+  Toaster,
+  useToast,
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/toast.tsx"
+
+function ToastDemoBase() {
+  const { toast } = useToast()
+  return (
+    <Button
+      variant="outline"
+      onClick={() => {
+        toast({
+          title: "Scheduled: Catch up ",
+          description: "Friday, February 10, 2023 at 5:57 PM",
+          action: (
+            <ToastAction altText="Goto schedule to undo">Undo</ToastAction>
+          ) as VNode<typeof ToastAction> & JSX.SignalLike<string|undefined>
+        })
+      }}
+    >
+      Add to calendar
+    </Button>
+  )
+}
+
+export function ToastDemo(){
+  return (
+    <Fragment>
+      <ToastDemoBase />
+      <Toaster />
+    </Fragment>
+  )
+}
 `
+
+const info = {
+  title: "Toast",
+  text: "A succinct message that is displayed temporarily."
+}
+
 
 function ToastDemoBase() {
   const { toast } = useToast()
@@ -37,7 +79,7 @@ function ToastDemoBase() {
 
 export function ToastDemo(){
   return (
-    <DemoWrapper code_text={Code.trim()} is_error={true}>
+    <DemoWrapper code_text={Code.trim()} info={info} is_error={true}>
       <Fragment>
         <ToastDemoBase />
         <Toaster />
