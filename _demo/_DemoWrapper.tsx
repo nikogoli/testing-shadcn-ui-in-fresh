@@ -1,4 +1,5 @@
-import { ComponentProps } from "preact"
+import { useState } from "preact/hooks"
+import { ComponentProps, JSX } from "preact"
 import {
   Alert,
   AlertDescription,
@@ -7,6 +8,8 @@ import {
 import IconAlertCircle from "https://deno.land/x/tabler_icons_tsx@0.0.6/tsx/alert-circle.tsx"
 
 import { highlightText } from "../hooks/useHighLight.js"
+import useRender from "https://raw.githubusercontent.com/nikogoli/niko-mponents/0.0.4/hooks/useRender.ts"
+
 
 
 export default function DemoWrapper(props:{
@@ -14,18 +17,25 @@ export default function DemoWrapper(props:{
   info?: {title:string, text:string},
   preview_h?: number,
   place_class?: string,
-  is_error?: true,
+  has_error?: {type:"mejor"|"minor", text:string},
 } & ComponentProps<"div">) {
-  const { code_text, info, children, is_error } = props
+  const [st, toggle] = useState(false)
+
+  const { code_text, info, children, has_error } = props
+  const err_sty = ! has_error ? null
+    : has_error.type == "mejor" ? "border-red-700 text-red-700" : "border-fuchsia-700 text-fuchsia-700"
   const preview_h = props.preview_h ?? 200
   const place_class = props.place_class ?? "place-content-center"
   return (
     <div class="h-full w-full flex flex-col gap-8 p-6">
-      { !is_error ? <></>
-      : <Alert class="h-fit border-red-700 text-red-700">
-          <IconAlertCircle class="h-4 w-4 red-700" />
+      { !has_error ? <></>
+      : <Alert class={`h-fit w-[80%] ${err_sty!}`}>
+          <IconAlertCircle class={`h-4 w-4 ${err_sty!.split(" ")[1]}`} />
           <AlertTitle class="font-bold">CAUTION</AlertTitle>
-          <AlertDescription> This components does not work properly. </AlertDescription>
+          <AlertDescription class="flex flex-col gap-1">{
+            ["This components does not work properly.\n", ...has_error!.text.split("\n").map(t => "・ "+t)]
+              .map(tx => <p>{tx}</p>)
+          }</AlertDescription>
         </Alert> }
       <div class="flex flex-col gap-3">
         <div>
