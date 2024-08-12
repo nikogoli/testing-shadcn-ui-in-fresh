@@ -28,9 +28,9 @@ import { SwitchDemo } from '../_demo/SwitchDemo.tsx'
 import { TabsDemo } from '../_demo/TabsDemo.tsx'
 import { TableDemo } from "../_demo/TableDemo.tsx"
 import { TextareaDemo } from '../_demo/TextareaDemo.tsx'
-//import { ToggleDemo } from '../_demo/Toggle.tsx'
 //import { TooltipDemo } from '../_demo/Tooltip.tsx'
 import { ToastDemo } from '../_demo/ToastDemo.tsx'
+import { ToggleDemo } from '../_demo/ToggleDemo.tsx'
 
 
 import { Signal } from "@preact/signals"
@@ -79,9 +79,9 @@ export default function ViewArea(props:{
         : item_sig.value == "Tabs" ? <TabsDemo />
         : item_sig.value == "Textarea" ? <TextareaDemo />
         : item_sig.value == "Toast" ? <ToastDemo />
+        : item_sig.value == "Toggle" ? <ToggleDemo />
         : <></>
         /*
-          : item_sig.value == "Toggle" ? <ToggleDemo />
           : item_sig.value == "Tooltip" ? <TooltipDemo />
           */
       }
