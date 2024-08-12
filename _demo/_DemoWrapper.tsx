@@ -11,11 +11,12 @@ import { highlightText } from "../hooks/useHighLight.js"
 
 export default function DemoWrapper(props:{
   code_text: string,
+  info?: {title:string, text:string},
   preview_h?: number,
   place_class?: string,
   is_error?: true,
 } & ComponentProps<"div">) {
-  const { code_text, children, is_error } = props
+  const { code_text, info, children, is_error } = props
   const preview_h = props.preview_h ?? 200
   const place_class = props.place_class ?? "place-content-center"
   return (
@@ -26,8 +27,11 @@ export default function DemoWrapper(props:{
           <AlertTitle class="font-bold">CAUTION</AlertTitle>
           <AlertDescription> This components does not work properly. </AlertDescription>
         </Alert> }
-      <div class="flex flex-col gap-1">
-        <div class="text-2xl font-semibold">Preview</div>
+      <div class="flex flex-col gap-3">
+        <div>
+          <div class="text-2xl font-semibold">{info?.title ?? "Preview"}</div>
+          <p class="text-gray-500">{info?.text ?? ""}</p>
+        </div>
         <div class={`h-[${preview_h}px] p-4 border rounded-xl grid ${place_class}`}>
           {children}
         </div>
