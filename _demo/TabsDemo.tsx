@@ -73,10 +73,15 @@ const info = {
   text: "A set of layered sections of content—known as tab panels—that are displayed one at a time."
 }
 
+const has_error = {
+  type: "mejor" as const,
+  text: "Buttons open the incorrect content which another button has to do."
+}
+
 
 export function TabsDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()} info={info} preview_h={500} is_error={true} >
+    <DemoWrapper code_text={Code.trim()} info={info} preview_h={500} has_error={has_error} >
       <Tabs defaultValue="account" class="w-[400px]">
         <TabsList class="grid w-full grid-cols-2">
           <TabsTrigger value="account">Account</TabsTrigger>

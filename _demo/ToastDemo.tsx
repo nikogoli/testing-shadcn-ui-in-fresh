@@ -53,6 +53,10 @@ const info = {
   text: "A succinct message that is displayed temporarily."
 }
 
+const has_error = {
+  type: "minor" as const,
+  text: "The popup does not close automatically after closing the popup manually by clicking 'X' or 'Undo'"
+}
 
 function ToastDemoBase() {
   const { toast } = useToast()
@@ -79,7 +83,7 @@ function ToastDemoBase() {
 
 export function ToastDemo(){
   return (
-    <DemoWrapper code_text={Code.trim()} info={info} is_error={true}>
+    <DemoWrapper code_text={Code.trim()} info={info} has_error={has_error}>
       <Fragment>
         <ToastDemoBase />
         <Toaster />

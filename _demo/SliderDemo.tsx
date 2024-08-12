@@ -25,10 +25,14 @@ const info = {
   text: "An input where the user selects a value from within a given range."
 }
 
+const has_error = {
+  type: "mejor" as const,
+  text: "The slider's Thumb does not apper."
+}
 
 export function SliderDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()} info={info} is_error={true}>
+    <DemoWrapper code_text={Code.trim()} info={info} has_error={has_error}>
       <div class="w-[450px]">
         <Slider
           defaultValue={[50]}

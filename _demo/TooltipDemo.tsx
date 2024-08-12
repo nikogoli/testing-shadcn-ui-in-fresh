@@ -41,10 +41,14 @@ const info = {
   text: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it."
 }
 
+const has_error = {
+  type: "mejor" as const,
+  text: "The tooltip disappeares immediately."
+}
 
 export function TooltipDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()} info={info} >
+    <DemoWrapper code_text={Code.trim()} info={info} has_error={has_error} >
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger asChild>

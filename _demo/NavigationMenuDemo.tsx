@@ -140,6 +140,11 @@ const info = {
 }
 
 
+const has_error = {
+  type: "mejor" as const,
+  text: "Buttons improperly share their contents' sizes."
+}
+
 const components: { title: string; href: string; description: string }[] = [
   { title: 'Alert Dialog', href: '/docs/primitives/alert-dialog', description:
     'A modal dialog that interrupts the user with important content and expects a response.' },
@@ -237,7 +242,7 @@ function ListItem(props:{ title: string } & ComponentProps<"a">){
 
 export function NavigationMenuDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()} info={info} is_error={true}>
+    <DemoWrapper code_text={Code.trim()} info={info} has_error={has_error}>
       <NavigationMenu>
         <NavigationMenuList>
           <FirstItem />

@@ -130,9 +130,14 @@ const info = {
 }
 
 
+const has_error = {
+  type: "mejor" as const,
+  text: "Clicking buttons doe not properly oepn/close their contents.\nHovering on the leftest button improperly closes a content"
+}
+
 export function MenubarDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()} info={info} is_error={true}>
+    <DemoWrapper code_text={Code.trim()} info={info} has_error={has_error}>
       <Menubar>
         <MenubarMenu>
           <MenubarTrigger>File</MenubarTrigger>
