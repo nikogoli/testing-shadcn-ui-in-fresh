@@ -82,9 +82,15 @@ export function CommandDemo() {
 }
 `
 
+const info = {
+  title: "Command",
+  text: "Fast, composable, unstyled command menu for React."
+}
+
+
 export function CommandDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()} preview_h={360} place_class="justify-center">
+    <DemoWrapper code_text={Code.trim()} info={info} preview_h={360} place_class="justify-center">
       <Command class="rounded-lg border shadow-md h-fit">
         <CommandInput placeholder="Type a command or search..." />
         <CommandList>

@@ -125,9 +125,15 @@ export function DropdownMenuDemo() {
 }
 `
 
+const info = {
+  title: "Dropdown Menu",
+  text: "Displays a menu to the user — such as a set of actions or functions — triggered by a button."
+}
+
+
 export function DropdownMenuDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()}>
+    <DemoWrapper code_text={Code.trim()} info={info} >
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="outline">Open</Button>

@@ -56,13 +56,17 @@ export function CollapsibleDemo() {
 }
 `
 
+const info = {
+  title: "Collapsible",
+  text: "An interactive component which expands/collapses a panel."
+}
 
 
 export function CollapsibleDemo() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <DemoWrapper code_text={Code.trim()} preview_h={250} place_class="justify-center">
+    <DemoWrapper code_text={Code.trim()} info={info} preview_h={250} place_class="justify-center">
       <Collapsible
         open={isOpen}
         onOpenChange={setIsOpen}

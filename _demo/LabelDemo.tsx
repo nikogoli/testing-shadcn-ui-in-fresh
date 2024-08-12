@@ -17,9 +17,16 @@ export function LabelDemo() {
 }
 `
 
+const info = {
+  title: "Label",
+  text: "Renders an accessible label associated with controls."
+}
+
+
+
 export function LabelDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()}>
+    <DemoWrapper code_text={Code.trim()} info={info} >
       <div class="flex items-center space-x-2">
         <Checkbox id="terms" />
         <Label htmlFor="terms" class="cursor-pointer">Accept terms and conditions</Label>

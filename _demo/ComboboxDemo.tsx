@@ -91,6 +91,11 @@ export function ComboboxDemo() {
 }
 `
 
+const info = {
+  title: "Combobox",
+  text: "Autocomplete input and command palette with a list of suggestions."
+}
+
 
 const frameworks = [ { value: "next.js", label: "Next.js" },
                     { value: "sveltekit", label: "SvelteKit" },
@@ -103,7 +108,7 @@ export function ComboboxDemo() {
   const [open, setOpen] = useState(false)
   const [value, setValue] = useState("")
   return (
-    <DemoWrapper code_text={Code.trim()}>
+    <DemoWrapper code_text={Code.trim()} info={info} >
       <Popover open={open} onOpenChange={setOpen}>
         <PopoverTrigger asChild>
           <Button

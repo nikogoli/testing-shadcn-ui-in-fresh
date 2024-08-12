@@ -62,9 +62,15 @@ export function DialogDemo() {
 }
 `
 
+const info = {
+  title: "Dialog",
+  text: "A window overlaid on either the primary window or another dialog window, rendering the content underneath inert."
+}
+
+
 export function DialogDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()}>
+    <DemoWrapper code_text={Code.trim()} info={info} >
       <Dialog>
         <DialogTrigger asChild>
           <Button variant="outline">Edit Profile</Button>

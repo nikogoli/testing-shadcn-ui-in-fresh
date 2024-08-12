@@ -35,12 +35,18 @@ export function HoverCardDemo() {
     </HoverCard>
   )
 }
-
 `
+
+const info = {
+  title: "Hover Card",
+  text: "For sighted users to preview content available behind a link."
+}
+
+
 
 export function HoverCardDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()}>
+    <DemoWrapper code_text={Code.trim()} info={info} >
       <HoverCard>
         <HoverCardTrigger asChild>
           <Button variant="link">@nextjs</Button>

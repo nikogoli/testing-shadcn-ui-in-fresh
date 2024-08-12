@@ -11,9 +11,15 @@ export function InputDemo() {
 }
 `
 
+const info = {
+  title: "Input",
+  text: "Displays a form input field or a component that looks like an input field."
+}
+
+
 export function InputDemo() {
   return(
-    <DemoWrapper code_text={Code.trim()}>
+    <DemoWrapper code_text={Code.trim()} info={info} >
       <Input type="email" placeholder="Email" class="w-90% max-w-450px" />
     </DemoWrapper>
 )}

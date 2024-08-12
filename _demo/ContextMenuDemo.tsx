@@ -89,9 +89,15 @@ export function ContextMenuDemo() {
 }
 `
 
+const info = {
+  title: "ContextMenu",
+  text: "Displays a menu to the user — such as a set of actions or functions — triggered by a button."
+}
+
+
 export function ContextMenuDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()}>
+    <DemoWrapper code_text={Code.trim()} info={info} >
       <ContextMenu>
         <ContextMenuTrigger class="flex h-[150px] w-[300px] items-center justify-center rounded-md border border-dashed border-slate-200 text-sm dark:border-slate-700">
           Right click here
