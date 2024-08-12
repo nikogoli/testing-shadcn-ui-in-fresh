@@ -68,6 +68,13 @@ export function TableDemo() {
 }
 `
 
+const info = {
+  title: "Table",
+  text: "A responsive table component."
+}
+
+
+
 const invoices = [
   { invoice: "INV001", paymentStatus: "Paid",
     totalAmount: "$250.00", paymentMethod: "Credit Card" },
@@ -87,7 +94,7 @@ const invoices = [
 
 export function TableDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()} preview_h={500}>
+    <DemoWrapper code_text={Code.trim()} info={info} preview_h={500}>
       <div>
         <Table>
           <TableCaption>A list of your recent invoices.</TableCaption>

@@ -27,9 +27,15 @@ export function RadioGroupDemo() {
 }
 `
 
+const info = {
+  title: "Radio Group",
+  text: "A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time."
+}
+
+
 export function RadioGroupDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()}>
+    <DemoWrapper code_text={Code.trim()} info={info} >
       <RadioGroup defaultValue="comfortable">
         <div class="flex items-center space-x-2">
           <RadioGroupItem value="default" id="r1" />

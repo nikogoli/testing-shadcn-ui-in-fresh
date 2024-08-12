@@ -11,10 +11,15 @@ export function TextareaDemo() {
 }
 `
 
+const info = {
+  title: "Textarea",
+  text: "Displays a form textarea or a component that looks like a textarea."
+}
+
 
 export function TextareaDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()}>
+    <DemoWrapper code_text={Code.trim()} info={info} >
       <Textarea placeholder="Type your message here." class='!w-100' />
     </DemoWrapper>
   

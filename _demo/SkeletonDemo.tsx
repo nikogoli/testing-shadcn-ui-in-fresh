@@ -19,9 +19,15 @@ export function SkeletonDemo() {
 }
 `
 
+const info = {
+  title: "Skeleton",
+  text: "Use to show a placeholder while content is loading."
+}
+
+
 export function SkeletonDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()}>
+    <DemoWrapper code_text={Code.trim()} info={info} >
       <div class="flex items-center space-x-4">
         <Skeleton class="h-12 w-12 rounded-full" />
         <div class="space-y-2">
