@@ -1,4 +1,4 @@
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/button.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/button.tsx"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,13 +12,13 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/dropdown-menu.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/dropdown-menu.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/button.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/button.tsx"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -32,7 +32,7 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/dropdown-menu.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/dropdown-menu.tsx"
 
 export function DropdownMenuDemo() {
   return (

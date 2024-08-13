@@ -8,7 +8,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/navigation-menu.tsx'
+} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/navigation-menu.tsx'
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
@@ -24,7 +24,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/navigation-menu.tsx'
+} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/navigation-menu.tsx'
 
 const components: { title: string; href: string; description: string }[] = [
   { title: 'Alert Dialog', href: '/docs/primitives/alert-dialog', description:

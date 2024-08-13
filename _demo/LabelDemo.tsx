@@ -1,11 +1,11 @@
-import { Checkbox } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/checkbox.tsx"
-import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/label.tsx"
+import { Checkbox } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/checkbox.tsx"
+import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/label.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 const Code = `
-import { Checkbox } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/checkbox.tsx"
-import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/label.tsx"
+import { Checkbox } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/checkbox.tsx"
+import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/label.tsx"
 
 export function LabelDemo() {
   return (

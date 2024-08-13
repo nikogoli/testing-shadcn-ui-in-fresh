@@ -1,18 +1,18 @@
-import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/button.tsx'
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/card.tsx'
-import { Input } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/input.tsx'
-import { Label } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/label.tsx'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/tabs.tsx'
+import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/button.tsx'
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/card.tsx'
+import { Input } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/input.tsx'
+import { Label } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/label.tsx'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/tabs.tsx'
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
-import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/button.tsx'
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/card.tsx'
-import { Input } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/input.tsx'
-import { Label } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/label.tsx'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.6/components/tabs.tsx'
+import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/button.tsx'
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/card.tsx'
+import { Input } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/input.tsx'
+import { Label } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/label.tsx'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/tabs.tsx'
 
 export function TabsDemo() {
   return (
