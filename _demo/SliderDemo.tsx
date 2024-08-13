@@ -32,7 +32,7 @@ const has_error = {
 
 export function SliderDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()} info={info} has_error={has_error}>
+    <DemoWrapper code_text={Code.trim()} info={info} >
       <div class="w-[450px]">
         <Slider
           defaultValue={[50]}

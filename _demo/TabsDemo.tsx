@@ -81,7 +81,7 @@ const has_error = {
 
 export function TabsDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()} info={info} preview_h={500} has_error={has_error} >
+    <DemoWrapper code_text={Code.trim()} info={info} preview_h={500} >
       <Tabs defaultValue="account" class="w-[400px]">
         <TabsList class="grid w-full grid-cols-2">
           <TabsTrigger value="account">Account</TabsTrigger>
