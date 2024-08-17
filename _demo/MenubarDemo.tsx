@@ -137,7 +137,7 @@ const has_error = {
 
 export function MenubarDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()} info={info} has_error={has_error}>
+    <DemoWrapper code_text={Code.trim()} info={info} >
       <Menubar>
         <MenubarMenu>
           <MenubarTrigger>File</MenubarTrigger>

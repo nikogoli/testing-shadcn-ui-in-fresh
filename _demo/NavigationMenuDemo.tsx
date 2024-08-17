@@ -43,7 +43,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 
 const FirstItem = () => (
-  <NavigationMenuItem open={true} onOpenChange={() => true}>
+  <NavigationMenuItem>
     <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
     <NavigationMenuContent>
       <ul class="grid gap-3 p-6 w-[400px]">
@@ -162,7 +162,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 
 const FirstItem = () => (
-  <NavigationMenuItem open={true} onOpenChange={() => true}>
+  <NavigationMenuItem>
     <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
     <NavigationMenuContent>
       <ul class="grid gap-3 p-6 w-[400px]">
@@ -242,7 +242,7 @@ function ListItem(props:{ title: string } & ComponentProps<"a">){
 
 export function NavigationMenuDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()} info={info} has_error={has_error}>
+    <DemoWrapper code_text={Code.trim()} info={info} >
       <NavigationMenu>
         <NavigationMenuList>
           <FirstItem />
