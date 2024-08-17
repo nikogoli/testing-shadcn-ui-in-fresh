@@ -1,9 +1,9 @@
-import { Toggle } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/toggle.tsx'
+import { Toggle } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/toggle.tsx'
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 const Code = `
-import { Toggle } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/toggle.tsx'
+import { Toggle } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/toggle.tsx'
 
 export function ToggleDemo() {
   return (

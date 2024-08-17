@@ -1,14 +1,14 @@
-import { Avatar, AvatarFallback, AvatarImage } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/avatar.tsx'
-import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/button.tsx'
-import { HoverCard, HoverCardContent, HoverCardTrigger } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/hover-card.tsx'
+import { Avatar, AvatarFallback, AvatarImage } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/avatar.tsx'
+import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/button.tsx'
+import { HoverCard, HoverCardContent, HoverCardTrigger } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/hover-card.tsx'
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
-import { Avatar, AvatarFallback, AvatarImage } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/avatar.tsx'
-import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/button.tsx'
-import { HoverCard, HoverCardContent, HoverCardTrigger } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/hover-card.tsx'
+import { Avatar, AvatarFallback, AvatarImage } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/avatar.tsx'
+import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/button.tsx'
+import { HoverCard, HoverCardContent, HoverCardTrigger } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/hover-card.tsx'
 
 export function HoverCardDemo() {
   return (

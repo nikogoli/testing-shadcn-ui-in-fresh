@@ -4,7 +4,7 @@ import {
   Alert,
   AlertDescription,
   AlertTitle,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/alert.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/alert.tsx"
 import IconAlertCircle from "https://deno.land/x/tabler_icons_tsx@0.0.6/tsx/alert-circle.tsx"
 
 import { highlightText } from "../hooks/useHighLight.js"

@@ -1,22 +1,22 @@
 import { VNode, JSX, Fragment } from "preact";
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/button.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/button.tsx"
 import {
   ToastAction,
   Toaster,
   useToast
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/toast.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/toast.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx";
 
 
 const Code = `
 import { VNode, JSX, Fragment } from "preact";
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/button.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/button.tsx"
 import {
   ToastAction,
   Toaster,
   useToast,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/toast.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/toast.tsx"
 
 function ToastDemoBase() {
   const { toast } = useToast()

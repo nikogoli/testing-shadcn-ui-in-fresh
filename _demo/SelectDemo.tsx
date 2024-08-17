@@ -6,7 +6,7 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/select.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/select.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
@@ -20,7 +20,7 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/select.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/select.tsx"
 
 export function SelectDemo() {
   return (

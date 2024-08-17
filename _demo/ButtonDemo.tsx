@@ -1,10 +1,10 @@
-import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/button.tsx'
+import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/button.tsx'
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
-import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.7/components/button.tsx'
+import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/button.tsx'
 
 export const ButtonDemo = () => {
   return <Button>Button</Button>
