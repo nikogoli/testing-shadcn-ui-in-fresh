@@ -12,6 +12,22 @@ export default {
         background:'hsl(var(--background) / <alpha-value>)',
         foreground:'hsl(var(--foreground) / <alpha-value>)',
         destructive: 'hsl(var(--destructive) / <alpha-value>)'
+      },
+      extend: {
+        keyframes: {
+          "accordion-down": {
+            '0%': { height: '0' },
+            '100%': { height: 'var(--radix-accordion-content-height)' },
+          },
+          "accordion-up": {
+            '0%': { height: 'var(--radix-accordion-content-height)' },
+            '100%': { height: '0' },
+          },
+        },
+        animation: {
+          "accordion-down": 'accordion-down .2s ease-out',
+          "accordion-up": 'accordion-up .2s ease-out'
+        }
       }
     }
   }),
