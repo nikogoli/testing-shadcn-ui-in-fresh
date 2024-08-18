@@ -83,7 +83,7 @@ function ToastDemoBase() {
 
 export function ToastDemo(){
   return (
-    <DemoWrapper code_text={Code.trim()} info={info} has_error={has_error}>
+    <DemoWrapper code_text={Code.trim()} info={info} >
       <Fragment>
         <ToastDemoBase />
         <Toaster />
