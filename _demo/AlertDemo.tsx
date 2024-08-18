@@ -1,15 +1,18 @@
-import IconAlertCircle from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/alert-circle.tsx"
+import IconAlertCircle from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/alert-circle.tsx"
 
 import {
   Alert,
   AlertDescription,
   AlertTitle,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/alert.tsx"
+  AlertVariants,
+} from "../../testing_shadcn_ui_for_deno/components/alert.tsx"
+
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
+import IconAlertCircle from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/alert-circle.tsx"
 import {
   Alert,
   AlertDescription,
@@ -37,7 +40,7 @@ const info = {
 
 export function AlertDemo() {
   return (
-    <DemoWrapper code_text={Code.trim()} info={info}>
+    <DemoWrapper code_text={Code.trim()} info={info} variants={AlertVariants}>
       <Alert class="h-fit">
         <IconAlertCircle class="h-4 w-4" />
         <AlertTitle>Error</AlertTitle>
