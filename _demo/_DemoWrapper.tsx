@@ -1,9 +1,7 @@
-import { useState } from "preact/hooks"
-import { ComponentProps, JSX } from "preact"
+import { ComponentProps } from "preact"
 
 import WrapperAlert from "./_WrapperAlert.tsx"
 import { highlightText } from "../hooks/useHighLight.js"
-import useRender from "https://raw.githubusercontent.com/nikogoli/niko-mponents/0.0.4/hooks/useRender.ts"
 
 
 
@@ -14,8 +12,6 @@ export default function DemoWrapper(props:{
   place_class?: string,
   has_error?: {type:"mejor"|"minor", text:string},
 } & ComponentProps<"div">) {
-  const [st, toggle] = useState(false)
-
   const { code_text, info, children, has_error } = props
   const preview_h = props.preview_h ?? 200
   const place_class = props.place_class ?? "place-content-center"
@@ -27,7 +23,7 @@ export default function DemoWrapper(props:{
           <div class="text-2xl font-semibold">{info?.title ?? "Preview"}</div>
           <p class="text-gray-500">{info?.text ?? ""}</p>
         </div>
-        <div class={`h-[${preview_h}px] p-4 border rounded-xl grid ${place_class}`}>
+        <div class={`h-[${preview_h}px] p-4 border rounded-xl grid ${place_class} relative`}>
           {children}
         </div>
       </div>
