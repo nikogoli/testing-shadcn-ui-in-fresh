@@ -9,6 +9,8 @@ import {
 
 
 import DemoWrapper from "./_DemoWrapper.tsx"
+import WrapperSelect from "./_WrapperSelect.tsx"
+import { useState } from "preact/hooks"
 
 
 const Code = `
@@ -21,7 +23,7 @@ import {
 
 export function AlertDemo() {
   return (
-    <Alert class="h-fit">
+    <Alert class="h-fit" variant="destructive">
       <IconAlertCircle class="h-4 w-4" />
       <AlertTitle>Error</AlertTitle>
       <AlertDescription>
@@ -39,9 +41,14 @@ const info = {
 
 
 export function AlertDemo() {
+  const defVari = AlertVariants.defaultVariants.variant
+  const [actVariant, setVariant] = useState<keyof typeof AlertVariants["variants"]["variant"]>(defVari)
+  const variNames = Object.keys(AlertVariants.variants.variant) as Array<typeof AlertVariants["defaultVariants"]["variant"]>
+  
   return (
-    <DemoWrapper code_text={Code.trim()} info={info} variants={AlertVariants}>
-      <Alert class="h-fit">
+    <DemoWrapper code_text={Code.trim()} info={info}>
+      <WrapperSelect {...{setVariant, variNames, defVari}} />
+      <Alert class="h-fit" variant={actVariant}>
         <IconAlertCircle class="h-4 w-4" />
         <AlertTitle>Error</AlertTitle>
         <AlertDescription>
