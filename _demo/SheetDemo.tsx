@@ -1,6 +1,6 @@
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/button.tsx"
-import { Input } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/input.tsx"
-import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/label.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/button.tsx"
+import { Input } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/input.tsx"
+import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/label.tsx"
 import {
   Sheet,
   SheetContent,
@@ -9,15 +9,15 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/sheet.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/sheet.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/button.tsx"
-import { Input } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/input.tsx"
-import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/label.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/button.tsx"
+import { Input } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/input.tsx"
+import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/label.tsx"
 import {
   Sheet,
   SheetContent,
@@ -26,7 +26,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/sheet.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/sheet.tsx"
 
 export function SheetDemo() {
   return (

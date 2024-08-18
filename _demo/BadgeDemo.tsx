@@ -1,10 +1,10 @@
-import { Badge } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/badge.tsx"
+import { Badge } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/badge.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
-import { Badge } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/badge.tsx"
+import { Badge } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/badge.tsx"
 
 export function BadgeDemo() {
   return <Badge variant="default">Badge</Badge>

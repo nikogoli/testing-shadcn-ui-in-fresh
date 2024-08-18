@@ -1,23 +1,23 @@
-import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/button.tsx'
+import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/button.tsx'
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger
-} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/tooltip.tsx'
+} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/tooltip.tsx'
 
 import { useState } from "preact/hooks"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 const Code = `
-import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/button.tsx'
+import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/button.tsx'
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger
-} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/tool
+} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/tool
 import { useState } from "preact/hooks"
 
 export function TooltipDemo() {

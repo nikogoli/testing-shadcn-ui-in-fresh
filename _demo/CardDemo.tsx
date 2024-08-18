@@ -1,4 +1,4 @@
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/button.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/button.tsx"
 import {
   Card,
   CardContent,
@@ -6,22 +6,22 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/card.tsx"
-import { Input } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/input.tsx"
-import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/label.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/card.tsx"
+import { Input } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/input.tsx"
+import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/label.tsx"
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/select.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/select.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/button.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/button.tsx"
 import {
   Card,
   CardContent,
@@ -29,16 +29,16 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/card.tsx"
-import { Input } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/input.tsx"
-import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/label.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/card.tsx"
+import { Input } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/input.tsx"
+import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/label.tsx"
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/select.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/select.tsx"
 
 export function CardDemo() {
   return (

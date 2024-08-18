@@ -3,8 +3,8 @@ import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/collapsible.tsx"
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/button.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/collapsible.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/button.tsx"
 
 import IconCaretUpDown from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/caret-up-down.tsx"
 import DemoWrapper from "./_DemoWrapper.tsx"
@@ -15,8 +15,8 @@ import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/collapsible.tsx"
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/button.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/collapsible.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/button.tsx"
 import IconCaretUpDown from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/caret-up-down.tsx"
 
 

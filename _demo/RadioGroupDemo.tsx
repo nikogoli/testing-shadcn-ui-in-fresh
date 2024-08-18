@@ -1,11 +1,11 @@
-import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/label.tsx"
-import { RadioGroup, RadioGroupItem } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/radio-group.tsx"
+import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/label.tsx"
+import { RadioGroup, RadioGroupItem } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/radio-group.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 const Code = `
-import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/label.tsx"
-import { RadioGroup, RadioGroupItem } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.8/components/radio-group.tsx"
+import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/label.tsx"
+import { RadioGroup, RadioGroupItem } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/radio-group.tsx"
 
 export function RadioGroupDemo() {
   return (
