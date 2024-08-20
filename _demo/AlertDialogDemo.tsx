@@ -8,8 +8,8 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/alert-dialog.tsx'
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/button.tsx"
+} from '../../testing_shadcn_ui_for_deno/components/alert-dialog.tsx'
+import { Button } from "../../testing_shadcn_ui_for_deno/components/button.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
@@ -34,7 +34,7 @@ export function AlertDialogDemo() {
       <AlertDialogTrigger asChild>
         <Button variant="outline">Open</Button>
       </AlertDialogTrigger>
-      <AlertDialogContent class="relative md:-top-25">
+      <AlertDialogContent>
         <AlertDialogHeader>
           <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
           <AlertDialogDescription>
@@ -64,7 +64,7 @@ export function AlertDialogDemo() {
         <AlertDialogTrigger asChild>
           <Button variant="outline">Open</Button>
         </AlertDialogTrigger>
-        <AlertDialogContent class="relative md:-top-25">
+        <AlertDialogContent>
           <AlertDialogHeader>
             <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
             <AlertDialogDescription>
