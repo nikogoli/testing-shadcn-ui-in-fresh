@@ -67,12 +67,18 @@ export default {
                 transform: 'translate3d(0,0,0) scale3d(1,1,1) rotate(0)',
               }
             },
+            zoom95: {
+              '0%':{
+                opacity: '0',
+                transform: 'translate3d(0,0,0) scale3d(.95,.95,.95) rotate(0)',
+              }
+            },
             dialog: {
               '0%':{
                 opacity: '0',
                 transform: 'translate3d(-50%,-48%,0) scale3d(.95,.95,.95) rotate(0)',
               }
-            }
+            },
           },
           exit: {
             DEFAULT: {
@@ -81,19 +87,74 @@ export default {
                 transform: 'translate3d(0,0,0) scale3d(1,1,1) rotate(0)',
               }
             },
+            zoom95: {
+              'to':{
+                opacity: '0',
+                transform: 'translate3d(0,0,0) scale3d(.95,.95,.95) rotate(0)',
+              }
+            },
             dialog: {
               'to':{
                 opacity: '0',
                 transform: 'translate3d(-50%,-48%,0) scale3d(.95,.95,.95) rotate(0)',
               }
             }
-          }
+          },
+          slide: {
+            in: {
+              DEFAULT: {},
+              fromright: {
+                DEFAULT: {},
+                half95: {
+                  '0%':{
+                    opacity: '0',
+                    transform: 'translate3d(0.5rem,0,0) scale3d(.95,.95,.95) rotate(0)',
+                  }
+                }
+              },
+              fromleft: {
+                DEFAULT: {},
+                half95: {
+                  '0%':{
+                    opacity: '0',
+                    transform: 'translate3d(-0.5rem,0,0) scale3d(.95,.95,.95) rotate(0)',
+                  }
+                }
+              },
+              fromtop: {
+                DEFAULT: {},
+                half95: {
+                  '0%':{
+                  opacity: '0',
+                  transform: 'translate3d(0,-0.5rem,0) scale3d(.95,.95,.95) rotate(0)',
+                  }
+                }
+              },
+              frombottom: {
+                DEFAULT: {},
+                half95: {
+                  '0%':{
+                  opacity: '0',
+                  transform: 'translate3d(0,0.5rem,0) scale3d(.95,.95,.95) rotate(0)',
+                  }
+                }
+              }
+            },
+            out: {
+            }
+          },
         },
         animation: {
           "accordion-down": 'accordion-down .2s ease-out',
           "accordion-up": 'accordion-up .2s ease-out',
           "dialog-in": 'enter-dialog .15s',
           "dialog-out": 'exit-dialog .15s',
+          "slidein-fromright": 'slide-in-fromright-half95 .15s',
+          "slidein-fromleft": 'slide-in-fromleft-half95 .15s',
+          "slidein-fromtop": 'slide-in-fromtop-half95 .15s',
+          "slidein-frombottom": 'slide-in-frombottom-half95 .15s',
+          "zoomin-95": 'enter-zoom95 .15s',
+          "zoomout-95": 'exit-zoom95 .15s',
         }
       }
     }
