@@ -49,18 +49,51 @@ export default {
           sm: "calc(var(--radius) - 4px)",
         },
         keyframes: {
-          "accordion-down": {
-            '0%': { height: '0' },
-            '100%': { height: 'var(--radix-accordion-content-height)' },
+          accordion:{
+            DEFAULT:{},
+            down:{
+              '0%': { height: '0' },
+              '100%': { height: 'var(--radix-accordion-content-height)' },
+            },
+            up:{
+              '0%': { height: 'var(--radix-accordion-content-height)' },
+              '100%': { height: '0' },
+            }
           },
-          "accordion-up": {
-            '0%': { height: 'var(--radix-accordion-content-height)' },
-            '100%': { height: '0' },
+          enter: {
+            DEFAULT: {
+              '0%':{
+                opacity: '0',
+                transform: 'translate3d(0,0,0) scale3d(1,1,1) rotate(0)',
+              }
+            },
+            dialog: {
+              '0%':{
+                opacity: '0',
+                transform: 'translate3d(-50%,-48%,0) scale3d(.95,.95,.95) rotate(0)',
+              }
+            }
           },
+          exit: {
+            DEFAULT: {
+              "to":{
+                opacity: '0',
+                transform: 'translate3d(0,0,0) scale3d(1,1,1) rotate(0)',
+              }
+            },
+            dialog: {
+              'to':{
+                opacity: '0',
+                transform: 'translate3d(-50%,-48%,0) scale3d(.95,.95,.95) rotate(0)',
+              }
+            }
+          }
         },
         animation: {
           "accordion-down": 'accordion-down .2s ease-out',
-          "accordion-up": 'accordion-up .2s ease-out'
+          "accordion-up": 'accordion-up .2s ease-out',
+          "dialog-in": 'enter-dialog .15s',
+          "dialog-out": 'exit-dialog .15s',
         }
       }
     }
