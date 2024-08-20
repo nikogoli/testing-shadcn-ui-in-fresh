@@ -1,9 +1,9 @@
-import IconCalculator from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/calculator.tsx"
-import IconCalendar from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/calendar.tsx"
-import IconCreditCard from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/credit-card.tsx"
-import IconSettings from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/settings.tsx"
-import IconMoodSmile from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/mood-smile.tsx"
-import IconUser from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/user.tsx"
+import IconCalculator from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/calculator.tsx"
+import IconCalendar from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/calendar.tsx"
+import IconCreditCard from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/credit-card.tsx"
+import IconSettings from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/settings.tsx"
+import IconMoodSmile from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/mood-smile.tsx"
+import IconUser from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/user.tsx"
 
 import {
   Command,
@@ -14,18 +14,18 @@ import {
   CommandList,
   CommandSeparator,
   CommandShortcut,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/command.tsx"
+} from "../../testing_shadcn_ui_for_deno/components/command.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
-import IconCalculator from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/calculator.tsx"
-import IconCalendar from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/calendar.tsx"
-import IconCreditCard from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/credit-card.tsx"
-import IconSettings from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/settings.tsx"
-import IconMoodSmile from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/mood-smile.tsx"
-import IconUser from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/user.tsx"
+import IconCalculator from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/calculator.tsx"
+import IconCalendar from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/calendar.tsx"
+import IconCreditCard from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/credit-card.tsx"
+import IconSettings from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/settings.tsx"
+import IconMoodSmile from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/mood-smile.tsx"
+import IconUser from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/user.tsx"
 
 import {
   Command,
@@ -53,7 +53,7 @@ export function CommandDemo() {
             <IconMoodSmile class="mr-2 h-4 w-4" />
             <span>{"Search Emoji"}</span>
           </CommandItem>
-          <CommandItem>
+          <CommandItem disabled>
             <IconCalculator class="mr-2 h-4 w-4" />
             <span>{"Calculator"}</span>
           </CommandItem>
@@ -104,7 +104,7 @@ export function CommandDemo() {
               <IconMoodSmile class="mr-2 h-4 w-4" />
               <span>Search Emoji</span>
             </CommandItem>
-            <CommandItem>
+            <CommandItem disabled>
               <IconCalculator class="mr-2 h-4 w-4" />
               <span>Calculator</span>
             </CommandItem>
