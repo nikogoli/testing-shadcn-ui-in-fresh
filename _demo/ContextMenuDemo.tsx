@@ -2,10 +2,8 @@ import {
   ContextMenu,
   ContextMenuCheckboxItem,
   ContextMenuContent,
-  ContextMenuGroup,
   ContextMenuItem,
   ContextMenuLabel,
-  ContextMenuPortal,
   ContextMenuRadioGroup,
   ContextMenuRadioItem,
   ContextMenuSeparator,
@@ -14,7 +12,7 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/context-menu.tsx'
+} from '../../testing_shadcn_ui_for_deno/components/context-menu.tsx'
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
@@ -24,10 +22,8 @@ import {
   ContextMenu,
   ContextMenuCheckboxItem,
   ContextMenuContent,
-  ContextMenuGroup,
   ContextMenuItem,
   ContextMenuLabel,
-  ContextMenuPortal,
   ContextMenuRadioGroup,
   ContextMenuRadioItem,
   ContextMenuSeparator,
