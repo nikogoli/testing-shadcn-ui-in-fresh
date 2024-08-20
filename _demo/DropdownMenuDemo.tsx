@@ -1,4 +1,4 @@
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/button.tsx"
+import { Button } from "../../testing_shadcn_ui_for_deno/components/button.tsx"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,7 +12,22 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/dropdown-menu.tsx"
+} from "../../testing_shadcn_ui_for_deno/components/dropdown-menu.tsx"
+import IconBrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/brand-github.tsx"
+import IconCirclePlus from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/circle-plus.tsx"
+import IconCloud from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/cloud.tsx"
+import IconCreditCard from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/credit-card.tsx"
+import IconLifebuoy from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/lifebuoy.tsx"
+import IconLogout from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/logout.tsx"
+import IconMail from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/mail.tsx"
+import IconMessage from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/message.tsx"
+import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/plus.tsx"
+import IconSettings from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/settings.tsx"
+import IconUser from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/user.tsx"
+import IconUsers from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/users.tsx"
+import IconUserPlus from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/user-plus.tsx"
+import IconKeyboard from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/keyboard.tsx"
+
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
@@ -33,6 +48,20 @@ import {
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/dropdown-menu.tsx"
+import IconBrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/brand-github.tsx"
+import IconCirclePlus from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/circle-plus.tsx"
+import IconCloud from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/cloud.tsx"
+import IconCreditCard from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/credit-card.tsx"
+import IconLifebuoy from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/lifebuoy.tsx"
+import IconLogout from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/logout.tsx"
+import IconMail from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/mail.tsx"
+import IconMessage from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/message.tsx"
+import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/plus.tsx"
+import IconSettings from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/settings.tsx"
+import IconUser from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/user.tsx"
+import IconUsers from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/users.tsx"
+import IconUserPlus from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/user-plus.tsx"
+import IconKeyboard from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/keyboard.tsx"
 
 export function DropdownMenuDemo() {
   return (
@@ -45,22 +74,22 @@ export function DropdownMenuDemo() {
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuItem>
-            <span class="i-lucide:user mr-2 h-4 w-4" />
+            <IconUser class="mr-2 h-4 w-4" />
             <span>Profile</span>
             <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <span class="i-lucide:credit-card mr-2 h-4 w-4" />
+            <IconCreditCard class="mr-2 h-4 w-4" />
             <span>Billing</span>
             <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <span class="i-lucide:settings mr-2 h-4 w-4" />
+            <IconSettings class="mr-2 h-4 w-4" />
             <span>Settings</span>
             <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <span class="i-lucide:keyboard mr-2 h-4 w-4" />
+            <IconKeyboard class="mr-2 h-4 w-4" />
             <span>Keyboard shortcuts</span>
             <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
           </DropdownMenuItem>
@@ -68,54 +97,54 @@ export function DropdownMenuDemo() {
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuItem>
-            <span class="i-lucide:users mr-2 h-4 w-4" />
+            <IconUsers class="mr-2 h-4 w-4" />
             <span>Team</span>
           </DropdownMenuItem>
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
-              <span class="i-lucide:user-plus mr-2 h-4 w-4" />
+              <IconUserPlus class="mr-2 h-4 w-4" />
               <span>Invite users</span>
             </DropdownMenuSubTrigger>
             <DropdownMenuPortal>
               <DropdownMenuSubContent>
                 <DropdownMenuItem>
-                  <span class="i-lucide:mail mr-2 h-4 w-4" />
+                  <IconMail class="mr-2 h-4 w-4" />
                   <span>Email</span>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <span class="i-lucide:message-square mr-2 h-4 w-4" />
+                  <IconMessage class="mr-2 h-4 w-4" />
                   <span>Message</span>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem>
-                  <span class="i-lucide:plus-circle mr-2 h-4 w-4" />
+                  <IconCirclePlus class="mr-2 h-4 w-4" />
                   <span>More...</span>
                 </DropdownMenuItem>
               </DropdownMenuSubContent>
             </DropdownMenuPortal>
           </DropdownMenuSub>
           <DropdownMenuItem>
-            <span class="i-lucide:plus mr-2 h-4 w-4" />
+            <IconPlus class="mr-2 h-4 w-4" />
             <span>New Team</span>
             <DropdownMenuShortcut>⌘+T</DropdownMenuShortcut>
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
-          <span class="i-lucide:github mr-2 h-4 w-4" />
+          <IconBrandGithub class="mr-2 h-4 w-4" />
           <span>GitHub</span>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <span class="i-lucide:life-buoy mr-2 h-4 w-4" />
+          <IconLifebuoy class="mr-2 h-4 w-4" />
           <span>Support</span>
         </DropdownMenuItem>
         <DropdownMenuItem disabled>
-          <span class="i-lucide:cloud mr-2 h-4 w-4" />
+          <IconCloud class="mr-2 h-4 w-4" />
           <span>API</span>
         </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
-          <span class="i-lucide:log-out mr-2 h-4 w-4" />
+          <IconLogout class="mr-2 h-4 w-4" />
           <span>Log out</span>
           <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
         </DropdownMenuItem>
@@ -143,22 +172,22 @@ export function DropdownMenuDemo() {
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
             <DropdownMenuItem>
-              <span class="i-lucide:user mr-2 h-4 w-4" />
+              <IconUser class="mr-2 h-4 w-4" />
               <span>Profile</span>
               <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <span class="i-lucide:credit-card mr-2 h-4 w-4" />
+              <IconCreditCard class="mr-2 h-4 w-4" />
               <span>Billing</span>
               <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <span class="i-lucide:settings mr-2 h-4 w-4" />
+              <IconSettings class="mr-2 h-4 w-4" />
               <span>Settings</span>
               <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <span class="i-lucide:keyboard mr-2 h-4 w-4" />
+              <IconKeyboard class="mr-2 h-4 w-4" />
               <span>Keyboard shortcuts</span>
               <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
             </DropdownMenuItem>
@@ -166,54 +195,54 @@ export function DropdownMenuDemo() {
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
             <DropdownMenuItem>
-              <span class="i-lucide:users mr-2 h-4 w-4" />
+              <IconUsers class="mr-2 h-4 w-4" />
               <span>Team</span>
             </DropdownMenuItem>
             <DropdownMenuSub>
               <DropdownMenuSubTrigger>
-                <span class="i-lucide:user-plus mr-2 h-4 w-4" />
+                <IconUserPlus class="mr-2 h-4 w-4" />
                 <span>Invite users</span>
               </DropdownMenuSubTrigger>
               <DropdownMenuPortal>
                 <DropdownMenuSubContent>
                   <DropdownMenuItem>
-                    <span class="i-lucide:mail mr-2 h-4 w-4" />
+                    <IconMail class="mr-2 h-4 w-4" />
                     <span>Email</span>
                   </DropdownMenuItem>
                   <DropdownMenuItem>
-                    <span class="i-lucide:message-square mr-2 h-4 w-4" />
+                    <IconMessage class="mr-2 h-4 w-4" />
                     <span>Message</span>
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
                   <DropdownMenuItem>
-                    <span class="i-lucide:plus-circle mr-2 h-4 w-4" />
+                    <IconCirclePlus class="mr-2 h-4 w-4" />
                     <span>More...</span>
                   </DropdownMenuItem>
                 </DropdownMenuSubContent>
               </DropdownMenuPortal>
             </DropdownMenuSub>
             <DropdownMenuItem>
-              <span class="i-lucide:plus mr-2 h-4 w-4" />
+              <IconPlus class="mr-2 h-4 w-4" />
               <span>New Team</span>
               <DropdownMenuShortcut>⌘+T</DropdownMenuShortcut>
             </DropdownMenuItem>
           </DropdownMenuGroup>
           <DropdownMenuSeparator />
           <DropdownMenuItem>
-            <span class="i-lucide:github mr-2 h-4 w-4" />
+            <IconBrandGithub class="mr-2 h-4 w-4" />
             <span>GitHub</span>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <span class="i-lucide:life-buoy mr-2 h-4 w-4" />
+            <IconLifebuoy class="mr-2 h-4 w-4" />
             <span>Support</span>
           </DropdownMenuItem>
           <DropdownMenuItem disabled>
-            <span class="i-lucide:cloud mr-2 h-4 w-4" />
+            <IconCloud class="mr-2 h-4 w-4" />
             <span>API</span>
           </DropdownMenuItem>
           <DropdownMenuSeparator />
           <DropdownMenuItem>
-            <span class="i-lucide:log-out mr-2 h-4 w-4" />
+            <IconLogout class="mr-2 h-4 w-4" />
             <span>Log out</span>
             <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
           </DropdownMenuItem>
