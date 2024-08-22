@@ -113,6 +113,12 @@ export default {
                     opacity: '0',
                     transform: 'translate3d(13rem,0,0) scale3d(1,1,1) rotate(0)',
                   }
+                },
+                full: {
+                  '0%':{
+                    opacity: '0',
+                    transform: 'translate3d(100%,0,0) scale3d(1,1,1) rotate(0)',
+                  }
                 }
               },
               fromleft: {
@@ -127,21 +133,39 @@ export default {
                     opacity: '0',
                     transform: 'translate3d(-13rem,0,0) scale3d(1,1,1) rotate(0)',
                   }
+                },
+                full: {
+                  '0%':{
+                    opacity: '0',
+                    transform: 'translate3d(-100%,0,0) scale3d(1,1,1) rotate(0)',
+                  }
                 }
               },
               fromtop: {
                 half95: {
                   '0%':{
-                  opacity: '0',
-                  transform: 'translate3d(0,-0.5rem,0) scale3d(.95,.95,.95) rotate(0)',
+                    opacity: '0',
+                    transform: 'translate3d(0,-0.5rem,0) scale3d(.95,.95,.95) rotate(0)',
+                  }
+                },
+                full: {
+                  '0%':{
+                    opacity: '0',
+                    transform: 'translate3d(0,-100%,0) scale3d(1,1,1) rotate(0)',
                   }
                 }
               },
               frombottom: {
                 half95: {
                   '0%':{
-                  opacity: '0',
-                  transform: 'translate3d(0,0.5rem,0) scale3d(.95,.95,.95) rotate(0)',
+                    opacity: '0',
+                    transform: 'translate3d(0,0.5rem,0) scale3d(.95,.95,.95) rotate(0)',
+                  }
+                },
+                full: {
+                  '0%':{
+                    opacity: '0',
+                    transform: 'translate3d(0,100%,0) scale3d(1,1,1) rotate(0)',
                   }
                 }
               }
@@ -149,17 +173,45 @@ export default {
             out: {
               toright: {
                 52: {
-                  '0%':{
+                  'to':{
                     opacity: '0',
                     transform: 'translate3d(13rem,0,0) scale3d(1,1,1) rotate(0)',
+                  }
+                },
+                full: {
+                  'to':{
+                    opacity: '0',
+                    transform: 'translate3d(100%,0,0) scale3d(1,1,1) rotate(0)',
                   }
                 }
               },
               toleft: {
                 52: {
-                  '0%':{
+                  'to':{
                     opacity: '0',
                     transform: 'translate3d(-13rem,0,0) scale3d(1,1,1) rotate(0)',
+                  }
+                },
+                full: {
+                  'to':{
+                    opacity: '0',
+                    transform: 'translate3d(-100%,0,0) scale3d(1,1,1) rotate(0)',
+                  }
+                }
+              },
+              totop: {
+                full: {
+                  'to':{
+                    opacity: '0',
+                    transform: 'translate3d(0,-100%,0) scale3d(1,1,1) rotate(0)',
+                  }
+                }
+              },
+              tobottom: {
+                full: {
+                  'to':{
+                    opacity: '0',
+                    transform: 'translate3d(0,100%,0) scale3d(1,1,1) rotate(0)',
                   }
                 }
               },
@@ -179,8 +231,16 @@ export default {
           "slidein-frombottom": 'slide-in-frombottom-half95 .15s',
           "slidein-fromright52": 'slide-in-fromright-52 .15s',
           "slidein-fromleft52": 'slide-in-fromleft-52 .15s',
+          "slidein-fromrightfull": 'slide-in-fromright-full .3s',
+          "slidein-fromleftfull": 'slide-in-fromleft-full .3s',
+          "slidein-fromtopfull": 'slide-in-fromtop-full .3s',
+          "slidein-frombottomfull": 'slide-in-frombottom-full .3s',
           "slideout-toright52": 'slide-out-toright-52 .15s',
           "slideout-toleft52": 'slide-out-toleft-52 .15s',
+          "slideout-torightfull": 'slide-out-toright-full .15s',
+          "slideout-toleftfull": 'slide-out-toleft-full .15s',
+          "slideout-totopfull": 'slide-out-totop-full .15s',
+          "slideout-tobottomfull": 'slide-out-tobottom-full .15s',
           "zoomin-90": 'enter-zoom90 .15s',
           "zoomout-95": 'exit-zoom95 .15s',
         }
