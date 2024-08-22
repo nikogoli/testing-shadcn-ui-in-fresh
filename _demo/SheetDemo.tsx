@@ -1,17 +1,21 @@
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/button.tsx"
-import { Input } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/input.tsx"
-import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/label.tsx"
+import { Button } from "../../testing_shadcn_ui_for_deno/components/button.tsx"
+import { Input } from "../../testing_shadcn_ui_for_deno/components/input.tsx"
+import { Label } from "../../testing_shadcn_ui_for_deno/components/label.tsx"
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetDescription,
   SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/sheet.tsx"
+  sheetVariatns,
+} from "../../testing_shadcn_ui_for_deno/components/sheet.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
+import WrapperSelect from "./_WrapperSelect.tsx"
+import { useState } from "preact/hooks"
 
 
 const Code = `
@@ -20,6 +24,7 @@ import { Input } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/comp
 import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/label.tsx"
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetDescription,
   SheetFooter,
@@ -34,7 +39,7 @@ export function SheetDemo() {
       <SheetTrigger asChild>
         <Button variant="outline">Open</Button>
       </SheetTrigger>
-      <SheetContent position="right" size="sm">
+      <SheetContent side="right">
         <SheetHeader>
           <SheetTitle>Edit profile</SheetTitle>
           <SheetDescription>
@@ -56,7 +61,9 @@ export function SheetDemo() {
           </div>
         </div>
         <SheetFooter>
-          <Button type="submit">Save changes</Button>
+          <SheetClose asChild>
+            <Button type="submit">Save changes</Button>
+          </SheetClose>
         </SheetFooter>
       </SheetContent>
     </Sheet>
@@ -71,13 +78,17 @@ const info = {
 
 
 export function SheetDemo() {
+  const defVari = sheetVariatns.defaultVariants.side
+  const [actVariant, setVariant] = useState<keyof typeof sheetVariatns["variants"]["side"]>(defVari)
+  const variNames = Object.keys(sheetVariatns.variants.side) as Array<typeof sheetVariatns["defaultVariants"]["side"]>
   return (
     <DemoWrapper code_text={Code.trim()} info={info} >
+      <WrapperSelect  {...{setVariant, variNames, defVari}}/>
       <Sheet>
         <SheetTrigger asChild>
           <Button variant="outline">Open</Button>
         </SheetTrigger>
-        <SheetContent position="right" size="sm">
+        <SheetContent side={actVariant}>
           <SheetHeader>
             <SheetTitle>Edit profile</SheetTitle>
             <SheetDescription>
@@ -99,7 +110,9 @@ export function SheetDemo() {
             </div>
           </div>
           <SheetFooter>
-            <Button type="submit">Save changes</Button>
+            <SheetClose asChild>
+              <Button type="submit">Save changes</Button>
+            </SheetClose>
           </SheetFooter>
         </SheetContent>
       </Sheet>
