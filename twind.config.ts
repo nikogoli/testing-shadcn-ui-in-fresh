@@ -50,7 +50,6 @@ export default {
         },
         keyframes: {
           accordion:{
-            DEFAULT:{},
             down:{
               '0%': { height: '0' },
               '100%': { height: 'var(--radix-accordion-content-height)' },
@@ -61,16 +60,16 @@ export default {
             }
           },
           enter: {
-            DEFAULT: {
+            base: {
               '0%':{
                 opacity: '0',
                 transform: 'translate3d(0,0,0) scale3d(1,1,1) rotate(0)',
               }
             },
-            zoom95: {
+            zoom90: {
               '0%':{
                 opacity: '0',
-                transform: 'translate3d(0,0,0) scale3d(.95,.95,.95) rotate(0)',
+                transform: 'translate3d(0,0,0) scale3d(.9,.9,.9) rotate(0)',
               }
             },
             dialog: {
@@ -81,7 +80,7 @@ export default {
             },
           },
           exit: {
-            DEFAULT: {
+            base: {
               "to":{
                 opacity: '0',
                 transform: 'translate3d(0,0,0) scale3d(1,1,1) rotate(0)',
@@ -102,27 +101,35 @@ export default {
           },
           slide: {
             in: {
-              DEFAULT: {},
               fromright: {
-                DEFAULT: {},
                 half95: {
                   '0%':{
                     opacity: '0',
                     transform: 'translate3d(0.5rem,0,0) scale3d(.95,.95,.95) rotate(0)',
                   }
+                },
+                52: {
+                  '0%':{
+                    opacity: '0',
+                    transform: 'translate3d(13rem,0,0) scale3d(1,1,1) rotate(0)',
+                  }
                 }
               },
               fromleft: {
-                DEFAULT: {},
                 half95: {
                   '0%':{
                     opacity: '0',
                     transform: 'translate3d(-0.5rem,0,0) scale3d(.95,.95,.95) rotate(0)',
                   }
+                },
+                52: {
+                  '0%':{
+                    opacity: '0',
+                    transform: 'translate3d(-13rem,0,0) scale3d(1,1,1) rotate(0)',
+                  }
                 }
               },
               fromtop: {
-                DEFAULT: {},
                 half95: {
                   '0%':{
                   opacity: '0',
@@ -131,7 +138,6 @@ export default {
                 }
               },
               frombottom: {
-                DEFAULT: {},
                 half95: {
                   '0%':{
                   opacity: '0',
@@ -141,19 +147,41 @@ export default {
               }
             },
             out: {
+              toright: {
+                52: {
+                  '0%':{
+                    opacity: '0',
+                    transform: 'translate3d(13rem,0,0) scale3d(1,1,1) rotate(0)',
+                  }
+                }
+              },
+              toleft: {
+                52: {
+                  '0%':{
+                    opacity: '0',
+                    transform: 'translate3d(-13rem,0,0) scale3d(1,1,1) rotate(0)',
+                  }
+                }
+              },
             }
           },
         },
         animation: {
           "accordion-down": 'accordion-down .2s ease-out',
           "accordion-up": 'accordion-up .2s ease-out',
+          "in": 'enter-base .15s',
+          "out": 'exit-base .15s',
           "dialog-in": 'enter-dialog .15s',
           "dialog-out": 'exit-dialog .15s',
           "slidein-fromright": 'slide-in-fromright-half95 .15s',
           "slidein-fromleft": 'slide-in-fromleft-half95 .15s',
           "slidein-fromtop": 'slide-in-fromtop-half95 .15s',
           "slidein-frombottom": 'slide-in-frombottom-half95 .15s',
-          "zoomin-95": 'enter-zoom95 .15s',
+          "slidein-fromright52": 'slide-in-fromright-52 .15s',
+          "slidein-fromleft52": 'slide-in-fromleft-52 .15s',
+          "slideout-toright52": 'slide-out-toright-52 .15s',
+          "slideout-toleft52": 'slide-out-toleft-52 .15s',
+          "zoomin-90": 'enter-zoom90 .15s',
           "zoomout-95": 'exit-zoom95 .15s',
         }
       }
