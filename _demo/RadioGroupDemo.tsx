@@ -1,5 +1,5 @@
-import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/label.tsx"
-import { RadioGroup, RadioGroupItem } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/radio-group.tsx"
+import { Label } from "../../testing_shadcn_ui_for_deno/components/label.tsx"
+import { RadioGroup, RadioGroupItem } from "../../testing_shadcn_ui_for_deno/components/radio-group.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
@@ -21,6 +21,10 @@ export function RadioGroupDemo() {
       <div class="flex items-center space-x-2">
         <RadioGroupItem value="compact" id="r3" />
         <Label htmlFor="r3">Compact</Label>
+      </div>
+      <div class="flex items-center space-x-2">
+        <RadioGroupItem value="expandable" id="r4" disabled />
+        <Label htmlFor="r4">Expandable</Label>
       </div>
     </RadioGroup>
   )
@@ -48,6 +52,10 @@ export function RadioGroupDemo() {
         <div class="flex items-center space-x-2">
           <RadioGroupItem value="compact" id="r3" />
           <Label htmlFor="r3">Compact</Label>
+        </div>
+        <div class="flex items-center space-x-2">
+          <RadioGroupItem value="expandable" id="r4" disabled />
+          <Label htmlFor="r4">Expandable</Label>
         </div>
       </RadioGroup>
     </DemoWrapper>
