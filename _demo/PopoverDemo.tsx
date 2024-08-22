@@ -1,9 +1,10 @@
 import { useState } from "preact/hooks"
 
-import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/button.tsx'
-import { Input } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/input.tsx'
-import { Label } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/label.tsx'
-import { Popover, PopoverContent, PopoverTrigger } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/popover.tsx'
+import { Button } from '../../testing_shadcn_ui_for_deno/components/button.tsx'
+import { Input } from '../../testing_shadcn_ui_for_deno/components/input.tsx'
+import { Label } from '../../testing_shadcn_ui_for_deno/components/label.tsx'
+import { Popover, PopoverContent, PopoverTrigger } from '../../testing_shadcn_ui_for_deno/components/popover.tsx'
+import IconSettings from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/settings.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
@@ -13,6 +14,7 @@ import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/com
 import { Input } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/input.tsx'
 import { Label } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/label.tsx'
 import { Popover, PopoverContent, PopoverTrigger } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/popover.tsx'
+import IconSettings from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/settings.tsx"
 
 export function PopoverDemo() {
   const [open, setOpen] = useState(false)
@@ -20,7 +22,7 @@ export function PopoverDemo() {
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
         <Button variant="outline" class="w-10 rounded-full p-0">
-          <span class='i-lucide:settings-2 flex h-4 w-4'></span>
+          <IconSettings class='h-4 w-4'/>
           <span class="sr-only">Open popover</span>
         </Button>
       </PopoverTrigger>
@@ -68,7 +70,7 @@ export function PopoverDemo() {
       <Popover open={open} onOpenChange={setOpen}>
         <PopoverTrigger asChild>
           <Button variant="outline" class="w-10 rounded-full p-0">
-            <span class='i-lucide:settings-2 flex h-4 w-4'></span>
+            <IconSettings class='h-4 w-4'/>
             <span class="sr-only">Open popover</span>
           </Button>
         </PopoverTrigger>
