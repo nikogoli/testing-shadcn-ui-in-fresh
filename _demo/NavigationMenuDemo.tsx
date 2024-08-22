@@ -7,8 +7,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/navigation-menu.tsx'
+} from '../../testing_shadcn_ui_for_deno/components/navigation-menu.tsx'
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
@@ -23,7 +22,6 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/navigation-menu.tsx'
 
 const components: { title: string; href: string; description: string }[] = [
@@ -46,16 +44,16 @@ const FirstItem = () => (
   <NavigationMenuItem>
     <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
     <NavigationMenuContent>
-      <ul class="grid gap-3 p-6 w-[400px]">
+      <ul class="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
         <li class="row-span-3">
           <NavigationMenuLink asChild>
             <a
-              class="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+              class="flex h-full w-full select-none flex-col justify-end rounded-md bg-accent/50 p-6 no-underline outline-none focus:shadow-md"
               href="/"
             >
               <div class="mb-2 mt-4 text-lg font-medium">shadcn/ui</div>
               <p class="text-sm leading-tight text-muted-foreground">
-                Beautifully designed components built with Radix UI and Tailwind CSS.
+                Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.
               </p>
             </a>
           </NavigationMenuLink>
@@ -101,7 +99,22 @@ const SecondItem = () => (
 
 const ThirdItem = () => (
   <NavigationMenuItem>
-    <NavigationMenuLink class={navigationMenuTriggerStyle()}>Documentation</NavigationMenuLink>
+    <NavigationMenuTrigger>Documentation</NavigationMenuTrigger>
+    <NavigationMenuContent>
+      <NavigationMenuLink asChild>
+        <ul class="grid w-[400px] h-[200px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+          <li>
+            <NavigationMenuLink asChild>
+              <a class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none
+                  transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent
+                  focus:text-accent-foreground">
+                <div class="font-medium leading-none">Documentation</div>
+              </a>
+            </NavigationMenuLink>
+          </li>
+        </ul>
+      </NavigationMenuLink>
+    </NavigationMenuContent>
   </NavigationMenuItem>
 )
 
@@ -118,8 +131,8 @@ function ListItem(props:{ title: string } & ComponentProps<"a">){
       </a>
     </NavigationMenuLink>
   </li>
-)
-}
+)}
+
 
 export function NavigationMenuDemo() {
   return (
@@ -140,11 +153,6 @@ const info = {
 }
 
 
-const has_error = {
-  type: "mejor" as const,
-  text: "Buttons improperly share their contents' sizes."
-}
-
 const components: { title: string; href: string; description: string }[] = [
   { title: 'Alert Dialog', href: '/docs/primitives/alert-dialog', description:
     'A modal dialog that interrupts the user with important content and expects a response.' },
@@ -165,16 +173,16 @@ const FirstItem = () => (
   <NavigationMenuItem>
     <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
     <NavigationMenuContent>
-      <ul class="grid gap-3 p-6 w-[400px]">
+      <ul class="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
         <li class="row-span-3">
           <NavigationMenuLink asChild>
             <a
-              class="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+              class="flex h-full w-full select-none flex-col justify-end rounded-md bg-accent/50 p-6 no-underline outline-none focus:shadow-md"
               href="/"
             >
               <div class="mb-2 mt-4 text-lg font-medium">shadcn/ui</div>
               <p class="text-sm leading-tight text-muted-foreground">
-                Beautifully designed components built with Radix UI and Tailwind CSS.
+                Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.
               </p>
             </a>
           </NavigationMenuLink>
@@ -220,7 +228,22 @@ const SecondItem = () => (
 
 const ThirdItem = () => (
   <NavigationMenuItem>
-    <NavigationMenuLink class={navigationMenuTriggerStyle()}>Documentation</NavigationMenuLink>
+    <NavigationMenuTrigger>Documentation</NavigationMenuTrigger>
+    <NavigationMenuContent>
+      <NavigationMenuLink asChild>
+        <ul class="grid w-[400px] h-[200px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+          <li>
+            <NavigationMenuLink asChild>
+              <a class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none
+                  transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent
+                  focus:text-accent-foreground">
+                <div class="font-medium leading-none">Documentation</div>
+              </a>
+            </NavigationMenuLink>
+          </li>
+        </ul>
+      </NavigationMenuLink>
+    </NavigationMenuContent>
   </NavigationMenuItem>
 )
 
@@ -237,8 +260,8 @@ function ListItem(props:{ title: string } & ComponentProps<"a">){
       </a>
     </NavigationMenuLink>
   </li>
-)
-}
+)}
+
 
 export function NavigationMenuDemo() {
   return (
