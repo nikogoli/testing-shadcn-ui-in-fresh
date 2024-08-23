@@ -1,12 +1,15 @@
 import { VNode, JSX, Fragment } from "preact";
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/button.tsx"
+import { Button } from "../../testing_shadcn_ui_for_deno/components/button.tsx"
 import {
   ToastAction,
   Toaster,
-  useToast
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/toast.tsx"
+  useToast,
+  toastVariants
+} from "../../testing_shadcn_ui_for_deno/components/toast.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx";
+import WrapperSelect from "./_WrapperSelect.tsx"
+import { useState } from "preact/hooks"
 
 
 const Code = `
@@ -16,20 +19,21 @@ import {
   ToastAction,
   Toaster,
   useToast,
+  toastVariants
 } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/toast.tsx"
 
-function ToastDemoBase() {
+function ToastDemoBase(porps:{variant:keyof typeof toastVariants["variants"]["variant"]}) {
   const { toast } = useToast()
   return (
     <Button
-      variant="outline"
+      variant={porps.variant == "default" ? "outline" : "destructive"}
       onClick={() => {
         toast({
           title: "Scheduled: Catch up ",
           description: "Friday, February 10, 2023 at 5:57 PM",
           action: (
             <ToastAction altText="Goto schedule to undo">Undo</ToastAction>
-          ) as VNode<typeof ToastAction> & JSX.SignalLike<string|undefined>
+          ) as VNode<typeof ToastAction> & JSX.SignalLike<string|undefined>,
         })
       }}
     >
@@ -41,8 +45,8 @@ function ToastDemoBase() {
 export function ToastDemo(){
   return (
     <Fragment>
-      <ToastDemoBase />
-      <Toaster />
+      <ToastDemoBase variant="default" />
+      <Toaster variant="default" />
     </Fragment>
   )
 }
@@ -53,16 +57,12 @@ const info = {
   text: "A succinct message that is displayed temporarily."
 }
 
-const has_error = {
-  type: "minor" as const,
-  text: "The popup does not close automatically after closing the popup manually by clicking 'X' or 'Undo'"
-}
 
-function ToastDemoBase() {
+function ToastDemoBase(porps:{variant:keyof typeof toastVariants["variants"]["variant"]}) {
   const { toast } = useToast()
   return (
     <Button
-      variant="outline"
+      variant={porps.variant == "default" ? "outline" : "destructive"}
       onClick={() => {
         toast({
           title: "Scheduled: Catch up ",
@@ -82,11 +82,15 @@ function ToastDemoBase() {
 
 
 export function ToastDemo(){
+  const defVari = toastVariants.defaultVariants.variant
+  const [actVariant, setVariant] = useState<keyof typeof toastVariants["variants"]["variant"]>(defVari)
+  const variNames = Object.keys(toastVariants.variants.variant) as Array<typeof toastVariants["defaultVariants"]["variant"]>
   return (
     <DemoWrapper code_text={Code.trim()} info={info} >
+      <WrapperSelect {...{setVariant, variNames, defVari}} />
       <Fragment>
-        <ToastDemoBase />
-        <Toaster />
+        <ToastDemoBase variant={actVariant} />
+        <Toaster variant={actVariant} />
       </Fragment>
     </DemoWrapper>
   )
