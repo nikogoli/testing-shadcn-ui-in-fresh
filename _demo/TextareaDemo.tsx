@@ -1,4 +1,4 @@
-import { Textarea } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/textarea.tsx'
+import { Textarea } from '../../testing_shadcn_ui_for_deno/components/textarea.tsx'
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
@@ -20,7 +20,7 @@ const info = {
 export function TextareaDemo() {
   return (
     <DemoWrapper code_text={Code.trim()} info={info} >
-      <Textarea placeholder="Type your message here." class='!w-100' />
+      <Textarea placeholder="Type your message here." class='w-[400px]' />
     </DemoWrapper>
   
 )}
