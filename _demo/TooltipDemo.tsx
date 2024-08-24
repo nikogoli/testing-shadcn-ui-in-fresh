@@ -1,13 +1,13 @@
-import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/button.tsx'
+import { Button } from '../../testing_shadcn_ui_for_deno/components/button.tsx'
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger
-} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/tooltip.tsx'
+} from '../../testing_shadcn_ui_for_deno/components/tooltip.tsx'
+import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/plus.tsx"
 
 import { useState } from "preact/hooks"
-
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 const Code = `
@@ -18,6 +18,7 @@ import {
   TooltipProvider,
   TooltipTrigger
 } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/tool
+import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/plus.tsx"
 import { useState } from "preact/hooks"
 
 export function TooltipDemo() {
@@ -27,7 +28,7 @@ export function TooltipDemo() {
       <Tooltip open={isOpen} onOpenChange={setIsOpen} >
         <TooltipTrigger asChild>
           <Button variant="outline" class="w-10 rounded-full p-0">
-            <span class="i-lucide:plus flex h-4 w-4" />
+            <IconPlus class="flex h-4 w-4" />
             <span class="sr-only">Add</span>
           </Button>
         </TooltipTrigger>
@@ -45,10 +46,6 @@ const info = {
   text: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it."
 }
 
-/* const has_error = {
-  type: "mejor" as const,
-  text: "The tooltip disappeares immediately."
-}*/
 
 export function TooltipDemo() {
   const [isOpen, setIsOpen] = useState(false)
@@ -58,7 +55,7 @@ export function TooltipDemo() {
         <Tooltip open={isOpen} onOpenChange={setIsOpen} >
           <TooltipTrigger asChild>
             <Button variant="outline" class="w-10 rounded-full p-0">
-              <span class="i-lucide:plus flex h-4 w-4" />
+              <IconPlus class="flex h-4 w-4" />
               <span class="sr-only">Add</span>
             </Button>
           </TooltipTrigger>
