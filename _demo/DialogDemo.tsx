@@ -1,4 +1,4 @@
-import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/button.tsx'
+import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/button.tsx'
 import {
   Dialog,
   DialogContent,
@@ -7,15 +7,15 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '../../testing_shadcn_ui_for_deno/components/dialog.tsx'
-import { Input } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/input.tsx'
-import { Label } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/label.tsx'
+} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/dialog.tsx'
+import { Input } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/input.tsx'
+import { Label } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/label.tsx'
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
-import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/button.tsx'
+import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/button.tsx'
 import {
   Dialog,
   DialogContent,
@@ -24,9 +24,9 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/dialog.tsx'
-import { Input } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/input.tsx'
-import { Label } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/label.tsx'
+} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/dialog.tsx'
+import { Input } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/input.tsx'
+import { Label } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/label.tsx'
 
 export function DialogDemo() {
   return (

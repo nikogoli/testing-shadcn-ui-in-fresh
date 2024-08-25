@@ -2,22 +2,22 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage
-} from '../../testing_shadcn_ui_for_deno/components/avatar.tsx'
-import { Button } from '../../testing_shadcn_ui_for_deno/components/button.tsx'
+} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/avatar.tsx'
+import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/button.tsx'
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger
-} from '../../testing_shadcn_ui_for_deno/components/hover-card.tsx'
+} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/hover-card.tsx'
 import IconCalendarMonth from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/calendar-month.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
-import { Avatar, AvatarFallback, AvatarImage } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/avatar.tsx'
-import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/button.tsx'
-import { HoverCard, HoverCardContent, HoverCardTrigger } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/hover-card.tsx'
+import { Avatar, AvatarFallback, AvatarImage } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/avatar.tsx'
+import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/button.tsx'
+import { HoverCard, HoverCardContent, HoverCardTrigger } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/hover-card.tsx'
 import IconCalendarMonth from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/calendar-month.tsx"
 
 export function HoverCardDemo() {

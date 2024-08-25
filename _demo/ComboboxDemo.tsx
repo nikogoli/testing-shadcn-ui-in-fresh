@@ -3,19 +3,19 @@ import { useState } from "preact/hooks"
 import IconCheck from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/check.tsx"
 import IconBracketsAngle from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/brackets-angle.tsx"
 
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/button.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/button.tsx"
 import {
   Command,
   CommandEmpty,
   CommandGroup,
   CommandInput,
   CommandItem,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/command.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/command.tsx"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/popover.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/popover.tsx"
 
 
 import DemoWrapper from "./_DemoWrapper.tsx"
@@ -25,19 +25,19 @@ const Code = `
 import { useState } from "preact/hooks"
 import IconCheck from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/check.tsx"
 import IconBracketsAngle from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/brackets-angle.tsx"
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/button.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/button.tsx"
 import {
   Command,
   CommandEmpty,
   CommandGroup,
   CommandInput,
   CommandItem,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/command.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/command.tsx"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/popover.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/popover.tsx"
 
 const frameworks = [ { value: "next.js", label: "Next.js" },
                     { value: "sveltekit", label: "SvelteKit" },

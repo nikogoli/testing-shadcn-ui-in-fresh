@@ -1,11 +1,11 @@
-import { Slider } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/slider.tsx"
+import { Slider } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/slider.tsx"
 import { signal } from "@preact/signals"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
-import { Slider } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/slider.tsx"
+import { Slider } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/slider.tsx"
 import { signal } from "@preact/signals"
 
 export function SliderDemo() {

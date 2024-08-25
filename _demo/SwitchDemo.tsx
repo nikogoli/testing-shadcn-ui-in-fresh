@@ -1,12 +1,12 @@
-import { Label } from "../../testing_shadcn_ui_for_deno/components/label.tsx"
-import { Switch } from "../../testing_shadcn_ui_for_deno/components/switch.tsx"
+import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/label.tsx"
+import { Switch } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/switch.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
-import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/label.tsx"
-import { Switch } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/switch.tsx"
+import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/label.tsx"
+import { Switch } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/switch.tsx"
 
 export function SwitchDemo() {
   return (

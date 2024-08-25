@@ -5,7 +5,7 @@ import {
   AlertDescription,
   AlertTitle,
   AlertVariants,
-} from "../../testing_shadcn_ui_for_deno/components/alert.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/alert.tsx"
 
 
 import DemoWrapper from "./_DemoWrapper.tsx"
@@ -19,7 +19,7 @@ import {
   Alert,
   AlertDescription,
   AlertTitle,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/alert.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/alert.tsx"
 
 export function AlertDemo() {
   return (

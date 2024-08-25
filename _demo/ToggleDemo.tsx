@@ -1,7 +1,7 @@
 import {
   Toggle,
   toggleVariants,
-} from '../../testing_shadcn_ui_for_deno/components/toggle.tsx'
+} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/toggle.tsx'
 import IconBold from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/bold.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
@@ -9,7 +9,7 @@ import WrapperSelect from "./_WrapperSelect.tsx"
 import { useState } from "preact/hooks"
 
 const Code = `
-import { Toggle } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/toggle.tsx'
+import { Toggle } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/toggle.tsx'
 
 export function ToggleDemo() {
   return (

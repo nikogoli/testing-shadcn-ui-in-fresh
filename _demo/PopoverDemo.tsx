@@ -1,19 +1,19 @@
 import { useState } from "preact/hooks"
 
-import { Button } from '../../testing_shadcn_ui_for_deno/components/button.tsx'
-import { Input } from '../../testing_shadcn_ui_for_deno/components/input.tsx'
-import { Label } from '../../testing_shadcn_ui_for_deno/components/label.tsx'
-import { Popover, PopoverContent, PopoverTrigger } from '../../testing_shadcn_ui_for_deno/components/popover.tsx'
+import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/button.tsx'
+import { Input } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/input.tsx'
+import { Label } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/label.tsx'
+import { Popover, PopoverContent, PopoverTrigger } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/popover.tsx'
 import IconSettings from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/settings.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
-import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/button.tsx'
-import { Input } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/input.tsx'
-import { Label } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/label.tsx'
-import { Popover, PopoverContent, PopoverTrigger } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/popover.tsx'
+import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/button.tsx'
+import { Input } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/input.tsx'
+import { Label } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/label.tsx'
+import { Popover, PopoverContent, PopoverTrigger } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/popover.tsx'
 import IconSettings from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/settings.tsx"
 
 export function PopoverDemo() {

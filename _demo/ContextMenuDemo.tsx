@@ -12,7 +12,7 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-} from '../../testing_shadcn_ui_for_deno/components/context-menu.tsx'
+} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/context-menu.tsx'
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
@@ -32,7 +32,7 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/context-menu.tsx'
+} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/context-menu.tsx'
 
 export function ContextMenuDemo() {
   return (

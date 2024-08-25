@@ -1,4 +1,4 @@
-import { Badge, badgeVariants } from "../../testing_shadcn_ui_for_deno/components/badge.tsx"
+import { Badge, badgeVariants } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/badge.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 import WrapperSelect from "./_WrapperSelect.tsx"
@@ -6,7 +6,7 @@ import { useState } from "preact/hooks"
 
 
 const Code = `
-import { Badge } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/badge.tsx"
+import { Badge } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/badge.tsx"
 
 export function BadgeDemo() {
   return <Badge variant="default">Badge</Badge>
