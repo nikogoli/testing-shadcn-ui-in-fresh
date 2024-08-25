@@ -7,7 +7,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/dialog.tsx'
+} from '../../testing_shadcn_ui_for_deno/components/dialog.tsx'
 import { Input } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/input.tsx'
 import { Label } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/label.tsx'
 
@@ -32,12 +32,12 @@ export function DialogDemo() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline">{"Edit Profile"}</Button>
+        <Button variant="outline">Edit Profile</Button>
       </DialogTrigger>
       <DialogContent class="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>{"Edit profile"}</DialogTitle>
-          <DialogDescription>{"Make changes to your profile here. Click save when you're done."}</DialogDescription>
+          <DialogTitle>Edit profile</DialogTitle>
+          <DialogDescription>Make changes to your profile here. Click save when you're done.</DialogDescription>
         </DialogHeader>
         <div class="grid gap-4 py-4">
           <div class="grid grid-cols-4 items-center gap-4">
