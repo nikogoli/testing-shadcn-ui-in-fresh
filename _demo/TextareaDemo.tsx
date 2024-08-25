@@ -7,7 +7,7 @@ const Code = `
 import { Textarea } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.0.9/components/textarea.tsx'
 
 export function TextareaDemo() {
-  return <Textarea placeholder="Type your message here." class='!w-100' />
+  return <Textarea placeholder="Type your message here." class='w-[400px]' />
 }
 `
 
