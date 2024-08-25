@@ -73,11 +73,6 @@ const info = {
   text: "A set of layered sections of content—known as tab panels—that are displayed one at a time."
 }
 
-const has_error = {
-  type: "mejor" as const,
-  text: "Buttons open the incorrect content which another button has to do."
-}
-
 
 export function TabsDemo() {
   return (
