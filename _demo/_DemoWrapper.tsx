@@ -1,7 +1,7 @@
 import { ComponentProps } from "preact"
 
 import WrapperAlert from "./_WrapperAlert.tsx"
-import { highlightText } from "../hooks/useHighLight.js"
+import { highlightText } from "../hooks/useHighLight.ts"
 
 
 
