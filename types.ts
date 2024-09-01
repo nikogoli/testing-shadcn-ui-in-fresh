@@ -20,6 +20,7 @@ export const ITEM_NAMES = [
   "Label",
   "Menubar",
   "NavigationMenu",
+  "Pagination",
   "Popover",
   "RadioGroup",
   "Select",

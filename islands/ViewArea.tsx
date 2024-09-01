@@ -19,6 +19,7 @@ import { InputDemo } from '../_demo/InputDemo.tsx'
 import { LabelDemo } from "../_demo/LabelDemo.tsx"
 import { MenubarDemo } from '../_demo/MenubarDemo.tsx'
 import { NavigationMenuDemo } from '../_demo/NavigationMenuDemo.tsx'
+import { PaginationDemo } from '../_demo/PagenationDemo.tsx'
 import { PopoverDemo } from '../_demo/PopoverDemo.tsx'
 import { RadioGroupDemo } from '../_demo/RadioGroupDemo.tsx'
 import { SelectDemo } from '../_demo/SelectDemo.tsx'
@@ -70,6 +71,7 @@ export default function ViewArea(props:{
         : item_sig.value == "Label" ? <LabelDemo />
         : item_sig.value == "Menubar" ? <MenubarDemo />
         : item_sig.value == "NavigationMenu" ? <NavigationMenuDemo />
+        : item_sig.value == "Pagination" ? <PaginationDemo />
         : item_sig.value == "Popover" ? <PopoverDemo />
         : item_sig.value == "RadioGroup" ? <RadioGroupDemo />
         : item_sig.value == "Select" ? <SelectDemo />
