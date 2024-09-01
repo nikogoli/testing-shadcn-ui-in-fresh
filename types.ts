@@ -21,6 +21,7 @@ export const ITEM_NAMES = [
   "Menubar",
   "NavigationMenu",
   "Pagination",
+  "Progress",
   "Popover",
   "RadioGroup",
   "Select",
