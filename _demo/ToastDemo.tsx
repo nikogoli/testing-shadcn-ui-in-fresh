@@ -31,9 +31,7 @@ function ToastDemoBase(porps:{variant:keyof typeof toastVariants["variants"]["va
         toast({
           title: "Scheduled: Catch up ",
           description: "Friday, February 10, 2023 at 5:57 PM",
-          action: (
-            <ToastAction altText="Goto schedule to undo">Undo</ToastAction>
-          ) as VNode<typeof ToastAction> & JSX.SignalLike<string|undefined>,
+          action: <ToastAction altText="Goto schedule to undo">Undo</ToastAction>
         })
       }}
     >
@@ -67,11 +65,7 @@ function ToastDemoBase(porps:{variant:keyof typeof toastVariants["variants"]["va
         toast({
           title: "Scheduled: Catch up ",
           description: "Friday, February 10, 2023 at 5:57 PM",
-          action: (
-            <ToastAction altText="Goto schedule to undo">Undo</ToastAction>
-          ) as VNode<typeof ToastAction> & JSX.SignalLike<string|undefined>,
-          // <ToastAction />'s type is not VNode<typeof ToastAction> but VNode<any>,
-          // and somehow preact requires type SignalLike<string|undefined>. (nikogoli)
+          action: <ToastAction altText="Goto schedule to undo">Undo</ToastAction>
         })
       }}
     >
