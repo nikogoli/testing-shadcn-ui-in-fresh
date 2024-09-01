@@ -5,6 +5,7 @@ export const ITEM_NAMES = [
   "AspectRatio",
   "Avatar",
   "Badge",
+  "Breadcrumb",
   "Button",
   "Card",
   "Checkbox",

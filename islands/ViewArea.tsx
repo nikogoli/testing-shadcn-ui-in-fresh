@@ -4,6 +4,7 @@ import { AlertDialogDemo } from "../_demo/AlertDialogDemo.tsx"
 import { AspectRatioDemo } from "../_demo/AspectRatioDemo.tsx"
 import { AvatarDemo } from "../_demo/AvatarDemo.tsx"
 import { BadgeDemo } from "../_demo/BadgeDemo.tsx"
+import { BreadcrumbDemo } from "../_demo/BreadcrumbDemo.tsx"
 import { ButtonDemo } from "../_demo/ButtonDemo.tsx"
 import { CardDemo } from "../_demo/CardDemo.tsx"
 import { CheckboxDemo } from "../_demo/CheckboxDemo.tsx"
@@ -54,6 +55,7 @@ export default function ViewArea(props:{
         : item_sig.value == "AspectRatio" ? <AspectRatioDemo />
         : item_sig.value == "Avatar" ? <AvatarDemo />
         : item_sig.value == "Badge" ? <BadgeDemo />
+        : item_sig.value == "Breadcrumb" ? <BreadcrumbDemo />
         : item_sig.value == "Button" ? <ButtonDemo />
         : item_sig.value == "Card" ? <CardDemo />
         : item_sig.value == "Checkbox"  ? <CheckboxDemo />
