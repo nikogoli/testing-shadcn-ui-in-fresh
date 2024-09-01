@@ -1,4 +1,4 @@
-import { dedent } from "jsr:@qnighy/dedent/";
+import { dedent } from "https://esm.sh/@qnighy/dedent@0.1.1";
 
 /**
  * This script is based on "https://zenn.dev/kstdx/articles/2874b355035d22",
