@@ -9,7 +9,7 @@ const Code = `
 import { Badge } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/badge.tsx"
 
 export function BadgeDemo() {
-  return <Badge variant="default">Badge</Badge>
+  return (<Badge variant="default">Badge</Badge>)
 }
 `
 
