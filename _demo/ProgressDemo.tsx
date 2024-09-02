@@ -1,18 +1,37 @@
 import { Progress } from "../../testing_shadcn_ui_for_deno/components/progress.tsx"
-import { useState, useEffect, useRef } from "preact/hooks"
+import { useState, useEffect } from "preact/hooks"
+
+import { Button } from "../../testing_shadcn_ui_for_deno/components/button.tsx"
+import IconReload from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/reload.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
 import { Progress } from "../../testing_shadcn_ui_for_deno/components/progress.tsx"
-import { useState, useEffect, useRef } from "preact/hooks"
+import { useState, useEffect } from "preact/hooks"
+import { Button } from "../../testing_shadcn_ui_for_deno/components/button.tsx"
+import IconReload from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/reload.tsx"
 
-export function ToggleDemo() {
+export function ProgressDemo() {
+  const [progress, setProgress] = useState(-3)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (progress < 100){ setProgress(prev => prev+1) }
+      else { clearTimeout(timer) }
+    }, 80)
+    return () => clearTimeout(timer)
+  }, [])
+
   return (
-    <Toggle aria-label="Toggle italic" variant="default">
-      <IconBold class="h-4 w-4" />
-    </Toggle>
+    <div class="flex gap-6 items-center">
+      <Progress value={progress} class="w-80" />
+      <Button disabled={progress < 100} variant="outline" class="w-fit h-fit"
+              onClick={_ev => setProgress(-3)} >
+        <IconReload class="w-4 h-4" />
+      </Button>
+    </div>
   )
 }
 `
@@ -25,16 +44,25 @@ const info = {
 
 
 export function ProgressDemo() {
-  const [progress, setProgress] = useState(13)
+  const [progress, setProgress] = useState(-3)
 
   useEffect(() => {
-    const timer = setTimeout(() => setProgress(66), 500)
+    const timer = setInterval(() => {
+      if (progress < 100){ setProgress(prev => prev+1) }
+      else { clearTimeout(timer) }
+    }, 80)
     return () => clearTimeout(timer)
   }, [])
 
   return (
     <DemoWrapper code_text={Code.trim()} info={info} >
-      <Progress value={progress} class="w-[60%]" />
+      <div class="flex gap-6 items-center">
+        <Progress value={progress} class="w-80" />
+        <Button disabled={progress < 100} variant="outline" class="w-fit h-fit"
+                onClick={_ev => setProgress(-3)} >
+          <IconReload class="w-4 h-4" />
+        </Button>
+      </div>
     </DemoWrapper>
   )
 }
