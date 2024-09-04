@@ -23,6 +23,7 @@ import { PaginationDemo } from '../_demo/PagenationDemo.tsx'
 import { ProgressDemo } from '../_demo/ProgressDemo.tsx'
 import { PopoverDemo } from '../_demo/PopoverDemo.tsx'
 import { RadioGroupDemo } from '../_demo/RadioGroupDemo.tsx'
+import { ScrollAreaDemo } from '../_demo/ScrollareaDemo.tsx'
 import { SelectDemo } from '../_demo/SelectDemo.tsx'
 import { SeparatorDemo } from '../_demo/SeparatorDemo.tsx'
 import { SheetDemo } from '../_demo/SheetDemo.tsx'
@@ -77,6 +78,7 @@ export default function ViewArea(props:{
         : item_sig.value == "Progress" ? <ProgressDemo />
         : item_sig.value == "Popover" ? <PopoverDemo />
         : item_sig.value == "RadioGroup" ? <RadioGroupDemo />
+        : item_sig.value == "Scrollarea" ? <ScrollAreaDemo />
         : item_sig.value == "Select" ? <SelectDemo />
         : item_sig.value == "Separator" ? <SeparatorDemo />
         : item_sig.value == "Sheet" ? <SheetDemo />
