@@ -24,6 +24,7 @@ import { ProgressDemo } from '../_demo/ProgressDemo.tsx'
 import { PopoverDemo } from '../_demo/PopoverDemo.tsx'
 import { RadioGroupDemo } from '../_demo/RadioGroupDemo.tsx'
 import { SelectDemo } from '../_demo/SelectDemo.tsx'
+import { SeparatorDemo } from '../_demo/SeparatorDemo.tsx'
 import { SheetDemo } from '../_demo/SheetDemo.tsx'
 import { SkeletonDemo } from '../_demo/SkeletonDemo.tsx'
 import { SliderDemo } from '../_demo/SliderDemo.tsx'
@@ -77,6 +78,7 @@ export default function ViewArea(props:{
         : item_sig.value == "Popover" ? <PopoverDemo />
         : item_sig.value == "RadioGroup" ? <RadioGroupDemo />
         : item_sig.value == "Select" ? <SelectDemo />
+        : item_sig.value == "Separator" ? <SeparatorDemo />
         : item_sig.value == "Sheet" ? <SheetDemo />
         : item_sig.value == "Slider" ? <SliderDemo />
         : item_sig.value == "Skeleton" ? <SkeletonDemo />

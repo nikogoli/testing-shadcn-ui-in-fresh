@@ -25,6 +25,7 @@ export const ITEM_NAMES = [
   "Popover",
   "RadioGroup",
   "Select",
+  "Separator",
   "Sheet",
   "Skeleton",
   "Slider",
