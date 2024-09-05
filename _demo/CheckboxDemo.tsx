@@ -1,5 +1,3 @@
-import { Checkbox } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/checkbox.tsx"
-
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
@@ -33,22 +31,31 @@ const info = {
 
 
 export function CheckboxDemo() {
+  const createComp = async () => {
+    const { Checkbox } = await import("https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/checkbox.tsx")
+
+    const Demo = () => {
+      return (
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center space-x-2">
+            <Checkbox id="terms" />
+            <label htmlFor="terms" class="text-sm font-medium leading-none">
+              Accept terms and conditions
+            </label>
+          </div>
+          <div class="flex items-center space-x-2">
+            <Checkbox id="not" disabled />
+            <label htmlFor="not" class="text-sm font-medium leading-none">
+              Disabled
+            </label>
+          </div>
+        </div>
+      )
+    }
+    return Demo
+  }
+  
   return (
-    <DemoWrapper code_text={Code.trim()} info={info} >
-      <div class="flex flex-col gap-4">
-        <div class="flex items-center space-x-2">
-          <Checkbox id="terms" />
-          <label htmlFor="terms" class="text-sm font-medium leading-none">
-            Accept terms and conditions
-          </label>
-        </div>
-        <div class="flex items-center space-x-2">
-          <Checkbox id="not" disabled />
-          <label htmlFor="not" class="text-sm font-medium leading-none">
-            Disabled
-          </label>
-        </div>
-      </div>
-    </DemoWrapper>
+    <DemoWrapper code_text={Code.trim()} info={info} funcCompForDemo={createComp} />
   )
 }
