@@ -1,13 +1,3 @@
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/select.tsx"
-
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
@@ -48,24 +38,42 @@ const info = {
   text: "Displays a list of options for the user to pick from—triggered by a button."
 }
 
+
 export function SelectDemo() {
+  const createComp = async () => {
+    const {
+      Select,
+      SelectContent,
+      SelectGroup,
+      SelectItem,
+      SelectLabel,
+      SelectTrigger,
+      SelectValue,
+    } = await import("https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/select.tsx")
+
+    const Demo = () => {
+      return (
+        <Select>
+          <SelectTrigger class="w-[180px]">
+            <SelectValue placeholder="Select a fruit" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectGroup>
+              <SelectLabel>Fruits</SelectLabel>
+              <SelectItem value="apple">Apple</SelectItem>
+              <SelectItem value="banana">Banana</SelectItem>
+              <SelectItem value="blueberry">Blueberry</SelectItem>
+              <SelectItem value="grapes">Grapes</SelectItem>
+              <SelectItem value="pineapple">Pineapple</SelectItem>
+            </SelectGroup>
+          </SelectContent>
+        </Select>
+      )
+    }
+    return Demo
+  }
+  
   return (
-    <DemoWrapper code_text={Code.trim()} info={info} >
-      <Select>
-        <SelectTrigger class="w-[180px]">
-          <SelectValue placeholder="Select a fruit" />
-        </SelectTrigger>
-        <SelectContent>
-          <SelectGroup>
-            <SelectLabel>Fruits</SelectLabel>
-            <SelectItem value="apple">Apple</SelectItem>
-            <SelectItem value="banana">Banana</SelectItem>
-            <SelectItem value="blueberry">Blueberry</SelectItem>
-            <SelectItem value="grapes">Grapes</SelectItem>
-            <SelectItem value="pineapple">Pineapple</SelectItem>
-          </SelectGroup>
-        </SelectContent>
-      </Select>
-    </DemoWrapper>
+    <DemoWrapper code_text={Code.trim()} info={info} funcCompForDemo={createComp} />
   )
 }
