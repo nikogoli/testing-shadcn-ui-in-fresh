@@ -1,7 +1,5 @@
-import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/label.tsx"
-import { RadioGroup, RadioGroupItem } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/radio-group.tsx"
-
 import DemoWrapper from "./_DemoWrapper.tsx"
+
 
 const Code = `
 import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/label.tsx"
@@ -38,26 +36,36 @@ const info = {
 
 
 export function RadioGroupDemo() {
+  const createComp = async () => {
+    const { Label } = await import("https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/label.tsx")
+    const { RadioGroup, RadioGroupItem } = await import("https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/radio-group.tsx")
+
+    const Demo = () => {
+      return (
+        <RadioGroup defaultValue="comfortable">
+          <div class="flex items-center space-x-2">
+            <RadioGroupItem value="default" id="r1" />
+            <Label htmlFor="r1">Default</Label>
+          </div>
+          <div class="flex items-center space-x-2">
+            <RadioGroupItem value="comfortable" id="r2" />
+            <Label htmlFor="r2">Comfortable</Label>
+          </div>
+          <div class="flex items-center space-x-2">
+            <RadioGroupItem value="compact" id="r3" />
+            <Label htmlFor="r3">Compact</Label>
+          </div>
+          <div class="flex items-center space-x-2">
+            <RadioGroupItem value="expandable" id="r4" disabled />
+            <Label htmlFor="r4">Expandable</Label>
+          </div>
+        </RadioGroup>
+      )
+    }
+    return Demo
+  }
+
   return (
-    <DemoWrapper code_text={Code.trim()} info={info} >
-      <RadioGroup defaultValue="comfortable">
-        <div class="flex items-center space-x-2">
-          <RadioGroupItem value="default" id="r1" />
-          <Label htmlFor="r1">Default</Label>
-        </div>
-        <div class="flex items-center space-x-2">
-          <RadioGroupItem value="comfortable" id="r2" />
-          <Label htmlFor="r2">Comfortable</Label>
-        </div>
-        <div class="flex items-center space-x-2">
-          <RadioGroupItem value="compact" id="r3" />
-          <Label htmlFor="r3">Compact</Label>
-        </div>
-        <div class="flex items-center space-x-2">
-          <RadioGroupItem value="expandable" id="r4" disabled />
-          <Label htmlFor="r4">Expandable</Label>
-        </div>
-      </RadioGroup>
-    </DemoWrapper>
+    <DemoWrapper code_text={Code.trim()} info={info} funcCompForDemo={createComp} />
   )
 }
