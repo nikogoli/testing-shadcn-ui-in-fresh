@@ -1,5 +1,3 @@
-import { Textarea } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/textarea.tsx'
-
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
@@ -18,9 +16,16 @@ const info = {
 
 
 export function TextareaDemo() {
+  const createComp = async () => {
+    const { Textarea } = await import('https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/textarea.tsx')
+    const Demo = () => {
+      return (
+        <Textarea placeholder="Type your message here." class='w-[400px]' />
+      )
+    }
+    return Demo
+  }
+
   return (
-    <DemoWrapper code_text={Code.trim()} info={info} >
-      <Textarea placeholder="Type your message here." class='w-[400px]' />
-    </DemoWrapper>
-  
+    <DemoWrapper code_text={Code.trim()} info={info} funcCompForDemo={createComp} />
 )}
