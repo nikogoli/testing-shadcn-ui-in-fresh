@@ -1,10 +1,10 @@
-import { Input } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/input.tsx"
+import { Input } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/input.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
-import { Input } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/input.tsx"
+import { Input } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/input.tsx"
 
 export function InputDemo() {
   return (<Input type="email" placeholder="Email" class="w-90% max-w-450px" />)

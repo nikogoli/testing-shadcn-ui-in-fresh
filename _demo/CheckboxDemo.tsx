@@ -1,10 +1,10 @@
-import { Checkbox } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/checkbox.tsx"
+import { Checkbox } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/checkbox.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
-import { Checkbox } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/checkbox.tsx"
+import { Checkbox } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/checkbox.tsx"
 
 export function CheckboxDemo() {
   return (

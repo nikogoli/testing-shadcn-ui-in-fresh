@@ -6,7 +6,7 @@ import {
   PaginationLink,
   PaginationNext,
   PaginationPrevious,
-} from "../../testing_shadcn_ui_for_deno/components/pagination.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/pagination.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
@@ -20,7 +20,7 @@ import {
   PaginationLink,
   PaginationNext,
   PaginationPrevious,
-} from "../../testing_shadcn_ui_for_deno/components/pagination.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/pagination.tsx"
 
 export function BreadcrumbDemo() {
   return (

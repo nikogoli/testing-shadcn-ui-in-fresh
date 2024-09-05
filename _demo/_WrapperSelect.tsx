@@ -7,7 +7,7 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/select.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/select.tsx"
 
 
 export default function WrapperSelect<T extends string>(props:{

@@ -14,7 +14,7 @@ import {
   CommandList,
   CommandSeparator,
   CommandShortcut,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/command.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/command.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
@@ -36,7 +36,7 @@ import {
   CommandList,
   CommandSeparator,
   CommandShortcut,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/command.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/command.tsx"
 
 export function CommandDemo() {
   return (

@@ -6,13 +6,13 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "../../testing_shadcn_ui_for_deno/components/breadcrumb.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/breadcrumb.tsx"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "../../testing_shadcn_ui_for_deno/components/dropdown-menu.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/dropdown-menu.tsx"
 
 
 import DemoWrapper from "./_DemoWrapper.tsx"
@@ -27,13 +27,13 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "../../testing_shadcn_ui_for_deno/components/breadcrumb.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/breadcrumb.tsx"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "../../testing_shadcn_ui_for_deno/components/dropdown-menu.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/dropdown-menu.tsx"
 
 export function BreadcrumbDemo() {
   return (

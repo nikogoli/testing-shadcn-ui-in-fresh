@@ -2,7 +2,7 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/avatar.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/avatar.tsx"
  
 import DemoWrapper from "./_DemoWrapper.tsx"
 
@@ -12,7 +12,7 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/avatar.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/avatar.tsx"
 
 export function AvatarDemo() {
   return (

@@ -1,19 +1,19 @@
 import { useState } from "preact/hooks"
 
-import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/button.tsx'
-import { Input } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/input.tsx'
-import { Label } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/label.tsx'
-import { Popover, PopoverContent, PopoverTrigger } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/popover.tsx'
+import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/button.tsx'
+import { Input } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/input.tsx'
+import { Label } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/label.tsx'
+import { Popover, PopoverContent, PopoverTrigger } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/popover.tsx'
 import IconSettings from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/settings.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
-import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/button.tsx'
-import { Input } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/input.tsx'
-import { Label } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/label.tsx'
-import { Popover, PopoverContent, PopoverTrigger } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/popover.tsx'
+import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/button.tsx'
+import { Input } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/input.tsx'
+import { Label } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/label.tsx'
+import { Popover, PopoverContent, PopoverTrigger } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/popover.tsx'
 import IconSettings from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/settings.tsx"
 
 export function PopoverDemo() {

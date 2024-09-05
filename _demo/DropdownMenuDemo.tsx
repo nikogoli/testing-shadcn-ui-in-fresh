@@ -1,4 +1,4 @@
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/button.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/button.tsx"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,7 +12,7 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/dropdown-menu.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/dropdown-menu.tsx"
 import IconBrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/brand-github.tsx"
 import IconCirclePlus from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/circle-plus.tsx"
 import IconCloud from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/cloud.tsx"
@@ -33,7 +33,7 @@ import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/button.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/button.tsx"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -47,7 +47,7 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/dropdown-menu.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/dropdown-menu.tsx"
 import IconBrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/brand-github.tsx"
 import IconCirclePlus from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/circle-plus.tsx"
 import IconCloud from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/cloud.tsx"

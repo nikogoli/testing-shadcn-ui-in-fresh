@@ -1,10 +1,10 @@
-import { Separator } from "../../testing_shadcn_ui_for_deno/components/separator.tsx"
+import { Separator } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/separator.tsx"
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
 const Code = `
-import { Separator } from "../../testing_shadcn_ui_for_deno/components/separator.tsx"
+import { Separator } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/separator.tsx"
 
 export function SeparatorDemo() {
   return (

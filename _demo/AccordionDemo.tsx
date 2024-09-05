@@ -3,7 +3,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger
-} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/accordion.tsx'
+} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/accordion.tsx'
 
 import DemoWrapper from "./_DemoWrapper.tsx"
 
@@ -14,7 +14,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger
-} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.0/components/accordion.tsx'
+} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/accordion.tsx'
 
 export function AccordionDemo() {
   return (
