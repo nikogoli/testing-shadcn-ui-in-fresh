@@ -1,12 +1,3 @@
-import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/button.tsx'
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger
-} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/tooltip.tsx'
-import IconPlus from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/plus.tsx"
-
 import { useState } from "preact/hooks"
 import DemoWrapper from "./_DemoWrapper.tsx"
 
@@ -48,22 +39,38 @@ const info = {
 
 
 export function TooltipDemo() {
-  const [isOpen, setIsOpen] = useState(false)
+  const createComp = async () => {
+    const { Button } = await import('https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/button.tsx')
+    const {
+      Tooltip,
+      TooltipContent,
+      TooltipProvider,
+      TooltipTrigger
+    } = await import('https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/tooltip.tsx')
+    const { default: IconPlus } = await import("https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/plus.tsx")
+
+    const Demo = () => {
+      const [isOpen, setIsOpen] = useState(false)
+      return (
+        <TooltipProvider>
+          <Tooltip open={isOpen} onOpenChange={setIsOpen} >
+            <TooltipTrigger asChild>
+              <Button variant="outline" class="w-10 rounded-full p-0">
+                <IconPlus class="flex h-4 w-4" />
+                <span class="sr-only">Add</span>
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Add to library</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+      )
+    }
+    return Demo
+  }
+
   return (
-    <DemoWrapper code_text={Code.trim()} info={info} >
-      <TooltipProvider>
-        <Tooltip open={isOpen} onOpenChange={setIsOpen} >
-          <TooltipTrigger asChild>
-            <Button variant="outline" class="w-10 rounded-full p-0">
-              <IconPlus class="flex h-4 w-4" />
-              <span class="sr-only">Add</span>
-            </Button>
-          </TooltipTrigger>
-          <TooltipContent>
-            <p>Add to library</p>
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
-    </DemoWrapper>
+    <DemoWrapper code_text={Code.trim()} info={info} funcCompForDemo={createComp} />
   )
 }
