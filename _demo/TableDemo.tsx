@@ -1,13 +1,3 @@
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/table.tsx"
-
 import DemoWrapper from "./_DemoWrapper.tsx"
 
 
@@ -90,30 +80,49 @@ const invoices = [
     totalAmount: "$300.00", paymentMethod: "Credit Card" },
 ]
 
+
 export function TableDemo() {
-  return (
-    <DemoWrapper code_text={Code.trim()} info={info} preview_h={500}>
-      <Table>
-        <TableCaption>A list of your recent invoices.</TableCaption>
-        <TableHeader>
-          <TableRow>
-            <TableHead class="w-[100px]">Invoice</TableHead>
-            <TableHead>Status</TableHead>
-            <TableHead>Method</TableHead>
-            <TableHead class="text-right">Amount</TableHead>
-          </TableRow>
-        </TableHeader>
-        <TableBody>
-          {invoices.map((invoice) => (
-            <TableRow key={invoice.invoice}>
-              <TableCell class="font-medium">{invoice.invoice}</TableCell>
-              <TableCell>{invoice.paymentStatus}</TableCell>
-              <TableCell>{invoice.paymentMethod}</TableCell>
-              <TableCell class="text-right">{invoice.totalAmount}</TableCell>
+  const createComp = async () => {
+    const {
+      Table,
+      TableBody,
+      TableCaption,
+      TableCell,
+      TableHead,
+      TableHeader,
+      TableRow,
+    } = await import("https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/table.tsx")
+
+    const Demo = () => {
+      return (
+        <Table>
+          <TableCaption>A list of your recent invoices.</TableCaption>
+          <TableHeader>
+            <TableRow>
+              <TableHead class="w-[100px]">Invoice</TableHead>
+              <TableHead>Status</TableHead>
+              <TableHead>Method</TableHead>
+              <TableHead class="text-right">Amount</TableHead>
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </DemoWrapper>
+          </TableHeader>
+          <TableBody>
+            {invoices.map((invoice) => (
+              <TableRow key={invoice.invoice}>
+                <TableCell class="font-medium">{invoice.invoice}</TableCell>
+                <TableCell>{invoice.paymentStatus}</TableCell>
+                <TableCell>{invoice.paymentMethod}</TableCell>
+                <TableCell class="text-right">{invoice.totalAmount}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      )
+    }
+    return Demo
+  }
+  
+  return (
+    <DemoWrapper code_text={Code.trim()} info={info} funcCompForDemo={createComp}
+                 preview_h={500}/>
   )
 }
