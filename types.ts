@@ -36,5 +36,6 @@ export const ITEM_NAMES = [
   "Textarea",
   "Toast",
   "Toggle",
+  "ToggleGroup",
   "Tooltip",
 ] as const

@@ -35,6 +35,7 @@ import { TableDemo } from "../_demo/TableDemo.tsx"
 import { TextareaDemo } from '../_demo/TextareaDemo.tsx'
 import { ToastDemo } from '../_demo/ToastDemo.tsx'
 import { ToggleDemo } from '../_demo/ToggleDemo.tsx'
+import { ToggleGroupDemo } from '../_demo/ToggleGroupDemo.tsx'
 import { TooltipDemo } from '../_demo/TooltipDemo.tsx'
 
 
@@ -90,6 +91,7 @@ export default function ViewArea(props:{
         : item_sig.value == "Textarea" ? <TextareaDemo />
         : item_sig.value == "Toast" ? <ToastDemo />
         : item_sig.value == "Toggle" ? <ToggleDemo />
+        : item_sig.value == "ToggleGroup" ? <ToggleGroupDemo />
         : item_sig.value == "Tooltip" ? <TooltipDemo />
         : <></>
       }
