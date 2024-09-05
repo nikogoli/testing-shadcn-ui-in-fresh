@@ -1,5 +1,4 @@
-import { Badge, badgeVariants } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/badge.tsx"
-
+import { Fragment } from "preact";
 import DemoWrapper from "./_DemoWrapper.tsx"
 import WrapperSelect from "./_WrapperSelect.tsx"
 import { useState } from "preact/hooks"
@@ -20,12 +19,24 @@ const info = {
 
 
 export function BadgeDemo() {
-  const defVari = badgeVariants.defaultVariants.variant
-  const [actVariant, setVariant] = useState<keyof typeof badgeVariants["variants"]["variant"]>(defVari)
-  const variNames = Object.keys(badgeVariants.variants.variant) as Array<typeof badgeVariants["defaultVariants"]["variant"]>
+  const createComp = async () => {
+    const { Badge, badgeVariants } = await import("https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/badge.tsx")
+
+    const Demo = () => {
+      const defVari = badgeVariants.defaultVariants.variant
+      const [actVariant, setVariant] = useState<typeof badgeVariants["defaultVariants"]["variant"]>(defVari)
+      const variNames = Object.keys(badgeVariants.variants.variant) as Array<typeof badgeVariants["defaultVariants"]["variant"]>
+      
+      return(
+        <Fragment>
+          <WrapperSelect {...{setVariant, variNames, defVari}} />
+          <Badge variant={actVariant}>Badge</Badge>
+        </Fragment>
+      )
+    }
+    return Demo
+  }
+
   return(
-    <DemoWrapper code_text={Code.trim()} info={info} >
-      <WrapperSelect {...{setVariant, variNames, defVari}} />
-      <Badge variant={actVariant}>Badge</Badge>
-    </DemoWrapper>
+    <DemoWrapper code_text={Code.trim()} info={info} funcCompForDemo={createComp} />
 )}
