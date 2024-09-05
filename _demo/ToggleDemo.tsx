@@ -1,12 +1,8 @@
-import {
-  Toggle,
-  toggleVariants,
-} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/toggle.tsx'
-import IconBold from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/bold.tsx"
-
 import DemoWrapper from "./_DemoWrapper.tsx"
 import WrapperSelect from "./_WrapperSelect.tsx"
 import { useState } from "preact/hooks"
+import { Fragment } from "preact"
+
 
 const Code = `
 import { Toggle } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/toggle.tsx'
@@ -28,15 +24,30 @@ const info = {
 
 
 export function ToggleDemo() {
-  const defVari = toggleVariants.defaultVariants.variant
-  const [actVariant, setVariant] = useState<keyof typeof toggleVariants["variants"]["variant"]>(defVari)
-  const variNames = Object.keys(toggleVariants.variants.variant) as Array<typeof toggleVariants["defaultVariants"]["variant"]>
+  const createComp = async () => {
+    const {
+      Toggle,
+      toggleVariants,
+    } = await import('https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/toggle.tsx')
+    const { default: IconBold } = await import("https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/bold.tsx")
+  
+    const Demo = () => {
+      const defVari = toggleVariants.defaultVariants.variant
+      const [actVariant, setVariant] = useState<typeof toggleVariants["defaultVariants"]["variant"]>(defVari)
+      const variNames = Object.keys(toggleVariants.variants.variant) as Array<typeof toggleVariants["defaultVariants"]["variant"]>
+      return (
+        <Fragment>
+          <WrapperSelect {...{setVariant, variNames, defVari}} />
+          <Toggle aria-label="Toggle italic" variant={actVariant}>
+            <IconBold class="h-4 w-4" />
+          </Toggle>
+        </Fragment>
+      )
+    }
+    return Demo
+  }
+
   return (
-    <DemoWrapper code_text={Code.trim()} info={info} >
-      <WrapperSelect {...{setVariant, variNames, defVari}} />
-      <Toggle aria-label="Toggle italic" variant={actVariant}>
-        <IconBold class="h-4 w-4" />
-      </Toggle>
-    </DemoWrapper>
+    <DemoWrapper code_text={Code.trim()} info={info} funcCompForDemo={createComp} />
   )
 }
