@@ -37,6 +37,7 @@ import { ToastDemo } from '../_demo/ToastDemo.tsx'
 import { ToggleDemo } from '../_demo/ToggleDemo.tsx'
 import { ToggleGroupDemo } from '../_demo/ToggleGroupDemo.tsx'
 import { TooltipDemo } from '../_demo/TooltipDemo.tsx'
+import { NoneDemo } from "../_demo/_NoneDemo.tsx"
 
 
 import { Signal } from "@preact/signals"
@@ -93,6 +94,7 @@ export default function ViewArea(props:{
         : item_sig.value == "Toggle" ? <ToggleDemo />
         : item_sig.value == "ToggleGroup" ? <ToggleGroupDemo />
         : item_sig.value == "Tooltip" ? <TooltipDemo />
+        : item_sig.value == "NONE" ? <NoneDemo />
         : <></>
       }
     </div>

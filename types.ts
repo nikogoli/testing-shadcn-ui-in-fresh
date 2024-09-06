@@ -38,4 +38,5 @@ export const ITEM_NAMES = [
   "Toggle",
   "ToggleGroup",
   "Tooltip",
+  "NONE",
 ] as const

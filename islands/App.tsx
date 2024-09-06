@@ -9,7 +9,7 @@ type ITEM_NAMES_type = typeof ITEM_NAMES[number]
 
 
 export default function App() {
-  const item_sig = signal<ITEM_NAMES_type>("Accordion" as const)
+  const item_sig = signal<ITEM_NAMES_type>("NONE" as const)
 
   return (
     <div class="App w-full h-screen p-8 grid grid-cols-4 gap-2 place-content-center">
