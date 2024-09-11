@@ -2,24 +2,186 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
+import * as $_demo_AccordionDemo from "./routes/(demo)/AccordionDemo.tsx";
+import * as $_demo_AlertDemo from "./routes/(demo)/AlertDemo.tsx";
+import * as $_demo_AlertDialogDemo from "./routes/(demo)/AlertDialogDemo.tsx";
+import * as $_demo_AspectRatioDemo from "./routes/(demo)/AspectRatioDemo.tsx";
+import * as $_demo_AvatarDemo from "./routes/(demo)/AvatarDemo.tsx";
+import * as $_demo_BadgeDemo from "./routes/(demo)/BadgeDemo.tsx";
+import * as $_demo_BreadcrumbDemo from "./routes/(demo)/BreadcrumbDemo.tsx";
+import * as $_demo_ButtonDemo from "./routes/(demo)/ButtonDemo.tsx";
+import * as $_demo_CardDemo from "./routes/(demo)/CardDemo.tsx";
+import * as $_demo_CheckboxDemo from "./routes/(demo)/CheckboxDemo.tsx";
+import * as $_demo_CollapsibleDemo from "./routes/(demo)/CollapsibleDemo.tsx";
+import * as $_demo_ComboboxDemo from "./routes/(demo)/ComboboxDemo.tsx";
+import * as $_demo_CommandDemo from "./routes/(demo)/CommandDemo.tsx";
+import * as $_demo_ContextMenuDemo from "./routes/(demo)/ContextMenuDemo.tsx";
+import * as $_demo_DialogDemo from "./routes/(demo)/DialogDemo.tsx";
+import * as $_demo_DropdownMenuDemo from "./routes/(demo)/DropdownMenuDemo.tsx";
+import * as $_demo_HoverCardDemo from "./routes/(demo)/HoverCardDemo.tsx";
+import * as $_demo_InputDemo from "./routes/(demo)/InputDemo.tsx";
+import * as $_demo_LabelDemo from "./routes/(demo)/LabelDemo.tsx";
+import * as $_demo_MenubarDemo from "./routes/(demo)/MenubarDemo.tsx";
+import * as $_demo_NavigationMenuDemo from "./routes/(demo)/NavigationMenuDemo.tsx";
+import * as $_demo_PaginationDemo from "./routes/(demo)/PaginationDemo.tsx";
+import * as $_demo_PopoverDemo from "./routes/(demo)/PopoverDemo.tsx";
+import * as $_demo_ProgressDemo from "./routes/(demo)/ProgressDemo.tsx";
+import * as $_demo_RadioGroupDemo from "./routes/(demo)/RadioGroupDemo.tsx";
+import * as $_demo_ScrollAreaDemo from "./routes/(demo)/ScrollAreaDemo.tsx";
+import * as $_demo_SelectDemo from "./routes/(demo)/SelectDemo.tsx";
+import * as $_demo_SeparatorDemo from "./routes/(demo)/SeparatorDemo.tsx";
+import * as $_demo_SheetDemo from "./routes/(demo)/SheetDemo.tsx";
+import * as $_demo_SkeletonDemo from "./routes/(demo)/SkeletonDemo.tsx";
+import * as $_demo_SliderDemo from "./routes/(demo)/SliderDemo.tsx";
+import * as $_demo_SwitchDemo from "./routes/(demo)/SwitchDemo.tsx";
+import * as $_demo_TableDemo from "./routes/(demo)/TableDemo.tsx";
+import * as $_demo_TabsDemo from "./routes/(demo)/TabsDemo.tsx";
+import * as $_demo_TextareaDemo from "./routes/(demo)/TextareaDemo.tsx";
+import * as $_demo_ToastDemo from "./routes/(demo)/ToastDemo.tsx";
+import * as $_demo_ToggleDemo from "./routes/(demo)/ToggleDemo.tsx";
+import * as $_demo_ToggleGroupDemo from "./routes/(demo)/ToggleGroupDemo.tsx";
+import * as $_demo_TooltipDemo from "./routes/(demo)/TooltipDemo.tsx";
+import * as $_demo_layout from "./routes/(demo)/_layout.tsx";
+import * as $_demo_middleware from "./routes/(demo)/_middleware.tsx";
+import * as $_demo_index from "./routes/(demo)/index.tsx";
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
-import * as $index from "./routes/index.tsx";
-import * as $App from "./islands/App.tsx";
 import * as $SidePanel from "./islands/SidePanel.tsx";
-import * as $ViewArea from "./islands/ViewArea.tsx";
+import * as $_DemoWrapper from "./islands/_DemoWrapper.tsx";
+import * as $_WrapperAlert from "./islands/_WrapperAlert.tsx";
+import * as $_WrapperSelect from "./islands/_WrapperSelect.tsx";
+import * as $demo_AccordionDemo from "./islands/demo/AccordionDemo.tsx";
+import * as $demo_AlertDemo from "./islands/demo/AlertDemo.tsx";
+import * as $demo_AlertDialogDemo from "./islands/demo/AlertDialogDemo.tsx";
+import * as $demo_AspectRatioDemo from "./islands/demo/AspectRatioDemo.tsx";
+import * as $demo_AvatarDemo from "./islands/demo/AvatarDemo.tsx";
+import * as $demo_BadgeDemo from "./islands/demo/BadgeDemo.tsx";
+import * as $demo_BreadcrumbDemo from "./islands/demo/BreadcrumbDemo.tsx";
+import * as $demo_ButtonDemo from "./islands/demo/ButtonDemo.tsx";
+import * as $demo_CardDemo from "./islands/demo/CardDemo.tsx";
+import * as $demo_CheckboxDemo from "./islands/demo/CheckboxDemo.tsx";
+import * as $demo_CollapsibleDemo from "./islands/demo/CollapsibleDemo.tsx";
+import * as $demo_ComboboxDemo from "./islands/demo/ComboboxDemo.tsx";
+import * as $demo_CommandDemo from "./islands/demo/CommandDemo.tsx";
+import * as $demo_ContextMenuDemo from "./islands/demo/ContextMenuDemo.tsx";
+import * as $demo_DialogDemo from "./islands/demo/DialogDemo.tsx";
+import * as $demo_DropdownMenuDemo from "./islands/demo/DropdownMenuDemo.tsx";
+import * as $demo_HoverCardDemo from "./islands/demo/HoverCardDemo.tsx";
+import * as $demo_InputDemo from "./islands/demo/InputDemo.tsx";
+import * as $demo_LabelDemo from "./islands/demo/LabelDemo.tsx";
+import * as $demo_MenubarDemo from "./islands/demo/MenubarDemo.tsx";
+import * as $demo_NavigationMenuDemo from "./islands/demo/NavigationMenuDemo.tsx";
+import * as $demo_PaginationDemo from "./islands/demo/PaginationDemo.tsx";
+import * as $demo_PopoverDemo from "./islands/demo/PopoverDemo.tsx";
+import * as $demo_ProgressDemo from "./islands/demo/ProgressDemo.tsx";
+import * as $demo_RadioGroupDemo from "./islands/demo/RadioGroupDemo.tsx";
+import * as $demo_Scroll_AreaDemo from "./islands/demo/Scroll_AreaDemo.tsx";
+import * as $demo_SelectDemo from "./islands/demo/SelectDemo.tsx";
+import * as $demo_SeparatorDemo from "./islands/demo/SeparatorDemo.tsx";
+import * as $demo_SheetDemo from "./islands/demo/SheetDemo.tsx";
+import * as $demo_SkeletonDemo from "./islands/demo/SkeletonDemo.tsx";
+import * as $demo_SliderDemo from "./islands/demo/SliderDemo.tsx";
+import * as $demo_SwitchDemo from "./islands/demo/SwitchDemo.tsx";
+import * as $demo_TableDemo from "./islands/demo/TableDemo.tsx";
+import * as $demo_TabsDemo from "./islands/demo/TabsDemo.tsx";
+import * as $demo_TextareaDemo from "./islands/demo/TextareaDemo.tsx";
+import * as $demo_ToastDemo from "./islands/demo/ToastDemo.tsx";
+import * as $demo_ToggleDemo from "./islands/demo/ToggleDemo.tsx";
+import * as $demo_ToggleGroupDemo from "./islands/demo/ToggleGroupDemo.tsx";
+import * as $demo_TooltipDemo from "./islands/demo/TooltipDemo.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
+    "./routes/(demo)/AccordionDemo.tsx": $_demo_AccordionDemo,
+    "./routes/(demo)/AlertDemo.tsx": $_demo_AlertDemo,
+    "./routes/(demo)/AlertDialogDemo.tsx": $_demo_AlertDialogDemo,
+    "./routes/(demo)/AspectRatioDemo.tsx": $_demo_AspectRatioDemo,
+    "./routes/(demo)/AvatarDemo.tsx": $_demo_AvatarDemo,
+    "./routes/(demo)/BadgeDemo.tsx": $_demo_BadgeDemo,
+    "./routes/(demo)/BreadcrumbDemo.tsx": $_demo_BreadcrumbDemo,
+    "./routes/(demo)/ButtonDemo.tsx": $_demo_ButtonDemo,
+    "./routes/(demo)/CardDemo.tsx": $_demo_CardDemo,
+    "./routes/(demo)/CheckboxDemo.tsx": $_demo_CheckboxDemo,
+    "./routes/(demo)/CollapsibleDemo.tsx": $_demo_CollapsibleDemo,
+    "./routes/(demo)/ComboboxDemo.tsx": $_demo_ComboboxDemo,
+    "./routes/(demo)/CommandDemo.tsx": $_demo_CommandDemo,
+    "./routes/(demo)/ContextMenuDemo.tsx": $_demo_ContextMenuDemo,
+    "./routes/(demo)/DialogDemo.tsx": $_demo_DialogDemo,
+    "./routes/(demo)/DropdownMenuDemo.tsx": $_demo_DropdownMenuDemo,
+    "./routes/(demo)/HoverCardDemo.tsx": $_demo_HoverCardDemo,
+    "./routes/(demo)/InputDemo.tsx": $_demo_InputDemo,
+    "./routes/(demo)/LabelDemo.tsx": $_demo_LabelDemo,
+    "./routes/(demo)/MenubarDemo.tsx": $_demo_MenubarDemo,
+    "./routes/(demo)/NavigationMenuDemo.tsx": $_demo_NavigationMenuDemo,
+    "./routes/(demo)/PaginationDemo.tsx": $_demo_PaginationDemo,
+    "./routes/(demo)/PopoverDemo.tsx": $_demo_PopoverDemo,
+    "./routes/(demo)/ProgressDemo.tsx": $_demo_ProgressDemo,
+    "./routes/(demo)/RadioGroupDemo.tsx": $_demo_RadioGroupDemo,
+    "./routes/(demo)/ScrollAreaDemo.tsx": $_demo_ScrollAreaDemo,
+    "./routes/(demo)/SelectDemo.tsx": $_demo_SelectDemo,
+    "./routes/(demo)/SeparatorDemo.tsx": $_demo_SeparatorDemo,
+    "./routes/(demo)/SheetDemo.tsx": $_demo_SheetDemo,
+    "./routes/(demo)/SkeletonDemo.tsx": $_demo_SkeletonDemo,
+    "./routes/(demo)/SliderDemo.tsx": $_demo_SliderDemo,
+    "./routes/(demo)/SwitchDemo.tsx": $_demo_SwitchDemo,
+    "./routes/(demo)/TableDemo.tsx": $_demo_TableDemo,
+    "./routes/(demo)/TabsDemo.tsx": $_demo_TabsDemo,
+    "./routes/(demo)/TextareaDemo.tsx": $_demo_TextareaDemo,
+    "./routes/(demo)/ToastDemo.tsx": $_demo_ToastDemo,
+    "./routes/(demo)/ToggleDemo.tsx": $_demo_ToggleDemo,
+    "./routes/(demo)/ToggleGroupDemo.tsx": $_demo_ToggleGroupDemo,
+    "./routes/(demo)/TooltipDemo.tsx": $_demo_TooltipDemo,
+    "./routes/(demo)/_layout.tsx": $_demo_layout,
+    "./routes/(demo)/_middleware.tsx": $_demo_middleware,
+    "./routes/(demo)/index.tsx": $_demo_index,
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
-    "./routes/index.tsx": $index,
   },
   islands: {
-    "./islands/App.tsx": $App,
     "./islands/SidePanel.tsx": $SidePanel,
-    "./islands/ViewArea.tsx": $ViewArea,
+    "./islands/_DemoWrapper.tsx": $_DemoWrapper,
+    "./islands/_WrapperAlert.tsx": $_WrapperAlert,
+    "./islands/_WrapperSelect.tsx": $_WrapperSelect,
+    "./islands/demo/AccordionDemo.tsx": $demo_AccordionDemo,
+    "./islands/demo/AlertDemo.tsx": $demo_AlertDemo,
+    "./islands/demo/AlertDialogDemo.tsx": $demo_AlertDialogDemo,
+    "./islands/demo/AspectRatioDemo.tsx": $demo_AspectRatioDemo,
+    "./islands/demo/AvatarDemo.tsx": $demo_AvatarDemo,
+    "./islands/demo/BadgeDemo.tsx": $demo_BadgeDemo,
+    "./islands/demo/BreadcrumbDemo.tsx": $demo_BreadcrumbDemo,
+    "./islands/demo/ButtonDemo.tsx": $demo_ButtonDemo,
+    "./islands/demo/CardDemo.tsx": $demo_CardDemo,
+    "./islands/demo/CheckboxDemo.tsx": $demo_CheckboxDemo,
+    "./islands/demo/CollapsibleDemo.tsx": $demo_CollapsibleDemo,
+    "./islands/demo/ComboboxDemo.tsx": $demo_ComboboxDemo,
+    "./islands/demo/CommandDemo.tsx": $demo_CommandDemo,
+    "./islands/demo/ContextMenuDemo.tsx": $demo_ContextMenuDemo,
+    "./islands/demo/DialogDemo.tsx": $demo_DialogDemo,
+    "./islands/demo/DropdownMenuDemo.tsx": $demo_DropdownMenuDemo,
+    "./islands/demo/HoverCardDemo.tsx": $demo_HoverCardDemo,
+    "./islands/demo/InputDemo.tsx": $demo_InputDemo,
+    "./islands/demo/LabelDemo.tsx": $demo_LabelDemo,
+    "./islands/demo/MenubarDemo.tsx": $demo_MenubarDemo,
+    "./islands/demo/NavigationMenuDemo.tsx": $demo_NavigationMenuDemo,
+    "./islands/demo/PaginationDemo.tsx": $demo_PaginationDemo,
+    "./islands/demo/PopoverDemo.tsx": $demo_PopoverDemo,
+    "./islands/demo/ProgressDemo.tsx": $demo_ProgressDemo,
+    "./islands/demo/RadioGroupDemo.tsx": $demo_RadioGroupDemo,
+    "./islands/demo/Scroll_AreaDemo.tsx": $demo_Scroll_AreaDemo,
+    "./islands/demo/SelectDemo.tsx": $demo_SelectDemo,
+    "./islands/demo/SeparatorDemo.tsx": $demo_SeparatorDemo,
+    "./islands/demo/SheetDemo.tsx": $demo_SheetDemo,
+    "./islands/demo/SkeletonDemo.tsx": $demo_SkeletonDemo,
+    "./islands/demo/SliderDemo.tsx": $demo_SliderDemo,
+    "./islands/demo/SwitchDemo.tsx": $demo_SwitchDemo,
+    "./islands/demo/TableDemo.tsx": $demo_TableDemo,
+    "./islands/demo/TabsDemo.tsx": $demo_TabsDemo,
+    "./islands/demo/TextareaDemo.tsx": $demo_TextareaDemo,
+    "./islands/demo/ToastDemo.tsx": $demo_ToastDemo,
+    "./islands/demo/ToggleDemo.tsx": $demo_ToggleDemo,
+    "./islands/demo/ToggleGroupDemo.tsx": $demo_ToggleGroupDemo,
+    "./islands/demo/TooltipDemo.tsx": $demo_TooltipDemo,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
