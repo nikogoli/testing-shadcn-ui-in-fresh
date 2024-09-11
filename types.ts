@@ -39,3 +39,8 @@ export const ITEM_NAMES = [
   "ToggleGroup",
   "Tooltip",
 ] as const
+
+
+export type MiddleState = {
+  compName: string;
+}
