@@ -24,7 +24,7 @@ export const ITEM_NAMES = [
   "Progress",
   "Popover",
   "RadioGroup",
-  "Scrollarea",
+  "ScrollArea",
   "Select",
   "Separator",
   "Sheet",
