@@ -20,7 +20,7 @@ export default function WrapperAlert(props:{
     : "border-fuchsia-700 text-fuchsia-700"
 
   return (
-    <Alert class={`h-fit w-[80%] ${err_sty!}`}>
+    <Alert class={`h-fit w-[80%] ${err_sty!}`} variant="noColorStyle">
       <IconAlertCircle class={`h-4 w-4 ${err_sty!.split(" ")[1]}`} />
       <AlertTitle class="font-bold">CAUTION</AlertTitle>
       <AlertDescription class="flex flex-col gap-1">{
