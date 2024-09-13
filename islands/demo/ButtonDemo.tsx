@@ -1,4 +1,4 @@
-import { Button, buttonVariants } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/button.tsx'
+import { Button, buttonVariants } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/button.tsx'
 
 import DemoWrapper from "../_DemoWrapper.tsx"
 import WrapperSelect from "../_WrapperSelect.tsx"
@@ -6,7 +6,7 @@ import { useState } from "preact/hooks"
 
 
 const Code = `
-import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/button.tsx'
+import { Button } from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/button.tsx'
 
 export const ButtonDemo = () => {
   return (

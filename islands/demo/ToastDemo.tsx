@@ -1,11 +1,11 @@
 import { VNode, JSX, Fragment } from "preact";
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/button.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/button.tsx"
 import {
   ToastAction,
   Toaster,
   useToast,
   toastVariants
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/toast.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/toast.tsx"
 
 import DemoWrapper from "../_DemoWrapper.tsx";
 import WrapperSelect from "../_WrapperSelect.tsx"
@@ -14,13 +14,13 @@ import { useState } from "preact/hooks"
 
 const Code = `
 import { VNode, JSX, Fragment } from "preact";
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/button.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/button.tsx"
 import {
   ToastAction,
   Toaster,
   useToast,
   toastVariants
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/toast.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/toast.tsx"
 
 function ToastDemoBase(porps:{variant:keyof typeof toastVariants["variants"]["variant"]}) {
   const { toast } = useToast()

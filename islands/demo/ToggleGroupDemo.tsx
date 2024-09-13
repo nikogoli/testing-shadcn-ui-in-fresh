@@ -5,7 +5,7 @@ import IconUnderline from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/underl
 import {
   ToggleGroup,
   ToggleGroupItem,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/toggle-group.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/toggle-group.tsx"
 
 import DemoWrapper from "../_DemoWrapper.tsx"
 
@@ -18,7 +18,7 @@ import IconUnderline from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/underl
 import {
   ToggleGroup,
   ToggleGroupItem,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/toggle-group.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/toggle-group.tsx"
 
 export function ToggleGroupDemo() {
   return (

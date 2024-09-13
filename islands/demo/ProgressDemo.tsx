@@ -1,16 +1,16 @@
-import { Progress } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/progress.tsx"
+import { Progress } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/progress.tsx"
 import { useState, useEffect } from "preact/hooks"
 
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/button.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/button.tsx"
 import IconReload from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/reload.tsx"
 
 import DemoWrapper from "../_DemoWrapper.tsx"
 
 
 const Code = `
-import { Progress } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/progress.tsx"
+import { Progress } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/progress.tsx"
 import { useState, useEffect } from "preact/hooks"
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/button.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/button.tsx"
 import IconReload from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/reload.tsx"
 
 export function ProgressDemo() {

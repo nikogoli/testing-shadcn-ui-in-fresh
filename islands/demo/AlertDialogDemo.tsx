@@ -8,8 +8,8 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/alert-dialog.tsx'
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/button.tsx"
+} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/alert-dialog.tsx'
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/button.tsx"
 
 import DemoWrapper from "../_DemoWrapper.tsx"
 
@@ -25,8 +25,8 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/alert-dialog.tsx'
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/button.tsx"
+} from 'https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/alert-dialog.tsx'
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/button.tsx"
 
 export function AlertDialogDemo() {
   return (

@@ -6,7 +6,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/table.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/table.tsx"
 
 import DemoWrapper from "../_DemoWrapper.tsx"
 
@@ -20,7 +20,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/table.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/table.tsx"
 
 const invoices = [
   { invoice: "INV001", paymentStatus: "Paid",

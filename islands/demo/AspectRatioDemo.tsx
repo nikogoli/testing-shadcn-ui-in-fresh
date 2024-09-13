@@ -1,10 +1,10 @@
-import { AspectRatio } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/aspect-ratio.tsx"
+import { AspectRatio } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/aspect-ratio.tsx"
 
 import DemoWrapper from "../_DemoWrapper.tsx"
 
 
 const Code = `
-import { AspectRatio } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/aspect-ratio.tsx"
+import { AspectRatio } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/aspect-ratio.tsx"
 
 export function AspectRatioDemo() {
   return (

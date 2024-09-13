@@ -2,7 +2,7 @@ import {
   Alert,
   AlertDescription,
   AlertTitle,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/alert.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/alert.tsx"
 import IconAlertCircle from "https://deno.land/x/tabler_icons_tsx@0.0.7/tsx/alert-circle.tsx"
 
 

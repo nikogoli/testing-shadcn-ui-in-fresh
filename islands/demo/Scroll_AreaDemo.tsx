@@ -1,14 +1,14 @@
 import { Fragment } from "preact";
-import { ScrollArea } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/scroll-area.tsx"
-import { Separator } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/separator.tsx"
+import { ScrollArea } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/scroll-area.tsx"
+import { Separator } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/separator.tsx"
 
 import DemoWrapper from "../_DemoWrapper.tsx"
 
 
 const Code = `
 import { Fragment } from "preact";
-import { ScrollArea } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/scroll-area.tsx"
-import { Separator } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/separator.tsx"
+import { ScrollArea } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/scroll-area.tsx"
+import { Separator } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/separator.tsx"
 
 export function ScrollAreaDemo() {
   return (

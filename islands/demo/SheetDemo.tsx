@@ -1,6 +1,6 @@
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/button.tsx"
-import { Input } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/input.tsx"
-import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/label.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/button.tsx"
+import { Input } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/input.tsx"
+import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/label.tsx"
 import {
   Sheet,
   SheetClose,
@@ -11,7 +11,7 @@ import {
   SheetTitle,
   SheetTrigger,
   sheetVariatns,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/sheet.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/sheet.tsx"
 
 import DemoWrapper from "../_DemoWrapper.tsx"
 import WrapperSelect from "../_WrapperSelect.tsx"
@@ -19,9 +19,9 @@ import { useState } from "preact/hooks"
 
 
 const Code = `
-import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/button.tsx"
-import { Input } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/input.tsx"
-import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/label.tsx"
+import { Button } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/button.tsx"
+import { Input } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/input.tsx"
+import { Label } from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/label.tsx"
 import {
   Sheet,
   SheetClose,
@@ -31,7 +31,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.1/components/sheet.tsx"
+} from "https://deno.land/x/testing_shadcn_ui_for_deno@0.1.2/components/sheet.tsx"
 
 export function SheetDemo() {
   return (
